@@ -1,0 +1,777 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 24 14:32:06 2025
+# Process ID: 4052
+# Current directory: E:/program/cpu/SCCPU_FPGA-main
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13656 E:\program\cpu\SCCPU_FPGA-main\SCCPU_SOC.xpr
+# Log file: E:/program/cpu/SCCPU_FPGA-main/vivado.log
+# Journal file: E:/program/cpu/SCCPU_FPGA-main\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.xpr
+INFO: [Project 1-313] Project file moved from 'D:/codtest/SCCPU_SOC' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/program/EDA/ziliao/CODExp/testcode/task/riscv_sidascsorting_fpga.coe', nor could it be found using path 'D:/EDA/ziliao/CODExp/testcode/task/riscv_sidascsorting_fpga.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'imem' is locked:
+* IP definition 'Distributed Memory Generator (8.0)' for IP 'imem' (customized with software release 2017.4) has a different revision in the IP Catalog.
+INFO: [Project 1-230] Project 'SCCPU_SOC.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 918.961 ; gain = 196.078
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -srcset imem -vlnv xilinx.com:ip:dist_mem_gen:8.0 [get_ips  imem] -log ip_upgrade.log
+Upgrading 'imem'
+INFO: [Project 1-386] Moving file 'E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/imem.xci' from fileset 'imem' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-4050] The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+WARNING: [IP_Flow 19-3438] Customization errors found on 'imem'. Restoring to previous valid configuration.
+WARNING: [IP_Flow 19-1721] During upgrade of 'imem':
+The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+CRITICAL WARNING: [IP_Flow 19-3421] Upgrade of 'imem' (Distributed Memory Generator 8.0) from revision 12 to revision 13 has resulted in an incomplete parameterization. Please review the message log, and recustomize this instance before continuing with your design.
+WARNING: [IP_Flow 19-4706] Upgraded port 'a' width 6 differs from original width 7
+WARNING: [IP_Flow 19-4706] Upgraded port 'spo' width 16 differs from original width 32
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'd'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'we'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'imem'. These changes may impact your design.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'imem'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'imem' has identified issues that may require user intervention. Please review the upgrade log 'e:/program/cpu/SCCPU_FPGA-main/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/program/cpu/SCCPU_FPGA-main/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips imem] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+reset_run synth_1
+generate_target all [get_files E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/imem.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'imem'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'imem'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'imem'...
+export_ip_user_files -of_objects [get_files E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/imem.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/imem.xci] -directory E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.ip_user_files/sim_scripts -ip_user_files_dir E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.ip_user_files -ipstatic_source_dir E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.cache/compile_simlib/modelsim} {questa=E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.cache/compile_simlib/questa} {riviera=E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.cache/compile_simlib/riviera} {activehdl=E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset imem
+set_property top imem [get_fileset imem]
+move_files -fileset [get_fileset imem] [get_files -of_objects [get_fileset sources_1] E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/imem.xci]
+launch_run imem_synth_1
+[Thu Apr 24 14:35:11 2025] Launched imem_synth_1...
+Run output will be captured here: E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.runs/imem_synth_1/runme.log
+wait_on_run imem_synth_1
+
+[Thu Apr 24 14:35:11 2025] Waiting for imem_synth_1 to finish...
+[Thu Apr 24 14:35:16 2025] Waiting for imem_synth_1 to finish...
+[Thu Apr 24 14:35:21 2025] Waiting for imem_synth_1 to finish...
+[Thu Apr 24 14:35:26 2025] Waiting for imem_synth_1 to finish...
+[Thu Apr 24 14:35:36 2025] Waiting for imem_synth_1 to finish...
+
+*** Running vivado
+    with args -log imem.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source imem.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source imem.tcl -notrace
+Command: synth_design -top imem -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25000 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 988.977 ; gain = 235.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'imem' [e:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/synth/imem.vhd:69]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 64 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 1 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at 'e:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [e:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/synth/imem.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'imem' (4#1) [e:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/synth/imem.vhd:69]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[8]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[7]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[6]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[5]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[4]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[3]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[2]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[1]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[0]
+WARNING: [Synth 8-3331] design spram has unconnected port i_ce
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_ce
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_rst
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo_ce
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo_clk
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo_rst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port i_ce
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo_ce
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qdpo_ce
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qdpo_clk
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo_rst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qdpo_rst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qdpo_srst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1063.496 ; gain = 309.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1063.496 ; gain = 309.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1063.496 ; gain = 309.906
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1063.496 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/imem_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/imem_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.runs/imem_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.runs/imem_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1118.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1130.043 ; gain = 11.418
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1130.043 ; gain = 376.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1130.043 ; gain = 376.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.runs/imem_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1130.043 ; gain = 376.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1130.043 ; gain = 376.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module spram 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1130.043 ; gain = 376.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------------------------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                                                | Inference | Size (Depth x Width) | Primitives     | 
++------------+-----------------------------------------------------------+-----------+----------------------+----------------+
+|U0          | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 64 x 16              | RAM64X1S x 16	 | 
++------------+-----------------------------------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1131.680 ; gain = 378.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1131.754 ; gain = 378.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-----------------------------------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                                                | Inference | Size (Depth x Width) | Primitives     | 
++------------+-----------------------------------------------------------+-----------+----------------------+----------------+
+|U0          | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 64 x 16              | RAM64X1S x 16	 | 
++------------+-----------------------------------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1141.852 ; gain = 388.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1157.633 ; gain = 404.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1157.633 ; gain = 404.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1157.633 ; gain = 404.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1157.633 ; gain = 404.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1157.633 ; gain = 404.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1157.633 ; gain = 404.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |RAM64X1S |    16|
+|2     |FDRE     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------------------+---------------------------+------+
+|      |Instance                          |Module                     |Cells |
++------+----------------------------------+---------------------------+------+
+|1     |top                               |                           |    32|
+|2     |  U0                              |dist_mem_gen_v8_0_13       |    32|
+|3     |    \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_13_synth |    32|
+|4     |      \gen_sp_ram.spram_inst      |spram                      |    32|
++------+----------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1157.633 ; gain = 404.043
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1157.633 ; gain = 337.496
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1157.633 ; gain = 404.043
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1169.637 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1176.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1176.566 ; gain = 707.590
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1176.566 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.runs/imem_synth_1/imem.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP imem, cache-ID = b582a0bb792ff59f
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1176.566 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.runs/imem_synth_1/imem.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file imem_utilization_synth.rpt -pb imem_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 24 14:35:37 2025...
+[Thu Apr 24 14:35:41 2025] imem_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 960.586 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'RVSCCPUSOC_Top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.sim/sim_1/behav/xsim/riscv_sidascsorting_fpga.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RVSCCPUSOC_Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/EXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/MIO_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIO_BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/Multi_CH32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multi_CH32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/SCCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/dm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RVSCCPU_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RVSCCPUSOC_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.sim/sim_1/behav/xsim'
+"xelab -wto 33eb1d55b82c49f9866c31355750bb83 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RVSCCPUSOC_Top_behav xil_defaultlib.RVSCCPUSOC_Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 33eb1d55b82c49f9866c31355750bb83 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RVSCCPUSOC_Top_behav xil_defaultlib.RVSCCPUSOC_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 6 for port 'a' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RVSCCPU_Top.v:55]
+WARNING: [VRFC 10-5021] port 'd' is not connected on this instance [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RVSCCPU_Top.v:54]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.EXT
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.SCCPU
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dm
+Compiling module xil_defaultlib.MIO_BUS
+Compiling module xil_defaultlib.Multi_CH32
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.RVSCCPUSOC_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RVSCCPUSOC_Top_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.sim/sim_1/behav/xsim/xsim.dir/RVSCCPUSOC_Top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 24 14:35:51 2025...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 960.586 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RVSCCPUSOC_Top_behav -key {Behavioral:sim_1:Functional:RVSCCPUSOC_Top} -tclbatch {RVSCCPUSOC_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source RVSCCPUSOC_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 995.309 ; gain = 30.988
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RVSCCPUSOC_Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 995.309 ; gain = 34.723
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: RVSCCPUSOC_Top
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1473.156 ; gain = 229.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RVSCCPUSOC_Top' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RVSCCPU_Top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/clk_div.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/clk_div.v:21]
+INFO: [Synth 8-6157] synthesizing module 'SCCPU' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/SCCPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (2#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/NPC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (4#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/NPC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EXT' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/EXT.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'EXT' (5#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/EXT.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RF' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RF.v:1]
+WARNING: [Synth 8-5788] Register rf_reg[0] in module RF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RF.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (7#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SCCPU' (8#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/SCCPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'imem' [E:/program/cpu/SCCPU_FPGA-main/.Xil/Vivado-4052-chenyidong/realtime/imem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (9#1) [E:/program/cpu/SCCPU_FPGA-main/.Xil/Vivado-4052-chenyidong/realtime/imem_stub.v:6]
+WARNING: [Synth 8-689] width (7) of port connection 'a' does not match port width (6) of module 'imem' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RVSCCPU_Top.v:55]
+WARNING: [Synth 8-689] width (32) of port connection 'spo' does not match port width (16) of module 'imem' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RVSCCPU_Top.v:55]
+WARNING: [Synth 8-7023] instance 'U_IM' of module 'imem' has 5 connections declared, but only 2 given [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RVSCCPU_Top.v:54]
+INFO: [Synth 8-6157] synthesizing module 'dm' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/dm.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dm' (10#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/dm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/MIO_BUS.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'MIO_BUS' (11#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/MIO_BUS.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Multi_CH32' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/Multi_CH32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Multi_CH32' (12#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/Multi_CH32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16' [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/seg7x16.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/seg7x16.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (13#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/seg7x16.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'RVSCCPUSOC_Top' (14#1) [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/imports/codtest/RVSCCPU_Top.v:3]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[31]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[30]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[29]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[28]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[27]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[26]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[25]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[24]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[23]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[22]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[21]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[20]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[19]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[18]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[17]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[16]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[15]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[14]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[13]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[12]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[11]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[10]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[9]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[1]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1527.086 ; gain = 283.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1527.086 ; gain = 283.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1527.086 ; gain = 283.582
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/sources_1/ip/imem/imem.dcp' for cell 'U_IM'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1527.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/constrs_1/imports/constraints/Nexys4DDR_CPU.xdc]
+Finished Parsing XDC File [E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/constrs_1/imports/constraints/Nexys4DDR_CPU.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1656.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 16 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1749.836 ; gain = 506.332
+37 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1749.836 ; gain = 754.527
+set_property IOSTANDARD LVCMOS33 [get_ports [list {disp_an_o[7]} {disp_an_o[6]} {disp_an_o[5]} {disp_an_o[4]} {disp_an_o[3]} {disp_an_o[2]} {disp_an_o[1]} {disp_an_o[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sw_i[15]} {sw_i[14]} {sw_i[13]} {sw_i[12]} {sw_i[11]} {sw_i[10]} {sw_i[9]} {sw_i[8]} {sw_i[7]} {sw_i[6]} {sw_i[5]} {sw_i[4]} {sw_i[3]} {sw_i[2]} {sw_i[1]} {sw_i[0]}]]
+set_property target_constrs_file E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.srcs/constrs_1/imports/constraints/Nexys4DDR_CPU.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs synth_1 -jobs 10
+[Thu Apr 24 14:38:15 2025] Launched synth_1...
+Run output will be captured here: E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.runs/synth_1/runme.log
+update_files -from_files E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.ip_user_files/mem_init_files/riscv_sidascsorting_fpga.coe -to_files E:/program/EDA/ziliao/CODExp/testcode/task/riscv_sidascsorting_fpga.coe -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'E:/program/EDA/ziliao/CODExp/testcode/task/riscv_sidascsorting_fpga.coe' with file 'E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.ip_user_files/mem_init_files/riscv_sidascsorting_fpga.coe'.
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Thu Apr 24 14:45:20 2025] Launched synth_1...
+Run output will be captured here: E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Apr 24 14:48:01 2025] Launched impl_1...
+Run output will be captured here: E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Thu Apr 24 14:49:03 2025] Launched impl_1...
+Run output will be captured here: E:/program/cpu/SCCPU_FPGA-main/SCCPU_SOC.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2122.789 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 306 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'RVSCCPUSOC_Top' is not ideal for floorplanning, since the cellview 'RF' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 2558.363 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 2558.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2558.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 1 instance 
+  RAM64X1S => RAM64X1S (RAMS64E): 16 instances
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2631.828 ; gain = 509.039
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 24 15:08:12 2025...

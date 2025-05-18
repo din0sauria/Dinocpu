@@ -1,0 +1,114 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Apr 24 15:17:57 2025
+| Host         : chenyidong running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file RVSCCPUSOC_Top_control_sets_placed.rpt
+| Design       : RVSCCPUSOC_Top
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    36 |
+|    Minimum number of control sets                        |    36 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    36 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    34 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |             116 |           45 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             992 |          426 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+---------------------------------+--------------------+------------------+----------------+
+|   Clock Signal   |          Enable Signal          |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++------------------+---------------------------------+--------------------+------------------+----------------+
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/ram_we             |                    |                1 |              2 |
+|  U_7SEG/seg7_clk |                                 | U_SCCPU/U_RF/AR[0] |                1 |              3 |
+|                  |                                 |                    |                4 |             16 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[5][31]_i_1_n_0  | U_SCCPU/U_RF/AR[0] |                9 |             32 |
+|  Clk_CPU_BUFG    |                                 | U_SCCPU/U_RF/AR[0] |               12 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[26][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               15 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[19][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               17 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[22][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               14 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[23][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               19 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[21][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |                9 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[20][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               12 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[15][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               13 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[1][31]_i_1_n_0  | U_SCCPU/U_RF/AR[0] |               15 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[10][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               12 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[11][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |                8 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[24][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               14 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[17][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               12 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[14][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               12 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[13][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               14 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[2][31]_i_1_n_0  | U_SCCPU/U_RF/AR[0] |               12 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[25][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               15 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[18][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               13 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[16][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               10 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[28][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               13 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[29][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               17 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[12][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               11 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[30][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               16 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[27][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               14 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[31][31]_i_1_n_0 | U_SCCPU/U_RF/AR[0] |               22 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[7][31]_i_1_n_0  | U_SCCPU/U_RF/AR[0] |               11 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[6][31]_i_1_n_0  | U_SCCPU/U_RF/AR[0] |               11 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[8][31]_i_1_n_0  | U_SCCPU/U_RF/AR[0] |               16 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[3][31]_i_1_n_0  | U_SCCPU/U_RF/AR[0] |                9 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[9][31]_i_1_n_0  | U_SCCPU/U_RF/AR[0] |               28 |             32 |
+|  Clk_CPU_BUFG    | U_SCCPU/U_RF/rf[4][31]_i_1_n_0  | U_SCCPU/U_RF/AR[0] |               13 |             32 |
+|  clk_IBUF_BUFG   |                                 | U_SCCPU/U_RF/AR[0] |               32 |             81 |
++------------------+---------------------------------+--------------------+------------------+----------------+
+
+

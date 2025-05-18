@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 24 15:08:38 2025
+# Process ID: 26480
+# Current directory: E:/program/cpu/SCCPU_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21520 E:\program\cpu\SCCPU_FPGA\SCCPU_SOC.xpr
+# Log file: E:/program/cpu/SCCPU_FPGA/vivado.log
+# Journal file: E:/program/cpu/SCCPU_FPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.xpr
+update_compile_order -fileset sources_1
+update_files -from_files E:/program/cpu/dino.coe -to_files E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.ip_user_files/mem_init_files/riscv_sidascsorting_fpga.coe -filesets [get_filesets *]
+launch_simulation
+source RVSCCPUSOC_Top.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw_manager
+close_sim
+files/riscv_sidascsorting_fpga.coe] -no_script -reset -force -quiet
+remove_files  E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.ip_user_files/mem_init_files/riscv_sidascsorting_fpga.coe
+open_hw_manager

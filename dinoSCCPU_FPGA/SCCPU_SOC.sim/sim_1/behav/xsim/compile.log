@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/EXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/MIO_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIO_BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/Multi_CH32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multi_CH32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/SCCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/dm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dm
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.srcs/sources_1/imports/codtest/RVSCCPU_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RVSCCPUSOC_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/program/cpu/SCCPU_FPGA/SCCPU_SOC.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
