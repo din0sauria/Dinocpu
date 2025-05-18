@@ -1,6 +1,6 @@
-# DinoSCCPU单周期CPU设计文档
+# DinoCPU单周期/多周期设计文档
 
-## 工程概述
+## DinoSCCPU - 单周期RISC-V CPU实现
 
 这是一个基于RISC-V指令集的单周期CPU实现，采用Verilog HDL编写，包含完整的指令执行流水线和存储系统。
 
@@ -69,7 +69,7 @@ sccomp (顶层模块)
 
 测试程序通过`rv32_sc_sim.dat`文件加载到指令存储器，测试平台自动生成时钟和复位信号。
 
-# DinoPLCPU - 五级流水线RISC-V CPU实现
+## DinoPLCPU - 五级流水线RISC-V CPU实现
 
 ## 模块关系
 
