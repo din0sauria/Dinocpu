@@ -1,5 +1,7 @@
 # DinoCPU单周期/多周期设计文档
 
+本项目基于powchan/SCCPU_SIM_RISCV32,powchan/SCCPU_FPGA,powchan/PLCPU_sim_RV32I
+
 ## DinoSCCPU - 单周期RISC-V CPU实现
 
 这是一个基于RISC-V指令集的单周期CPU实现，采用Verilog HDL编写，包含完整的指令执行流水线和存储系统。
