@@ -1,0 +1,658 @@
+
+*** Running vivado
+    with args -log PLCPUSOC_Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PLCPUSOC_Top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source PLCPUSOC_Top.tcl -notrace
+Command: synth_design -top PLCPUSOC_Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22036 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 989.445 ; gain = 235.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PLCPUSOC_Top' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/PLCPU_Top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/clk_div.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/clk_div.v:21]
+INFO: [Synth 8-6157] synthesizing module 'PLCPU' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/PLCPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (2#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/NPC.v:3]
+INFO: [Synth 8-251] NPC: xxxxxxxx, NPCOp: 5'bxxxxx [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/NPC.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (4#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/NPC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EXT' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/EXT.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'EXT' (5#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/EXT.v:4]
+INFO: [Synth 8-6157] synthesizing module 'RF' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/RF.v:1]
+WARNING: [Synth 8-5788] Register rf_reg[0] in module RF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/RF.v:18]
+WARNING: [Synth 8-3848] Net reg_data in module/entity RF does not have driver. [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/RF.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/RF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/alu.v:3]
+WARNING: [Synth 8-151] case item 5'b01110 is unreachable [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/alu.v:19]
+WARNING: [Synth 8-151] case item 5'b01101 is unreachable [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/alu.v:19]
+WARNING: [Synth 8-151] case item 5'b01100 is unreachable [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/alu.v:19]
+WARNING: [Synth 8-151] case item 5'b10000 is unreachable [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/alu.v:19]
+WARNING: [Synth 8-151] case item 5'b10001 is unreachable [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/alu.v:19]
+WARNING: [Synth 8-151] case item 5'b01111 is unreachable [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/alu.v:19]
+WARNING: [Synth 8-151] case item 5'b01010 is unreachable [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/alu.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (7#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/alu.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/PLCPU.v:152]
+INFO: [Synth 8-6157] synthesizing module 'pl_reg' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/pl_reg.v:1]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg' (8#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/pl_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pl_reg__parameterized0' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/pl_reg.v:1]
+	Parameter WIDTH bound to: 194 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg__parameterized0' (8#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/pl_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pl_reg__parameterized1' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/pl_reg.v:1]
+	Parameter WIDTH bound to: 146 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg__parameterized1' (8#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/pl_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pl_reg__parameterized2' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/pl_reg.v:1]
+	Parameter WIDTH bound to: 136 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg__parameterized2' (8#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/pl_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_Detect' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/hazard.v:3]
+INFO: [Synth 8-251] stall=1'bx [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/hazard.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_Detect' (9#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/hazard.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Forwarding' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/hazard.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'Forwarding' (10#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/hazard.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'PLCPU' (11#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/PLCPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'imem' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.runs/synth_1/.Xil/Vivado-13328-chenyidong/realtime/imem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (12#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.runs/synth_1/.Xil/Vivado-13328-chenyidong/realtime/imem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dm' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/dm.v:3]
+WARNING: [Synth 8-3936] Found unconnected internal register 'write_addr_reg' and it is trimmed from '32' to '9' bits. [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/dm.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'dm' (13#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/dm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/MIO_BUS.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'MIO_BUS' (14#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/MIO_BUS.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Multi_CH32' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/Multi_CH32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Multi_CH32' (15#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/Multi_CH32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/seg7x16.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/seg7x16.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (16#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/seg7x16.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'PLCPUSOC_Top' (17#1) [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/PLCPU_Top.v:3]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[31]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[30]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[29]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[28]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[27]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[26]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[25]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[24]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[23]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[22]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[21]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[20]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[19]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[18]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[17]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[16]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[15]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[14]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[13]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[12]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[11]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[10]
+WARNING: [Synth 8-3331] design dm has unconnected port addr[9]
+WARNING: [Synth 8-3331] design Hazard_Detect has unconnected port clk
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[31]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[30]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[29]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[28]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[27]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[26]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[25]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[24]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[23]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[22]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[21]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[20]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[19]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[18]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[17]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[16]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[15]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[14]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[13]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[12]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[11]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[10]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[9]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[8]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[7]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[6]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[5]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[4]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[3]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[2]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[1]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[0]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_sel[4]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_sel[3]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_sel[2]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_sel[1]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_sel[0]
+WARNING: [Synth 8-3331] design ctrl has unconnected port Zero
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1062.359 ; gain = 308.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1062.359 ; gain = 308.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1062.359 ; gain = 308.621
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1062.359 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/ip/imem/imem/imem_in_context.xdc] for cell 'U_IM'
+Finished Parsing XDC File [e:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/ip/imem/imem/imem_in_context.xdc] for cell 'U_IM'
+Parsing XDC File [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/constrs_1/imports/constraints/Nexys4DDR_CPU.xdc]
+Finished Parsing XDC File [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/constrs_1/imports/constraints/Nexys4DDR_CPU.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/constrs_1/imports/constraints/Nexys4DDR_CPU.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PLCPUSOC_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PLCPUSOC_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1178.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1178.215 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1178.215 ; gain = 424.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1178.215 ; gain = 424.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U_IM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1178.215 ; gain = 424.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/alu.v:19]
+INFO: [Synth 8-5546] ROM "o_seg_r" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'WD_reg' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/PLCPU.v:138]
+WARNING: [Synth 8-327] inferring latch for variable 'dout_reg' [E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.srcs/sources_1/imports/PLCPU_FPGA/dm.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1178.215 ; gain = 424.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	              194 Bit    Registers := 1     
+	              146 Bit    Registers := 1     
+	              136 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 35    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    194 Bit        Muxes := 2     
+	   2 Input    146 Bit        Muxes := 2     
+	   2 Input    136 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 8     
+	  20 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 3     
+	  11 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 43    
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module NPC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+Module RF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  20 Input     32 Bit        Muxes := 1     
+Module pl_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module pl_reg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	              194 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    194 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module pl_reg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	              146 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    146 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module pl_reg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	              136 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    136 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Forwarding 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module PLCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module dm 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module MIO_BUS 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module Multi_CH32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     32 Bit        Muxes := 1     
+Module seg7x16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Hazard_Detect has unconnected port clk
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[31]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[30]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[29]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[28]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[27]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[26]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[25]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[24]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[23]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[22]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[21]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[20]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[19]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[18]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[17]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[16]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[15]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[14]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[13]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[12]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[11]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[10]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[9]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[8]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[7]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[6]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[5]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[4]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[3]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[2]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[1]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_data[0]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_sel[4]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_sel[3]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_sel[2]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_sel[1]
+WARNING: [Synth 8-3331] design RF has unconnected port reg_sel[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U_PLCPU/ID_EX/out_reg[159]' (FDCE) to 'U_PLCPU/ID_EX/out_reg[161]'
+INFO: [Synth 8-3886] merging instance 'U_PLCPU/ID_EX/out_reg[154]' (FDCE) to 'U_PLCPU/ID_EX/out_reg[153]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/ID_EX/\out_reg[153] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U_7SEG/o_seg_r_reg[7] )
+INFO: [Synth 8-3886] merging instance 'U_PLCPU/EX_MEM/out_reg[106]' (FDCE) to 'U_PLCPU/EX_MEM/out_reg[113]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_PLCPU/U_RF/\rf_reg[0][3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1178.215 ; gain = 424.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-------------+---------------+-----------+----------------------+---------------------------+
+|Module Name  | RTL Object    | Inference | Size (Depth x Width) | Primitives                | 
++-------------+---------------+-----------+----------------------+---------------------------+
+|PLCPUSOC_Top | U_DM/dmem_reg | Implied   | 128 x 32             | RAM64X1D x 4	RAM64M x 20	 | 
++-------------+---------------+-----------+----------------------+---------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1178.215 ; gain = 424.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1182.711 ; gain = 428.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++-------------+---------------+-----------+----------------------+---------------------------+
+|Module Name  | RTL Object    | Inference | Size (Depth x Width) | Primitives                | 
++-------------+---------------+-----------+----------------------+---------------------------+
+|PLCPUSOC_Top | U_DM/dmem_reg | Implied   | 128 x 32             | RAM64X1D x 4	RAM64M x 20	 | 
++-------------+---------------+-----------+----------------------+---------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1208.879 ; gain = 455.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1215.453 ; gain = 461.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1215.453 ; gain = 461.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1215.453 ; gain = 461.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1215.453 ; gain = 461.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1215.453 ; gain = 461.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1215.453 ; gain = 461.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |imem          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |imem     |     1|
+|2     |BUFG     |     5|
+|3     |CARRY4   |    65|
+|4     |LUT1     |     8|
+|5     |LUT2     |   125|
+|6     |LUT3     |   157|
+|7     |LUT4     |   221|
+|8     |LUT5     |   354|
+|9     |LUT6     |  1060|
+|10    |MUXF7    |   285|
+|11    |MUXF8    |   140|
+|12    |RAM64M   |    20|
+|13    |RAM64X1D |     4|
+|14    |FDCE     |  1545|
+|15    |FDPE     |    23|
+|16    |FDRE     |    40|
+|17    |LD       |    64|
+|18    |IBUF     |    18|
+|19    |OBUF     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------+-----------------------+------+
+|      |Instance   |Module                 |Cells |
++------+-----------+-----------------------+------+
+|1     |top        |                       |  4182|
+|2     |  U_7SEG   |seg7x16                |    92|
+|3     |  U_CLKDIV |clk_div                |    36|
+|4     |  U_DM     |dm                     |   146|
+|5     |  U_Multi  |Multi_CH32             |    32|
+|6     |  U_PLCPU  |PLCPU                  |  3805|
+|7     |    EX_MEM |pl_reg__parameterized1 |   229|
+|8     |    ID_EX  |pl_reg__parameterized0 |  1216|
+|9     |    IF_ID  |pl_reg                 |   121|
+|10    |    MEM_WB |pl_reg__parameterized2 |   180|
+|11    |    U_EXT  |EXT                    |     1|
+|12    |    U_PC   |PC                     |   137|
+|13    |    U_RF   |RF                     |  1889|
++------+-----------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1215.453 ; gain = 461.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 41 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1215.453 ; gain = 345.859
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1215.453 ; gain = 461.715
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1224.316 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 578 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1224.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 88 instances were transformed.
+  LD => LDCE: 64 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1224.316 ; gain = 754.480
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1224.316 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/program/cpu/PLCPU_FPGA/PLCPU_FPGA/PLCPU_FPGA.runs/synth_1/PLCPUSOC_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PLCPUSOC_Top_utilization_synth.rpt -pb PLCPUSOC_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 20 18:57:18 2025...

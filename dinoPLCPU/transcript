@@ -1,0 +1,3065 @@
+# Reading pref.tcl
+# OpenFile E:/program/cpu/dinoPLCPU/dinoPLCPU.mpf
+# Loading project dinoPLCPU
+# Compile of alu.v was successful.
+# Compile of ctrl.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of dm.v was successful.
+# Compile of EXT.v was successful.
+# Compile of hazard.v was successful.
+# Compile of im.v was successful.
+# Compile of NPC.v was successful.
+# Compile of PC.v was successful.
+# Compile of pl_reg.v was successful.
+# Compile of plcomp.v was successful.
+# Compile of plcomp_tb.v was successful.
+# Compile of PLCPU.v was successful.
+# Compile of RF.v was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.plcomp_tb
+# vsim -gui work.plcomp_tb 
+# Start time: 00:41:27 on May 20,2025
+# Loading work.plcomp_tb
+# Loading work.plcomp
+# Loading work.PLCPU
+# Loading work.ctrl
+# Loading work.PC
+# Loading work.NPC
+# Loading work.EXT
+# Loading work.RF
+# Loading work.alu
+# Loading work.pl_reg
+# Loading work.Hazard_Detect
+# Loading work.Forwarding
+# Loading work.dm
+# Loading work.im
+run
+# NPC: xxxxxxxx, NPCOp: 00000
+# stall=0
+# MEM_MemWrite:0 IF_ID_out:0000000000000000 ID_EX_out:0000000000000000000000000000000000000000000000000MEM_RD2:00000000 NPC: 00000004, NPCOp: 00000
+# 
+#  cycle=          1, IF_PC=00000000, IF_ins=123452b7, 
+#  cycle=          2, IF_PC=00000000, IF_ins=123452b7, 
+#  cycle=          3, IF_PC=00000000, IF_ins=123452b7, 
+#  cycle=          4, IF_PC=00000000, IF_ins=123452b7, 
+#  cycle=          5, IF_PC=00000000, IF_ins=123452b7, 
+#  pc = 00000000: stall=0
+# IF_ID_out:123452b700000000 NPC: 00000008, NPCOp: 00000
+# 
+#  cycle=          6, IF_PC=00000004, IF_ins=fffff337, 
+#  pc = 00000004: stall=0
+# ID_EX_out:048d14adc08028000000000000000091a28000d0500000000IF_ID_out:fffff33700000004 NPC: 0000000c, NPCOp: 00000
+# 
+#  cycle=          7, IF_PC=00000008, IF_ins=00400613, 
+#  pc = 00000008: stall=0
+# ID_EX_out:3ffffccdc080280000000000000007ffff8007fe600000004IF_ID_out:0040061300000008 NPC: 00000010, NPCOp: 00000
+# 
+#  cycle=          8, IF_PC=0000000c, IF_ins=00000013, 
+#  pc = 0000000c: stall=0
+# ID_EX_out:00100184c0806800000000000000000000002100c00000008IF_ID_out:000000130000000c NPC: 00000014, NPCOp: 00000
+# x 5 = 12345000  
+#  cycle=          9, IF_PC=00000010, IF_ins=00000013, x 5 = 12345000  
+#  pc = 00000010: stall=0
+# ID_EX_out:00000004c080680000000000000000000000000000000000cIF_ID_out:0000001300000010 NPC: 00000018, NPCOp: 00000
+# x 6 = fffff000  
+#  cycle=         10, IF_PC=00000014, IF_ins=006283b3, x 6 = fffff000  
+#  pc = 00000014: stall=0
+# ID_EX_out:00000004c0806800000000000000000000000000000000010IF_ID_out:006283b300000014 NPC: 0000001c, NPCOp: 00000
+# x12 = 00000004  
+#  cycle=         11, IF_PC=00000018, IF_ins=40628433, x12 = 00000004  
+#  pc = 00000018: stall=0
+# ID_EX_out:0018a0ecc0006fffff800091a28000000000018a700000014IF_ID_out:4062843300000018 NPC: 00000020, NPCOp: 00000
+# 
+#  cycle=         12, IF_PC=0000001c, IF_ins=0062c4b3, 
+#  pc = 0000001c: stall=0
+# ID_EX_out:1018a10cc0008fffff800091a28000000000018a800000018IF_ID_out:0062c4b30000001c MEM_RD2:fffff000 NPC: 00000024, NPCOp: 00000
+# 
+#  cycle=         13, IF_PC=00000020, IF_ins=0062e533, 
+#  pc = 00000020: stall=0
+# ID_EX_out:0018b12cc0018fffff800091a28000000000018a90000001cIF_ID_out:0062e53300000020 NPC: 00000028, NPCOp: 00000
+# x 7 = 12344000  
+#  cycle=         14, IF_PC=00000024, IF_ins=0062f5b3, x 7 = 12344000  
+#  pc = 00000024: stall=0
+# ID_EX_out:0018b94cc001afffff800091a28000000000018aa00000020IF_ID_out:0062f5b300000024 NPC: 0000002c, NPCOp: 00000
+# x 8 = 12346000  
+#  cycle=         15, IF_PC=00000028, IF_ins=00c356b3, x 8 = 12346000  
+#  pc = 00000028: stall=0
+# ID_EX_out:0018bd6cc001cfffff800091a28000000000018ab00000024IF_ID_out:00c356b300000028 NPC: 00000030, NPCOp: 00000
+# x 9 = edcba000  
+#  cycle=         16, IF_PC=0000002c, IF_ins=40c35733, x 9 = edcba000  
+#  pc = 0000002c: stall=0
+# ID_EX_out:0030d5acc0020800000027ffff8000000000030cd00000028IF_ID_out:40c357330000002c NPC: 00000034, NPCOp: 00000
+# x10 = fffff000  
+#  cycle=         17, IF_PC=00000030, IF_ins=00c297b3, x10 = fffff000  
+#  pc = 00000030: stall=0
+# ID_EX_out:1030d5ccc0022800000027ffff8000000000030ce0000002cIF_ID_out:00c297b300000030 MEM_RD2:00000004 NPC: 00000038, NPCOp: 00000
+# x11 = 12345000  
+#  cycle=         18, IF_PC=00000034, IF_ins=00a62023, x11 = 12345000  
+#  pc = 00000034: stall=0
+# ID_EX_out:0030a5ecc001e80000002091a28000000000030af00000030IF_ID_out:00a6202300000034 NPC: 0000003c, NPCOp: 00000
+# x13 = 0fffff00  
+#  cycle=         19, IF_PC=00000038, IF_ins=00b62223, x13 = 0fffff00  
+#  pc = 00000038: stall=0
+# ID_EX_out:00298808c08077ffff8000000000200000000298000000034IF_ID_out:00b6222300000038 NPC: 00000040, NPCOp: 00000
+# x14 = ffffff00  
+#  cycle=         20, IF_PC=0000003c, IF_ins=00062803, x14 = ffffff00  
+#  pc = 0000003c: stall=0
+# ID_EX_out:002d8888c0807091a280000000002000000022d8400000038IF_ID_out:000628030000003c MEM_RD2:fffff000 MEM_MemWrite:1 NPC: 00000044, NPCOp: 00000
+# x15 = 23450000  
+#  cycle=         21, IF_PC=00000040, IF_ins=00462883, x15 = 23450000  
+#  pc = 00000040: stall=0
+# ID_EX_out:00018a00e880680000000000000020000000001900000003cIF_ID_out:0046288300000040 MEM_RD2:12345000 NPC: 00000048, NPCOp: 00000
+#  memaddr = 00000004, memdata = fffff000 
+# 
+#  cycle=         22, IF_PC=00000044, IF_ins=00000013, 
+#  pc = 00000044: stall=0
+# ID_EX_out:00118a20e8806800000000000000200000002119100000040IF_ID_out:0000001300000044 MEM_RD2:00000000 MEM_MemWrite:0 NPC: 0000004c, NPCOp: 00000
+#  memaddr = 00000008, memdata = 12345000 
+# 
+#  cycle=         23, IF_PC=00000048, IF_ins=00000013, 
+#  pc = 00000048: stall=0
+# ID_EX_out:00000004c0806800000000000000000000000000000000044IF_ID_out:0000001300000048 NPC: 00000050, NPCOp: 00000
+# x16 = fffff000  
+#  cycle=         24, IF_PC=0000004c, IF_ins=00000013, x16 = fffff000  
+#  pc = 0000004c: ID_EX_out:00000004c0806800000000000000000000000000000000048IF_ID_out:000000130000004c NPC: 00000054, NPCOp: 00000
+# x17 = 12345000  
+#  cycle=         25, IF_PC=00000050, IF_ins=01180933, x17 = 12345000  
+#  pc = 00000050: stall=0
+# ID_EX_out:00000004c080680000000000000000000000000000000004cIF_ID_out:0118093300000050 NPC: 00000058, NPCOp: 00000
+# 
+#  cycle=         26, IF_PC=00000054, IF_ins=xxxxxxxx, 
+#  pc = 00000054: stall=0
+# ID_EX_out:0046024cc0006891a28007ffff80000000000461200000050IF_ID_out:xxxxxxxx00000054 NPC: 0000005c, NPCOp: 00000
+# 
+#  cycle=         27, IF_PC=00000058, IF_ins=xxxxxxxx, 
+#  pc = 00000058: NPC: 0000005c, NPCOp: 00xx0
+# stall=0
+# ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000054IF_ID_out:xxxxxxxx00000058 MEM_RD2:12345000 NPC: 00000060, NPCOp: 00xx0
+# NPC: 00000060, NPCOp: 00xxx
+# 
+#  cycle=         28, IF_PC=0000005c, IF_ins=xxxxxxxx, 
+#  pc = 0000005c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000058IF_ID_out:xxxxxxxx0000005c MEM_RD2:xxxxxxxx MEM_MemWrite:x NPC: 00000064, NPCOp: 00xxx
+# x18 = 12344000  
+#  cycle=         29, IF_PC=00000060, IF_ins=xxxxxxxx, x18 = 12344000  
+#  pc = 00000060: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000005cIF_ID_out:xxxxxxxx00000060 NPC: 00000068, NPCOp: 00xxx
+# 
+#  cycle=         30, IF_PC=00000064, IF_ins=xxxxxxxx, 
+#  pc = 00000064: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000060IF_ID_out:xxxxxxxx00000064 NPC: 0000006c, NPCOp: 00xxx
+# 
+#  cycle=         31, IF_PC=00000068, IF_ins=xxxxxxxx, 
+#  pc = 00000068: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000064IF_ID_out:xxxxxxxx00000068 NPC: 00000070, NPCOp: 00xxx
+# 
+#  cycle=         32, IF_PC=0000006c, IF_ins=xxxxxxxx, 
+#  pc = 0000006c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000068IF_ID_out:xxxxxxxx0000006c NPC: 00000074, NPCOp: 00xxx
+# 
+#  cycle=         33, IF_PC=00000070, IF_ins=xxxxxxxx, 
+#  pc = 00000070: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000006cIF_ID_out:xxxxxxxx00000070 NPC: 00000078, NPCOp: 00xxx
+# 
+#  cycle=         34, IF_PC=00000074, IF_ins=xxxxxxxx, 
+#  pc = 00000074: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000070IF_ID_out:xxxxxxxx00000074 NPC: 0000007c, NPCOp: 00xxx
+# 
+#  cycle=         35, IF_PC=00000078, IF_ins=xxxxxxxx, 
+#  pc = 00000078: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000074IF_ID_out:xxxxxxxx00000078 NPC: 00000080, NPCOp: 00xxx
+# 
+#  cycle=         36, IF_PC=0000007c, IF_ins=xxxxxxxx, 
+#  pc = 0000007c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000078IF_ID_out:xxxxxxxx0000007c NPC: 00000084, NPCOp: 00xxx
+# 
+#  cycle=         37, IF_PC=00000080, IF_ins=xxxxxxxx, 
+#  pc = 00000080: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000007cIF_ID_out:xxxxxxxx00000080 NPC: 00000088, NPCOp: 00xxx
+# 
+#  cycle=         38, IF_PC=00000084, IF_ins=xxxxxxxx, 
+#  pc = 00000084: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000080IF_ID_out:xxxxxxxx00000084 NPC: 0000008c, NPCOp: 00xxx
+# 
+#  cycle=         39, IF_PC=00000088, IF_ins=xxxxxxxx, 
+#  pc = 00000088: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000084IF_ID_out:xxxxxxxx00000088 NPC: 00000090, NPCOp: 00xxx
+# 
+#  cycle=         40, IF_PC=0000008c, IF_ins=xxxxxxxx, 
+#  pc = 0000008c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000088IF_ID_out:xxxxxxxx0000008c NPC: 00000094, NPCOp: 00xxx
+# 
+#  cycle=         41, IF_PC=00000090, IF_ins=xxxxxxxx, 
+#  pc = 00000090: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000008cIF_ID_out:xxxxxxxx00000090 NPC: 00000098, NPCOp: 00xxx
+# 
+#  cycle=         42, IF_PC=00000094, IF_ins=xxxxxxxx, 
+#  pc = 00000094: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000090IF_ID_out:xxxxxxxx00000094 NPC: 0000009c, NPCOp: 00xxx
+# 
+#  cycle=         43, IF_PC=00000098, IF_ins=xxxxxxxx, 
+#  pc = 00000098: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000094IF_ID_out:xxxxxxxx00000098 NPC: 000000a0, NPCOp: 00xxx
+# 
+#  cycle=         44, IF_PC=0000009c, IF_ins=xxxxxxxx, 
+#  pc = 0000009c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000098IF_ID_out:xxxxxxxx0000009c NPC: 000000a4, NPCOp: 00xxx
+# 
+#  cycle=         45, IF_PC=000000a0, IF_ins=xxxxxxxx, 
+#  pc = 000000a0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000009cIF_ID_out:xxxxxxxx000000a0 NPC: 000000a8, NPCOp: 00xxx
+# 
+#  cycle=         46, IF_PC=000000a4, IF_ins=xxxxxxxx, 
+#  pc = 000000a4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000a0IF_ID_out:xxxxxxxx000000a4 NPC: 000000ac, NPCOp: 00xxx
+# 
+#  cycle=         47, IF_PC=000000a8, IF_ins=xxxxxxxx, 
+#  pc = 000000a8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000a4IF_ID_out:xxxxxxxx000000a8 NPC: 000000b0, NPCOp: 00xxx
+# 
+#  cycle=         48, IF_PC=000000ac, IF_ins=xxxxxxxx, 
+#  pc = 000000ac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000a8IF_ID_out:xxxxxxxx000000ac NPC: 000000b4, NPCOp: 00xxx
+# 
+#  cycle=         49, IF_PC=000000b0, IF_ins=xxxxxxxx, 
+#  pc = 000000b0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000acIF_ID_out:xxxxxxxx000000b0 NPC: 000000b8, NPCOp: 00xxx
+# 
+#  cycle=         50, IF_PC=000000b4, IF_ins=xxxxxxxx, 
+#  pc = 000000b4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000b0IF_ID_out:xxxxxxxx000000b4 NPC: 000000bc, NPCOp: 00xxx
+# 
+#  cycle=         51, IF_PC=000000b8, IF_ins=xxxxxxxx, 
+#  pc = 000000b8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000b4IF_ID_out:xxxxxxxx000000b8 NPC: 000000c0, NPCOp: 00xxx
+# 
+#  cycle=         52, IF_PC=000000bc, IF_ins=xxxxxxxx, 
+#  pc = 000000bc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000b8IF_ID_out:xxxxxxxx000000bc NPC: 000000c4, NPCOp: 00xxx
+# 
+#  cycle=         53, IF_PC=000000c0, IF_ins=xxxxxxxx, 
+#  pc = 000000c0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000bcIF_ID_out:xxxxxxxx000000c0 NPC: 000000c8, NPCOp: 00xxx
+# 
+#  cycle=         54, IF_PC=000000c4, IF_ins=xxxxxxxx, 
+#  pc = 000000c4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000c0IF_ID_out:xxxxxxxx000000c4 NPC: 000000cc, NPCOp: 00xxx
+# 
+#  cycle=         55, IF_PC=000000c8, IF_ins=xxxxxxxx, 
+#  pc = 000000c8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000c4IF_ID_out:xxxxxxxx000000c8 NPC: 000000d0, NPCOp: 00xxx
+# 
+#  cycle=         56, IF_PC=000000cc, IF_ins=xxxxxxxx, 
+#  pc = 000000cc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000c8IF_ID_out:xxxxxxxx000000cc NPC: 000000d4, NPCOp: 00xxx
+# 
+#  cycle=         57, IF_PC=000000d0, IF_ins=xxxxxxxx, 
+#  pc = 000000d0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000ccIF_ID_out:xxxxxxxx000000d0 NPC: 000000d8, NPCOp: 00xxx
+# 
+#  cycle=         58, IF_PC=000000d4, IF_ins=xxxxxxxx, 
+#  pc = 000000d4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000d0IF_ID_out:xxxxxxxx000000d4 NPC: 000000dc, NPCOp: 00xxx
+# 
+#  cycle=         59, IF_PC=000000d8, IF_ins=xxxxxxxx, 
+#  pc = 000000d8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000d4IF_ID_out:xxxxxxxx000000d8 NPC: 000000e0, NPCOp: 00xxx
+# 
+#  cycle=         60, IF_PC=000000dc, IF_ins=xxxxxxxx, 
+#  pc = 000000dc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000d8IF_ID_out:xxxxxxxx000000dc NPC: 000000e4, NPCOp: 00xxx
+# 
+#  cycle=         61, IF_PC=000000e0, IF_ins=xxxxxxxx, 
+#  pc = 000000e0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000dcIF_ID_out:xxxxxxxx000000e0 NPC: 000000e8, NPCOp: 00xxx
+# 
+#  cycle=         62, IF_PC=000000e4, IF_ins=xxxxxxxx, 
+#  pc = 000000e4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000e0IF_ID_out:xxxxxxxx000000e4 NPC: 000000ec, NPCOp: 00xxx
+# 
+#  cycle=         63, IF_PC=000000e8, IF_ins=xxxxxxxx, 
+#  pc = 000000e8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000e4IF_ID_out:xxxxxxxx000000e8 NPC: 000000f0, NPCOp: 00xxx
+# 
+#  cycle=         64, IF_PC=000000ec, IF_ins=xxxxxxxx, 
+#  pc = 000000ec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000e8IF_ID_out:xxxxxxxx000000ec NPC: 000000f4, NPCOp: 00xxx
+# 
+#  cycle=         65, IF_PC=000000f0, IF_ins=xxxxxxxx, 
+#  pc = 000000f0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000ecIF_ID_out:xxxxxxxx000000f0 NPC: 000000f8, NPCOp: 00xxx
+# 
+#  cycle=         66, IF_PC=000000f4, IF_ins=xxxxxxxx, 
+#  pc = 000000f4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000f0IF_ID_out:xxxxxxxx000000f4 NPC: 000000fc, NPCOp: 00xxx
+# 
+#  cycle=         67, IF_PC=000000f8, IF_ins=xxxxxxxx, 
+#  pc = 000000f8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000f4IF_ID_out:xxxxxxxx000000f8 NPC: 00000100, NPCOp: 00xxx
+# 
+#  cycle=         68, IF_PC=000000fc, IF_ins=xxxxxxxx, 
+#  pc = 000000fc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000f8IF_ID_out:xxxxxxxx000000fc NPC: 00000104, NPCOp: 00xxx
+# 
+#  cycle=         69, IF_PC=00000100, IF_ins=xxxxxxxx, 
+#  pc = 00000100: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000000fcIF_ID_out:xxxxxxxx00000100 NPC: 00000108, NPCOp: 00xxx
+# 
+#  cycle=         70, IF_PC=00000104, IF_ins=xxxxxxxx, 
+#  pc = 00000104: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000100IF_ID_out:xxxxxxxx00000104 NPC: 0000010c, NPCOp: 00xxx
+# 
+#  cycle=         71, IF_PC=00000108, IF_ins=xxxxxxxx, 
+#  pc = 00000108: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000104IF_ID_out:xxxxxxxx00000108 NPC: 00000110, NPCOp: 00xxx
+# 
+#  cycle=         72, IF_PC=0000010c, IF_ins=xxxxxxxx, 
+#  pc = 0000010c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000108IF_ID_out:xxxxxxxx0000010c NPC: 00000114, NPCOp: 00xxx
+# 
+#  cycle=         73, IF_PC=00000110, IF_ins=xxxxxxxx, 
+#  pc = 00000110: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000010cIF_ID_out:xxxxxxxx00000110 NPC: 00000118, NPCOp: 00xxx
+# 
+#  cycle=         74, IF_PC=00000114, IF_ins=xxxxxxxx, 
+#  pc = 00000114: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000110IF_ID_out:xxxxxxxx00000114 NPC: 0000011c, NPCOp: 00xxx
+# 
+#  cycle=         75, IF_PC=00000118, IF_ins=xxxxxxxx, 
+#  pc = 00000118: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000114IF_ID_out:xxxxxxxx00000118 NPC: 00000120, NPCOp: 00xxx
+# 
+#  cycle=         76, IF_PC=0000011c, IF_ins=xxxxxxxx, 
+#  pc = 0000011c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000118IF_ID_out:xxxxxxxx0000011c NPC: 00000124, NPCOp: 00xxx
+# 
+#  cycle=         77, IF_PC=00000120, IF_ins=xxxxxxxx, 
+#  pc = 00000120: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000011cIF_ID_out:xxxxxxxx00000120 NPC: 00000128, NPCOp: 00xxx
+# 
+#  cycle=         78, IF_PC=00000124, IF_ins=xxxxxxxx, 
+#  pc = 00000124: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000120IF_ID_out:xxxxxxxx00000124 NPC: 0000012c, NPCOp: 00xxx
+# 
+#  cycle=         79, IF_PC=00000128, IF_ins=xxxxxxxx, 
+#  pc = 00000128: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000124IF_ID_out:xxxxxxxx00000128 NPC: 00000130, NPCOp: 00xxx
+# 
+#  cycle=         80, IF_PC=0000012c, IF_ins=xxxxxxxx, 
+#  pc = 0000012c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000128IF_ID_out:xxxxxxxx0000012c NPC: 00000134, NPCOp: 00xxx
+# 
+#  cycle=         81, IF_PC=00000130, IF_ins=xxxxxxxx, 
+#  pc = 00000130: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000012cIF_ID_out:xxxxxxxx00000130 NPC: 00000138, NPCOp: 00xxx
+# 
+#  cycle=         82, IF_PC=00000134, IF_ins=xxxxxxxx, 
+#  pc = 00000134: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000130IF_ID_out:xxxxxxxx00000134 NPC: 0000013c, NPCOp: 00xxx
+# 
+#  cycle=         83, IF_PC=00000138, IF_ins=xxxxxxxx, 
+#  pc = 00000138: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000134IF_ID_out:xxxxxxxx00000138 NPC: 00000140, NPCOp: 00xxx
+# 
+#  cycle=         84, IF_PC=0000013c, IF_ins=xxxxxxxx, 
+#  pc = 0000013c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000138IF_ID_out:xxxxxxxx0000013c NPC: 00000144, NPCOp: 00xxx
+# 
+#  cycle=         85, IF_PC=00000140, IF_ins=xxxxxxxx, 
+#  pc = 00000140: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000013cIF_ID_out:xxxxxxxx00000140 NPC: 00000148, NPCOp: 00xxx
+# 
+#  cycle=         86, IF_PC=00000144, IF_ins=xxxxxxxx, 
+#  pc = 00000144: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000140IF_ID_out:xxxxxxxx00000144 NPC: 0000014c, NPCOp: 00xxx
+# 
+#  cycle=         87, IF_PC=00000148, IF_ins=xxxxxxxx, 
+#  pc = 00000148: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000144IF_ID_out:xxxxxxxx00000148 NPC: 00000150, NPCOp: 00xxx
+# 
+#  cycle=         88, IF_PC=0000014c, IF_ins=xxxxxxxx, 
+#  pc = 0000014c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000148IF_ID_out:xxxxxxxx0000014c NPC: 00000154, NPCOp: 00xxx
+# 
+#  cycle=         89, IF_PC=00000150, IF_ins=xxxxxxxx, 
+#  pc = 00000150: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000014cIF_ID_out:xxxxxxxx00000150 NPC: 00000158, NPCOp: 00xxx
+# 
+#  cycle=         90, IF_PC=00000154, IF_ins=xxxxxxxx, 
+#  pc = 00000154: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000150IF_ID_out:xxxxxxxx00000154 NPC: 0000015c, NPCOp: 00xxx
+# 
+#  cycle=         91, IF_PC=00000158, IF_ins=xxxxxxxx, 
+#  pc = 00000158: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000154IF_ID_out:xxxxxxxx00000158 NPC: 00000160, NPCOp: 00xxx
+# 
+#  cycle=         92, IF_PC=0000015c, IF_ins=xxxxxxxx, 
+#  pc = 0000015c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000158IF_ID_out:xxxxxxxx0000015c NPC: 00000164, NPCOp: 00xxx
+# 
+#  cycle=         93, IF_PC=00000160, IF_ins=xxxxxxxx, 
+#  pc = 00000160: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000015cIF_ID_out:xxxxxxxx00000160 NPC: 00000168, NPCOp: 00xxx
+# 
+#  cycle=         94, IF_PC=00000164, IF_ins=xxxxxxxx, 
+#  pc = 00000164: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000160IF_ID_out:xxxxxxxx00000164 NPC: 0000016c, NPCOp: 00xxx
+# 
+#  cycle=         95, IF_PC=00000168, IF_ins=xxxxxxxx, 
+#  pc = 00000168: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000164IF_ID_out:xxxxxxxx00000168 NPC: 00000170, NPCOp: 00xxx
+# 
+#  cycle=         96, IF_PC=0000016c, IF_ins=xxxxxxxx, 
+#  pc = 0000016c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000168IF_ID_out:xxxxxxxx0000016c NPC: 00000174, NPCOp: 00xxx
+# 
+#  cycle=         97, IF_PC=00000170, IF_ins=xxxxxxxx, 
+#  pc = 00000170: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000016cIF_ID_out:xxxxxxxx00000170 NPC: 00000178, NPCOp: 00xxx
+# 
+#  cycle=         98, IF_PC=00000174, IF_ins=xxxxxxxx, 
+#  pc = 00000174: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000170IF_ID_out:xxxxxxxx00000174 NPC: 0000017c, NPCOp: 00xxx
+# 
+#  cycle=         99, IF_PC=00000178, IF_ins=xxxxxxxx, 
+#  pc = 00000178: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000174IF_ID_out:xxxxxxxx00000178 NPC: 00000180, NPCOp: 00xxx
+# 
+#  cycle=        100, IF_PC=0000017c, IF_ins=xxxxxxxx, 
+#  pc = 0000017c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000178IF_ID_out:xxxxxxxx0000017c NPC: 00000184, NPCOp: 00xxx
+# 
+#  cycle=        101, IF_PC=00000180, IF_ins=xxxxxxxx, 
+#  pc = 00000180: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000017cIF_ID_out:xxxxxxxx00000180 NPC: 00000188, NPCOp: 00xxx
+# 
+#  cycle=        102, IF_PC=00000184, IF_ins=xxxxxxxx, 
+#  pc = 00000184: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000180IF_ID_out:xxxxxxxx00000184 NPC: 0000018c, NPCOp: 00xxx
+# 
+#  cycle=        103, IF_PC=00000188, IF_ins=xxxxxxxx, 
+#  pc = 00000188: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000184IF_ID_out:xxxxxxxx00000188 NPC: 00000190, NPCOp: 00xxx
+# 
+#  cycle=        104, IF_PC=0000018c, IF_ins=xxxxxxxx, 
+#  pc = 0000018c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000188IF_ID_out:xxxxxxxx0000018c NPC: 00000194, NPCOp: 00xxx
+# 
+#  cycle=        105, IF_PC=00000190, IF_ins=xxxxxxxx, 
+#  pc = 00000190: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000018cIF_ID_out:xxxxxxxx00000190 NPC: 00000198, NPCOp: 00xxx
+# 
+#  cycle=        106, IF_PC=00000194, IF_ins=xxxxxxxx, 
+#  pc = 00000194: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000190IF_ID_out:xxxxxxxx00000194 NPC: 0000019c, NPCOp: 00xxx
+# 
+#  cycle=        107, IF_PC=00000198, IF_ins=xxxxxxxx, 
+#  pc = 00000198: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000194IF_ID_out:xxxxxxxx00000198 NPC: 000001a0, NPCOp: 00xxx
+# 
+#  cycle=        108, IF_PC=0000019c, IF_ins=xxxxxxxx, 
+#  pc = 0000019c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000198IF_ID_out:xxxxxxxx0000019c NPC: 000001a4, NPCOp: 00xxx
+# 
+#  cycle=        109, IF_PC=000001a0, IF_ins=xxxxxxxx, 
+#  pc = 000001a0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000019cIF_ID_out:xxxxxxxx000001a0 NPC: 000001a8, NPCOp: 00xxx
+# 
+#  cycle=        110, IF_PC=000001a4, IF_ins=xxxxxxxx, 
+#  pc = 000001a4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001a0IF_ID_out:xxxxxxxx000001a4 NPC: 000001ac, NPCOp: 00xxx
+# 
+#  cycle=        111, IF_PC=000001a8, IF_ins=xxxxxxxx, 
+#  pc = 000001a8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001a4IF_ID_out:xxxxxxxx000001a8 NPC: 000001b0, NPCOp: 00xxx
+# 
+#  cycle=        112, IF_PC=000001ac, IF_ins=xxxxxxxx, 
+#  pc = 000001ac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001a8IF_ID_out:xxxxxxxx000001ac NPC: 000001b4, NPCOp: 00xxx
+# 
+#  cycle=        113, IF_PC=000001b0, IF_ins=xxxxxxxx, 
+#  pc = 000001b0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001acIF_ID_out:xxxxxxxx000001b0 NPC: 000001b8, NPCOp: 00xxx
+# 
+#  cycle=        114, IF_PC=000001b4, IF_ins=xxxxxxxx, 
+#  pc = 000001b4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001b0IF_ID_out:xxxxxxxx000001b4 NPC: 000001bc, NPCOp: 00xxx
+# 
+#  cycle=        115, IF_PC=000001b8, IF_ins=xxxxxxxx, 
+#  pc = 000001b8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001b4IF_ID_out:xxxxxxxx000001b8 NPC: 000001c0, NPCOp: 00xxx
+# 
+#  cycle=        116, IF_PC=000001bc, IF_ins=xxxxxxxx, 
+#  pc = 000001bc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001b8IF_ID_out:xxxxxxxx000001bc NPC: 000001c4, NPCOp: 00xxx
+# 
+#  cycle=        117, IF_PC=000001c0, IF_ins=xxxxxxxx, 
+#  pc = 000001c0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001bcIF_ID_out:xxxxxxxx000001c0 NPC: 000001c8, NPCOp: 00xxx
+# 
+#  cycle=        118, IF_PC=000001c4, IF_ins=xxxxxxxx, 
+#  pc = 000001c4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001c0IF_ID_out:xxxxxxxx000001c4 NPC: 000001cc, NPCOp: 00xxx
+# 
+#  cycle=        119, IF_PC=000001c8, IF_ins=xxxxxxxx, 
+#  pc = 000001c8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001c4IF_ID_out:xxxxxxxx000001c8 NPC: 000001d0, NPCOp: 00xxx
+# 
+#  cycle=        120, IF_PC=000001cc, IF_ins=xxxxxxxx, 
+#  pc = 000001cc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001c8IF_ID_out:xxxxxxxx000001cc NPC: 000001d4, NPCOp: 00xxx
+# 
+#  cycle=        121, IF_PC=000001d0, IF_ins=xxxxxxxx, 
+#  pc = 000001d0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001ccIF_ID_out:xxxxxxxx000001d0 NPC: 000001d8, NPCOp: 00xxx
+# 
+#  cycle=        122, IF_PC=000001d4, IF_ins=xxxxxxxx, 
+#  pc = 000001d4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001d0IF_ID_out:xxxxxxxx000001d4 NPC: 000001dc, NPCOp: 00xxx
+# 
+#  cycle=        123, IF_PC=000001d8, IF_ins=xxxxxxxx, 
+#  pc = 000001d8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001d4IF_ID_out:xxxxxxxx000001d8 NPC: 000001e0, NPCOp: 00xxx
+# 
+#  cycle=        124, IF_PC=000001dc, IF_ins=xxxxxxxx, 
+#  pc = 000001dc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001d8IF_ID_out:xxxxxxxx000001dc NPC: 000001e4, NPCOp: 00xxx
+# 
+#  cycle=        125, IF_PC=000001e0, IF_ins=xxxxxxxx, 
+#  pc = 000001e0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001dcIF_ID_out:xxxxxxxx000001e0 NPC: 000001e8, NPCOp: 00xxx
+# 
+#  cycle=        126, IF_PC=000001e4, IF_ins=xxxxxxxx, 
+#  pc = 000001e4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001e0IF_ID_out:xxxxxxxx000001e4 NPC: 000001ec, NPCOp: 00xxx
+# 
+#  cycle=        127, IF_PC=000001e8, IF_ins=xxxxxxxx, 
+#  pc = 000001e8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001e4IF_ID_out:xxxxxxxx000001e8 NPC: 000001f0, NPCOp: 00xxx
+# 
+#  cycle=        128, IF_PC=000001ec, IF_ins=xxxxxxxx, 
+#  pc = 000001ec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001e8IF_ID_out:xxxxxxxx000001ec NPC: 000001f4, NPCOp: 00xxx
+# 
+#  cycle=        129, IF_PC=000001f0, IF_ins=xxxxxxxx, 
+#  pc = 000001f0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001ecIF_ID_out:xxxxxxxx000001f0 NPC: 000001f8, NPCOp: 00xxx
+# 
+#  cycle=        130, IF_PC=000001f4, IF_ins=xxxxxxxx, 
+#  pc = 000001f4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001f0IF_ID_out:xxxxxxxx000001f4 NPC: 000001fc, NPCOp: 00xxx
+# 
+#  cycle=        131, IF_PC=000001f8, IF_ins=xxxxxxxx, 
+#  pc = 000001f8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001f4IF_ID_out:xxxxxxxx000001f8 NPC: 00000200, NPCOp: 00xxx
+# 
+#  cycle=        132, IF_PC=000001fc, IF_ins=xxxxxxxx, 
+#  pc = 000001fc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001f8IF_ID_out:xxxxxxxx000001fc NPC: 00000204, NPCOp: 00xxx
+# 
+#  cycle=        133, IF_PC=00000200, IF_ins=xxxxxxxx, 
+#  pc = 00000200: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000001fcIF_ID_out:xxxxxxxx00000200 NPC: 00000208, NPCOp: 00xxx
+# 
+#  cycle=        134, IF_PC=00000204, IF_ins=xxxxxxxx, 
+#  pc = 00000204: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000200IF_ID_out:xxxxxxxx00000204 NPC: 0000020c, NPCOp: 00xxx
+# 
+#  cycle=        135, IF_PC=00000208, IF_ins=xxxxxxxx, 
+#  pc = 00000208: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000204IF_ID_out:xxxxxxxx00000208 NPC: 00000210, NPCOp: 00xxx
+# 
+#  cycle=        136, IF_PC=0000020c, IF_ins=xxxxxxxx, 
+#  pc = 0000020c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000208IF_ID_out:xxxxxxxx0000020c NPC: 00000214, NPCOp: 00xxx
+# 
+#  cycle=        137, IF_PC=00000210, IF_ins=xxxxxxxx, 
+#  pc = 00000210: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000020cIF_ID_out:xxxxxxxx00000210 NPC: 00000218, NPCOp: 00xxx
+# 
+#  cycle=        138, IF_PC=00000214, IF_ins=xxxxxxxx, 
+#  pc = 00000214: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000210IF_ID_out:xxxxxxxx00000214 NPC: 0000021c, NPCOp: 00xxx
+# 
+#  cycle=        139, IF_PC=00000218, IF_ins=xxxxxxxx, 
+#  pc = 00000218: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000214IF_ID_out:xxxxxxxx00000218 NPC: 00000220, NPCOp: 00xxx
+# 
+#  cycle=        140, IF_PC=0000021c, IF_ins=xxxxxxxx, 
+#  pc = 0000021c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000218IF_ID_out:xxxxxxxx0000021c NPC: 00000224, NPCOp: 00xxx
+# 
+#  cycle=        141, IF_PC=00000220, IF_ins=xxxxxxxx, 
+#  pc = 00000220: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000021cIF_ID_out:xxxxxxxx00000220 NPC: 00000228, NPCOp: 00xxx
+# 
+#  cycle=        142, IF_PC=00000224, IF_ins=xxxxxxxx, 
+#  pc = 00000224: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000220IF_ID_out:xxxxxxxx00000224 NPC: 0000022c, NPCOp: 00xxx
+# 
+#  cycle=        143, IF_PC=00000228, IF_ins=xxxxxxxx, 
+#  pc = 00000228: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000224IF_ID_out:xxxxxxxx00000228 NPC: 00000230, NPCOp: 00xxx
+# 
+#  cycle=        144, IF_PC=0000022c, IF_ins=xxxxxxxx, 
+#  pc = 0000022c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000228IF_ID_out:xxxxxxxx0000022c NPC: 00000234, NPCOp: 00xxx
+# 
+#  cycle=        145, IF_PC=00000230, IF_ins=xxxxxxxx, 
+#  pc = 00000230: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000022cIF_ID_out:xxxxxxxx00000230 NPC: 00000238, NPCOp: 00xxx
+# 
+#  cycle=        146, IF_PC=00000234, IF_ins=xxxxxxxx, 
+#  pc = 00000234: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000230IF_ID_out:xxxxxxxx00000234 NPC: 0000023c, NPCOp: 00xxx
+# 
+#  cycle=        147, IF_PC=00000238, IF_ins=xxxxxxxx, 
+#  pc = 00000238: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000234IF_ID_out:xxxxxxxx00000238 NPC: 00000240, NPCOp: 00xxx
+# 
+#  cycle=        148, IF_PC=0000023c, IF_ins=xxxxxxxx, 
+#  pc = 0000023c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000238IF_ID_out:xxxxxxxx0000023c NPC: 00000244, NPCOp: 00xxx
+# 
+#  cycle=        149, IF_PC=00000240, IF_ins=xxxxxxxx, 
+#  pc = 00000240: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000023cIF_ID_out:xxxxxxxx00000240 NPC: 00000248, NPCOp: 00xxx
+# 
+#  cycle=        150, IF_PC=00000244, IF_ins=xxxxxxxx, 
+#  pc = 00000244: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000240IF_ID_out:xxxxxxxx00000244 NPC: 0000024c, NPCOp: 00xxx
+# 
+#  cycle=        151, IF_PC=00000248, IF_ins=xxxxxxxx, 
+#  pc = 00000248: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000244IF_ID_out:xxxxxxxx00000248 NPC: 00000250, NPCOp: 00xxx
+# 
+#  cycle=        152, IF_PC=0000024c, IF_ins=xxxxxxxx, 
+#  pc = 0000024c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000248IF_ID_out:xxxxxxxx0000024c NPC: 00000254, NPCOp: 00xxx
+# 
+#  cycle=        153, IF_PC=00000250, IF_ins=xxxxxxxx, 
+#  pc = 00000250: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000024cIF_ID_out:xxxxxxxx00000250 NPC: 00000258, NPCOp: 00xxx
+# 
+#  cycle=        154, IF_PC=00000254, IF_ins=xxxxxxxx, 
+#  pc = 00000254: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000250IF_ID_out:xxxxxxxx00000254 NPC: 0000025c, NPCOp: 00xxx
+# 
+#  cycle=        155, IF_PC=00000258, IF_ins=xxxxxxxx, 
+#  pc = 00000258: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000254IF_ID_out:xxxxxxxx00000258 NPC: 00000260, NPCOp: 00xxx
+# 
+#  cycle=        156, IF_PC=0000025c, IF_ins=xxxxxxxx, 
+#  pc = 0000025c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000258IF_ID_out:xxxxxxxx0000025c NPC: 00000264, NPCOp: 00xxx
+# 
+#  cycle=        157, IF_PC=00000260, IF_ins=xxxxxxxx, 
+#  pc = 00000260: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000025cIF_ID_out:xxxxxxxx00000260 NPC: 00000268, NPCOp: 00xxx
+# 
+#  cycle=        158, IF_PC=00000264, IF_ins=xxxxxxxx, 
+#  pc = 00000264: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000260IF_ID_out:xxxxxxxx00000264 NPC: 0000026c, NPCOp: 00xxx
+# 
+#  cycle=        159, IF_PC=00000268, IF_ins=xxxxxxxx, 
+#  pc = 00000268: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000264IF_ID_out:xxxxxxxx00000268 NPC: 00000270, NPCOp: 00xxx
+# 
+#  cycle=        160, IF_PC=0000026c, IF_ins=xxxxxxxx, 
+#  pc = 0000026c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000268IF_ID_out:xxxxxxxx0000026c NPC: 00000274, NPCOp: 00xxx
+# 
+#  cycle=        161, IF_PC=00000270, IF_ins=xxxxxxxx, 
+#  pc = 00000270: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000026cIF_ID_out:xxxxxxxx00000270 NPC: 00000278, NPCOp: 00xxx
+# 
+#  cycle=        162, IF_PC=00000274, IF_ins=xxxxxxxx, 
+#  pc = 00000274: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000270IF_ID_out:xxxxxxxx00000274 NPC: 0000027c, NPCOp: 00xxx
+# 
+#  cycle=        163, IF_PC=00000278, IF_ins=xxxxxxxx, 
+#  pc = 00000278: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000274IF_ID_out:xxxxxxxx00000278 NPC: 00000280, NPCOp: 00xxx
+# 
+#  cycle=        164, IF_PC=0000027c, IF_ins=xxxxxxxx, 
+#  pc = 0000027c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000278IF_ID_out:xxxxxxxx0000027c NPC: 00000284, NPCOp: 00xxx
+# 
+#  cycle=        165, IF_PC=00000280, IF_ins=xxxxxxxx, 
+#  pc = 00000280: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000027cIF_ID_out:xxxxxxxx00000280 NPC: 00000288, NPCOp: 00xxx
+# 
+#  cycle=        166, IF_PC=00000284, IF_ins=xxxxxxxx, 
+#  pc = 00000284: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000280IF_ID_out:xxxxxxxx00000284 NPC: 0000028c, NPCOp: 00xxx
+# 
+#  cycle=        167, IF_PC=00000288, IF_ins=xxxxxxxx, 
+#  pc = 00000288: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000284IF_ID_out:xxxxxxxx00000288 NPC: 00000290, NPCOp: 00xxx
+# 
+#  cycle=        168, IF_PC=0000028c, IF_ins=xxxxxxxx, 
+#  pc = 0000028c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000288IF_ID_out:xxxxxxxx0000028c NPC: 00000294, NPCOp: 00xxx
+# 
+#  cycle=        169, IF_PC=00000290, IF_ins=xxxxxxxx, 
+#  pc = 00000290: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000028cIF_ID_out:xxxxxxxx00000290 NPC: 00000298, NPCOp: 00xxx
+# 
+#  cycle=        170, IF_PC=00000294, IF_ins=xxxxxxxx, 
+#  pc = 00000294: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000290IF_ID_out:xxxxxxxx00000294 NPC: 0000029c, NPCOp: 00xxx
+# 
+#  cycle=        171, IF_PC=00000298, IF_ins=xxxxxxxx, 
+#  pc = 00000298: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000294IF_ID_out:xxxxxxxx00000298 NPC: 000002a0, NPCOp: 00xxx
+# 
+#  cycle=        172, IF_PC=0000029c, IF_ins=xxxxxxxx, 
+#  pc = 0000029c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000298IF_ID_out:xxxxxxxx0000029c NPC: 000002a4, NPCOp: 00xxx
+# 
+#  cycle=        173, IF_PC=000002a0, IF_ins=xxxxxxxx, 
+#  pc = 000002a0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000029cIF_ID_out:xxxxxxxx000002a0 NPC: 000002a8, NPCOp: 00xxx
+# 
+#  cycle=        174, IF_PC=000002a4, IF_ins=xxxxxxxx, 
+#  pc = 000002a4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002a0IF_ID_out:xxxxxxxx000002a4 NPC: 000002ac, NPCOp: 00xxx
+# 
+#  cycle=        175, IF_PC=000002a8, IF_ins=xxxxxxxx, 
+#  pc = 000002a8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002a4IF_ID_out:xxxxxxxx000002a8 NPC: 000002b0, NPCOp: 00xxx
+# 
+#  cycle=        176, IF_PC=000002ac, IF_ins=xxxxxxxx, 
+#  pc = 000002ac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002a8IF_ID_out:xxxxxxxx000002ac NPC: 000002b4, NPCOp: 00xxx
+# 
+#  cycle=        177, IF_PC=000002b0, IF_ins=xxxxxxxx, 
+#  pc = 000002b0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002acIF_ID_out:xxxxxxxx000002b0 NPC: 000002b8, NPCOp: 00xxx
+# 
+#  cycle=        178, IF_PC=000002b4, IF_ins=xxxxxxxx, 
+#  pc = 000002b4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002b0IF_ID_out:xxxxxxxx000002b4 NPC: 000002bc, NPCOp: 00xxx
+# 
+#  cycle=        179, IF_PC=000002b8, IF_ins=xxxxxxxx, 
+#  pc = 000002b8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002b4IF_ID_out:xxxxxxxx000002b8 NPC: 000002c0, NPCOp: 00xxx
+# 
+#  cycle=        180, IF_PC=000002bc, IF_ins=xxxxxxxx, 
+#  pc = 000002bc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002b8IF_ID_out:xxxxxxxx000002bc NPC: 000002c4, NPCOp: 00xxx
+# 
+#  cycle=        181, IF_PC=000002c0, IF_ins=xxxxxxxx, 
+#  pc = 000002c0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002bcIF_ID_out:xxxxxxxx000002c0 NPC: 000002c8, NPCOp: 00xxx
+# 
+#  cycle=        182, IF_PC=000002c4, IF_ins=xxxxxxxx, 
+#  pc = 000002c4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002c0IF_ID_out:xxxxxxxx000002c4 NPC: 000002cc, NPCOp: 00xxx
+# 
+#  cycle=        183, IF_PC=000002c8, IF_ins=xxxxxxxx, 
+#  pc = 000002c8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002c4IF_ID_out:xxxxxxxx000002c8 NPC: 000002d0, NPCOp: 00xxx
+# 
+#  cycle=        184, IF_PC=000002cc, IF_ins=xxxxxxxx, 
+#  pc = 000002cc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002c8IF_ID_out:xxxxxxxx000002cc NPC: 000002d4, NPCOp: 00xxx
+# 
+#  cycle=        185, IF_PC=000002d0, IF_ins=xxxxxxxx, 
+#  pc = 000002d0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002ccIF_ID_out:xxxxxxxx000002d0 NPC: 000002d8, NPCOp: 00xxx
+# 
+#  cycle=        186, IF_PC=000002d4, IF_ins=xxxxxxxx, 
+#  pc = 000002d4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002d0IF_ID_out:xxxxxxxx000002d4 NPC: 000002dc, NPCOp: 00xxx
+# 
+#  cycle=        187, IF_PC=000002d8, IF_ins=xxxxxxxx, 
+#  pc = 000002d8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002d4IF_ID_out:xxxxxxxx000002d8 NPC: 000002e0, NPCOp: 00xxx
+# 
+#  cycle=        188, IF_PC=000002dc, IF_ins=xxxxxxxx, 
+#  pc = 000002dc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002d8IF_ID_out:xxxxxxxx000002dc NPC: 000002e4, NPCOp: 00xxx
+# 
+#  cycle=        189, IF_PC=000002e0, IF_ins=xxxxxxxx, 
+#  pc = 000002e0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002dcIF_ID_out:xxxxxxxx000002e0 NPC: 000002e8, NPCOp: 00xxx
+# 
+#  cycle=        190, IF_PC=000002e4, IF_ins=xxxxxxxx, 
+#  pc = 000002e4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002e0IF_ID_out:xxxxxxxx000002e4 NPC: 000002ec, NPCOp: 00xxx
+# 
+#  cycle=        191, IF_PC=000002e8, IF_ins=xxxxxxxx, 
+#  pc = 000002e8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002e4IF_ID_out:xxxxxxxx000002e8 NPC: 000002f0, NPCOp: 00xxx
+# 
+#  cycle=        192, IF_PC=000002ec, IF_ins=xxxxxxxx, 
+#  pc = 000002ec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002e8IF_ID_out:xxxxxxxx000002ec NPC: 000002f4, NPCOp: 00xxx
+# 
+#  cycle=        193, IF_PC=000002f0, IF_ins=xxxxxxxx, 
+#  pc = 000002f0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002ecIF_ID_out:xxxxxxxx000002f0 NPC: 000002f8, NPCOp: 00xxx
+# 
+#  cycle=        194, IF_PC=000002f4, IF_ins=xxxxxxxx, 
+#  pc = 000002f4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002f0IF_ID_out:xxxxxxxx000002f4 NPC: 000002fc, NPCOp: 00xxx
+# 
+#  cycle=        195, IF_PC=000002f8, IF_ins=xxxxxxxx, 
+#  pc = 000002f8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002f4IF_ID_out:xxxxxxxx000002f8 NPC: 00000300, NPCOp: 00xxx
+# 
+#  cycle=        196, IF_PC=000002fc, IF_ins=xxxxxxxx, 
+#  pc = 000002fc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002f8IF_ID_out:xxxxxxxx000002fc NPC: 00000304, NPCOp: 00xxx
+# 
+#  cycle=        197, IF_PC=00000300, IF_ins=xxxxxxxx, 
+#  pc = 00000300: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000002fcIF_ID_out:xxxxxxxx00000300 NPC: 00000308, NPCOp: 00xxx
+# 
+#  cycle=        198, IF_PC=00000304, IF_ins=xxxxxxxx, 
+#  pc = 00000304: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000300IF_ID_out:xxxxxxxx00000304 NPC: 0000030c, NPCOp: 00xxx
+# 
+#  cycle=        199, IF_PC=00000308, IF_ins=xxxxxxxx, 
+#  pc = 00000308: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000304IF_ID_out:xxxxxxxx00000308 NPC: 00000310, NPCOp: 00xxx
+# 
+#  cycle=        200, IF_PC=0000030c, IF_ins=xxxxxxxx, 
+#  pc = 0000030c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000308IF_ID_out:xxxxxxxx0000030c NPC: 00000314, NPCOp: 00xxx
+# 
+#  cycle=        201, IF_PC=00000310, IF_ins=xxxxxxxx, 
+#  pc = 00000310: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000030cIF_ID_out:xxxxxxxx00000310 NPC: 00000318, NPCOp: 00xxx
+# 
+#  cycle=        202, IF_PC=00000314, IF_ins=xxxxxxxx, 
+#  pc = 00000314: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000310IF_ID_out:xxxxxxxx00000314 NPC: 0000031c, NPCOp: 00xxx
+# 
+#  cycle=        203, IF_PC=00000318, IF_ins=xxxxxxxx, 
+#  pc = 00000318: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000314IF_ID_out:xxxxxxxx00000318 NPC: 00000320, NPCOp: 00xxx
+# 
+#  cycle=        204, IF_PC=0000031c, IF_ins=xxxxxxxx, 
+#  pc = 0000031c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000318IF_ID_out:xxxxxxxx0000031c NPC: 00000324, NPCOp: 00xxx
+# 
+#  cycle=        205, IF_PC=00000320, IF_ins=xxxxxxxx, 
+#  pc = 00000320: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000031cIF_ID_out:xxxxxxxx00000320 NPC: 00000328, NPCOp: 00xxx
+# 
+#  cycle=        206, IF_PC=00000324, IF_ins=xxxxxxxx, 
+#  pc = 00000324: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000320IF_ID_out:xxxxxxxx00000324 NPC: 0000032c, NPCOp: 00xxx
+# 
+#  cycle=        207, IF_PC=00000328, IF_ins=xxxxxxxx, 
+#  pc = 00000328: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000324IF_ID_out:xxxxxxxx00000328 NPC: 00000330, NPCOp: 00xxx
+# 
+#  cycle=        208, IF_PC=0000032c, IF_ins=xxxxxxxx, 
+#  pc = 0000032c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000328IF_ID_out:xxxxxxxx0000032c NPC: 00000334, NPCOp: 00xxx
+# 
+#  cycle=        209, IF_PC=00000330, IF_ins=xxxxxxxx, 
+#  pc = 00000330: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000032cIF_ID_out:xxxxxxxx00000330 NPC: 00000338, NPCOp: 00xxx
+# 
+#  cycle=        210, IF_PC=00000334, IF_ins=xxxxxxxx, 
+#  pc = 00000334: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000330IF_ID_out:xxxxxxxx00000334 NPC: 0000033c, NPCOp: 00xxx
+# 
+#  cycle=        211, IF_PC=00000338, IF_ins=xxxxxxxx, 
+#  pc = 00000338: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000334IF_ID_out:xxxxxxxx00000338 NPC: 00000340, NPCOp: 00xxx
+# 
+#  cycle=        212, IF_PC=0000033c, IF_ins=xxxxxxxx, 
+#  pc = 0000033c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000338IF_ID_out:xxxxxxxx0000033c NPC: 00000344, NPCOp: 00xxx
+# 
+#  cycle=        213, IF_PC=00000340, IF_ins=xxxxxxxx, 
+#  pc = 00000340: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000033cIF_ID_out:xxxxxxxx00000340 NPC: 00000348, NPCOp: 00xxx
+# 
+#  cycle=        214, IF_PC=00000344, IF_ins=xxxxxxxx, 
+#  pc = 00000344: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000340IF_ID_out:xxxxxxxx00000344 NPC: 0000034c, NPCOp: 00xxx
+# 
+#  cycle=        215, IF_PC=00000348, IF_ins=xxxxxxxx, 
+#  pc = 00000348: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000344IF_ID_out:xxxxxxxx00000348 NPC: 00000350, NPCOp: 00xxx
+# 
+#  cycle=        216, IF_PC=0000034c, IF_ins=xxxxxxxx, 
+#  pc = 0000034c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000348IF_ID_out:xxxxxxxx0000034c NPC: 00000354, NPCOp: 00xxx
+# 
+#  cycle=        217, IF_PC=00000350, IF_ins=xxxxxxxx, 
+#  pc = 00000350: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000034cIF_ID_out:xxxxxxxx00000350 NPC: 00000358, NPCOp: 00xxx
+# 
+#  cycle=        218, IF_PC=00000354, IF_ins=xxxxxxxx, 
+#  pc = 00000354: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000350IF_ID_out:xxxxxxxx00000354 NPC: 0000035c, NPCOp: 00xxx
+# 
+#  cycle=        219, IF_PC=00000358, IF_ins=xxxxxxxx, 
+#  pc = 00000358: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000354IF_ID_out:xxxxxxxx00000358 NPC: 00000360, NPCOp: 00xxx
+# 
+#  cycle=        220, IF_PC=0000035c, IF_ins=xxxxxxxx, 
+#  pc = 0000035c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000358IF_ID_out:xxxxxxxx0000035c NPC: 00000364, NPCOp: 00xxx
+# 
+#  cycle=        221, IF_PC=00000360, IF_ins=xxxxxxxx, 
+#  pc = 00000360: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000035cIF_ID_out:xxxxxxxx00000360 NPC: 00000368, NPCOp: 00xxx
+# 
+#  cycle=        222, IF_PC=00000364, IF_ins=xxxxxxxx, 
+#  pc = 00000364: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000360IF_ID_out:xxxxxxxx00000364 NPC: 0000036c, NPCOp: 00xxx
+# 
+#  cycle=        223, IF_PC=00000368, IF_ins=xxxxxxxx, 
+#  pc = 00000368: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000364IF_ID_out:xxxxxxxx00000368 NPC: 00000370, NPCOp: 00xxx
+# 
+#  cycle=        224, IF_PC=0000036c, IF_ins=xxxxxxxx, 
+#  pc = 0000036c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000368IF_ID_out:xxxxxxxx0000036c NPC: 00000374, NPCOp: 00xxx
+# 
+#  cycle=        225, IF_PC=00000370, IF_ins=xxxxxxxx, 
+#  pc = 00000370: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000036cIF_ID_out:xxxxxxxx00000370 NPC: 00000378, NPCOp: 00xxx
+# 
+#  cycle=        226, IF_PC=00000374, IF_ins=xxxxxxxx, 
+#  pc = 00000374: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000370IF_ID_out:xxxxxxxx00000374 NPC: 0000037c, NPCOp: 00xxx
+# 
+#  cycle=        227, IF_PC=00000378, IF_ins=xxxxxxxx, 
+#  pc = 00000378: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000374IF_ID_out:xxxxxxxx00000378 NPC: 00000380, NPCOp: 00xxx
+# 
+#  cycle=        228, IF_PC=0000037c, IF_ins=xxxxxxxx, 
+#  pc = 0000037c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000378IF_ID_out:xxxxxxxx0000037c NPC: 00000384, NPCOp: 00xxx
+# 
+#  cycle=        229, IF_PC=00000380, IF_ins=xxxxxxxx, 
+#  pc = 00000380: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000037cIF_ID_out:xxxxxxxx00000380 NPC: 00000388, NPCOp: 00xxx
+# 
+#  cycle=        230, IF_PC=00000384, IF_ins=xxxxxxxx, 
+#  pc = 00000384: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000380IF_ID_out:xxxxxxxx00000384 NPC: 0000038c, NPCOp: 00xxx
+# 
+#  cycle=        231, IF_PC=00000388, IF_ins=xxxxxxxx, 
+#  pc = 00000388: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000384IF_ID_out:xxxxxxxx00000388 NPC: 00000390, NPCOp: 00xxx
+# 
+#  cycle=        232, IF_PC=0000038c, IF_ins=xxxxxxxx, 
+#  pc = 0000038c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000388IF_ID_out:xxxxxxxx0000038c NPC: 00000394, NPCOp: 00xxx
+# 
+#  cycle=        233, IF_PC=00000390, IF_ins=xxxxxxxx, 
+#  pc = 00000390: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000038cIF_ID_out:xxxxxxxx00000390 NPC: 00000398, NPCOp: 00xxx
+# 
+#  cycle=        234, IF_PC=00000394, IF_ins=xxxxxxxx, 
+#  pc = 00000394: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000390IF_ID_out:xxxxxxxx00000394 NPC: 0000039c, NPCOp: 00xxx
+# 
+#  cycle=        235, IF_PC=00000398, IF_ins=xxxxxxxx, 
+#  pc = 00000398: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000394IF_ID_out:xxxxxxxx00000398 NPC: 000003a0, NPCOp: 00xxx
+# 
+#  cycle=        236, IF_PC=0000039c, IF_ins=xxxxxxxx, 
+#  pc = 0000039c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000398IF_ID_out:xxxxxxxx0000039c NPC: 000003a4, NPCOp: 00xxx
+# 
+#  cycle=        237, IF_PC=000003a0, IF_ins=xxxxxxxx, 
+#  pc = 000003a0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000039cIF_ID_out:xxxxxxxx000003a0 NPC: 000003a8, NPCOp: 00xxx
+# 
+#  cycle=        238, IF_PC=000003a4, IF_ins=xxxxxxxx, 
+#  pc = 000003a4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003a0IF_ID_out:xxxxxxxx000003a4 NPC: 000003ac, NPCOp: 00xxx
+# 
+#  cycle=        239, IF_PC=000003a8, IF_ins=xxxxxxxx, 
+#  pc = 000003a8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003a4IF_ID_out:xxxxxxxx000003a8 NPC: 000003b0, NPCOp: 00xxx
+# 
+#  cycle=        240, IF_PC=000003ac, IF_ins=xxxxxxxx, 
+#  pc = 000003ac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003a8IF_ID_out:xxxxxxxx000003ac NPC: 000003b4, NPCOp: 00xxx
+# 
+#  cycle=        241, IF_PC=000003b0, IF_ins=xxxxxxxx, 
+#  pc = 000003b0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003acIF_ID_out:xxxxxxxx000003b0 NPC: 000003b8, NPCOp: 00xxx
+# 
+#  cycle=        242, IF_PC=000003b4, IF_ins=xxxxxxxx, 
+#  pc = 000003b4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003b0IF_ID_out:xxxxxxxx000003b4 NPC: 000003bc, NPCOp: 00xxx
+# 
+#  cycle=        243, IF_PC=000003b8, IF_ins=xxxxxxxx, 
+#  pc = 000003b8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003b4IF_ID_out:xxxxxxxx000003b8 NPC: 000003c0, NPCOp: 00xxx
+# 
+#  cycle=        244, IF_PC=000003bc, IF_ins=xxxxxxxx, 
+#  pc = 000003bc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003b8IF_ID_out:xxxxxxxx000003bc NPC: 000003c4, NPCOp: 00xxx
+# 
+#  cycle=        245, IF_PC=000003c0, IF_ins=xxxxxxxx, 
+#  pc = 000003c0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003bcIF_ID_out:xxxxxxxx000003c0 NPC: 000003c8, NPCOp: 00xxx
+# 
+#  cycle=        246, IF_PC=000003c4, IF_ins=xxxxxxxx, 
+#  pc = 000003c4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003c0IF_ID_out:xxxxxxxx000003c4 NPC: 000003cc, NPCOp: 00xxx
+# 
+#  cycle=        247, IF_PC=000003c8, IF_ins=xxxxxxxx, 
+#  pc = 000003c8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003c4IF_ID_out:xxxxxxxx000003c8 NPC: 000003d0, NPCOp: 00xxx
+# 
+#  cycle=        248, IF_PC=000003cc, IF_ins=xxxxxxxx, 
+#  pc = 000003cc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003c8IF_ID_out:xxxxxxxx000003cc NPC: 000003d4, NPCOp: 00xxx
+# 
+#  cycle=        249, IF_PC=000003d0, IF_ins=xxxxxxxx, 
+#  pc = 000003d0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003ccIF_ID_out:xxxxxxxx000003d0 NPC: 000003d8, NPCOp: 00xxx
+# 
+#  cycle=        250, IF_PC=000003d4, IF_ins=xxxxxxxx, 
+#  pc = 000003d4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003d0IF_ID_out:xxxxxxxx000003d4 NPC: 000003dc, NPCOp: 00xxx
+# 
+#  cycle=        251, IF_PC=000003d8, IF_ins=xxxxxxxx, 
+#  pc = 000003d8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003d4IF_ID_out:xxxxxxxx000003d8 NPC: 000003e0, NPCOp: 00xxx
+# 
+#  cycle=        252, IF_PC=000003dc, IF_ins=xxxxxxxx, 
+#  pc = 000003dc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003d8IF_ID_out:xxxxxxxx000003dc NPC: 000003e4, NPCOp: 00xxx
+# 
+#  cycle=        253, IF_PC=000003e0, IF_ins=xxxxxxxx, 
+#  pc = 000003e0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003dcIF_ID_out:xxxxxxxx000003e0 NPC: 000003e8, NPCOp: 00xxx
+# 
+#  cycle=        254, IF_PC=000003e4, IF_ins=xxxxxxxx, 
+#  pc = 000003e4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003e0IF_ID_out:xxxxxxxx000003e4 NPC: 000003ec, NPCOp: 00xxx
+# 
+#  cycle=        255, IF_PC=000003e8, IF_ins=xxxxxxxx, 
+#  pc = 000003e8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003e4IF_ID_out:xxxxxxxx000003e8 NPC: 000003f0, NPCOp: 00xxx
+# 
+#  cycle=        256, IF_PC=000003ec, IF_ins=xxxxxxxx, 
+#  pc = 000003ec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003e8IF_ID_out:xxxxxxxx000003ec NPC: 000003f4, NPCOp: 00xxx
+# 
+#  cycle=        257, IF_PC=000003f0, IF_ins=xxxxxxxx, 
+#  pc = 000003f0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003ecIF_ID_out:xxxxxxxx000003f0 NPC: 000003f8, NPCOp: 00xxx
+# 
+#  cycle=        258, IF_PC=000003f4, IF_ins=xxxxxxxx, 
+#  pc = 000003f4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003f0IF_ID_out:xxxxxxxx000003f4 NPC: 000003fc, NPCOp: 00xxx
+# 
+#  cycle=        259, IF_PC=000003f8, IF_ins=xxxxxxxx, 
+#  pc = 000003f8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003f4IF_ID_out:xxxxxxxx000003f8 NPC: 00000400, NPCOp: 00xxx
+# 
+#  cycle=        260, IF_PC=000003fc, IF_ins=xxxxxxxx, 
+#  pc = 000003fc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003f8IF_ID_out:xxxxxxxx000003fc NPC: 00000404, NPCOp: 00xxx
+# 
+#  cycle=        261, IF_PC=00000400, IF_ins=xxxxxxxx, 
+#  pc = 00000400: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000003fcIF_ID_out:xxxxxxxx00000400 NPC: 00000408, NPCOp: 00xxx
+# 
+#  cycle=        262, IF_PC=00000404, IF_ins=xxxxxxxx, 
+#  pc = 00000404: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000400IF_ID_out:xxxxxxxx00000404 NPC: 0000040c, NPCOp: 00xxx
+# 
+#  cycle=        263, IF_PC=00000408, IF_ins=xxxxxxxx, 
+#  pc = 00000408: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000404IF_ID_out:xxxxxxxx00000408 NPC: 00000410, NPCOp: 00xxx
+# 
+#  cycle=        264, IF_PC=0000040c, IF_ins=xxxxxxxx, 
+#  pc = 0000040c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000408IF_ID_out:xxxxxxxx0000040c NPC: 00000414, NPCOp: 00xxx
+# 
+#  cycle=        265, IF_PC=00000410, IF_ins=xxxxxxxx, 
+#  pc = 00000410: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000040cIF_ID_out:xxxxxxxx00000410 NPC: 00000418, NPCOp: 00xxx
+# 
+#  cycle=        266, IF_PC=00000414, IF_ins=xxxxxxxx, 
+#  pc = 00000414: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000410IF_ID_out:xxxxxxxx00000414 NPC: 0000041c, NPCOp: 00xxx
+# 
+#  cycle=        267, IF_PC=00000418, IF_ins=xxxxxxxx, 
+#  pc = 00000418: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000414IF_ID_out:xxxxxxxx00000418 NPC: 00000420, NPCOp: 00xxx
+# 
+#  cycle=        268, IF_PC=0000041c, IF_ins=xxxxxxxx, 
+#  pc = 0000041c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000418IF_ID_out:xxxxxxxx0000041c NPC: 00000424, NPCOp: 00xxx
+# 
+#  cycle=        269, IF_PC=00000420, IF_ins=xxxxxxxx, 
+#  pc = 00000420: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000041cIF_ID_out:xxxxxxxx00000420 NPC: 00000428, NPCOp: 00xxx
+# 
+#  cycle=        270, IF_PC=00000424, IF_ins=xxxxxxxx, 
+#  pc = 00000424: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000420IF_ID_out:xxxxxxxx00000424 NPC: 0000042c, NPCOp: 00xxx
+# 
+#  cycle=        271, IF_PC=00000428, IF_ins=xxxxxxxx, 
+#  pc = 00000428: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000424IF_ID_out:xxxxxxxx00000428 NPC: 00000430, NPCOp: 00xxx
+# 
+#  cycle=        272, IF_PC=0000042c, IF_ins=xxxxxxxx, 
+#  pc = 0000042c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000428IF_ID_out:xxxxxxxx0000042c NPC: 00000434, NPCOp: 00xxx
+# 
+#  cycle=        273, IF_PC=00000430, IF_ins=xxxxxxxx, 
+#  pc = 00000430: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000042cIF_ID_out:xxxxxxxx00000430 NPC: 00000438, NPCOp: 00xxx
+# 
+#  cycle=        274, IF_PC=00000434, IF_ins=xxxxxxxx, 
+#  pc = 00000434: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000430IF_ID_out:xxxxxxxx00000434 NPC: 0000043c, NPCOp: 00xxx
+# 
+#  cycle=        275, IF_PC=00000438, IF_ins=xxxxxxxx, 
+#  pc = 00000438: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000434IF_ID_out:xxxxxxxx00000438 NPC: 00000440, NPCOp: 00xxx
+# 
+#  cycle=        276, IF_PC=0000043c, IF_ins=xxxxxxxx, 
+#  pc = 0000043c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000438IF_ID_out:xxxxxxxx0000043c NPC: 00000444, NPCOp: 00xxx
+# 
+#  cycle=        277, IF_PC=00000440, IF_ins=xxxxxxxx, 
+#  pc = 00000440: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000043cIF_ID_out:xxxxxxxx00000440 NPC: 00000448, NPCOp: 00xxx
+# 
+#  cycle=        278, IF_PC=00000444, IF_ins=xxxxxxxx, 
+#  pc = 00000444: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000440IF_ID_out:xxxxxxxx00000444 NPC: 0000044c, NPCOp: 00xxx
+# 
+#  cycle=        279, IF_PC=00000448, IF_ins=xxxxxxxx, 
+#  pc = 00000448: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000444IF_ID_out:xxxxxxxx00000448 NPC: 00000450, NPCOp: 00xxx
+# 
+#  cycle=        280, IF_PC=0000044c, IF_ins=xxxxxxxx, 
+#  pc = 0000044c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000448IF_ID_out:xxxxxxxx0000044c NPC: 00000454, NPCOp: 00xxx
+# 
+#  cycle=        281, IF_PC=00000450, IF_ins=xxxxxxxx, 
+#  pc = 00000450: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000044cIF_ID_out:xxxxxxxx00000450 NPC: 00000458, NPCOp: 00xxx
+# 
+#  cycle=        282, IF_PC=00000454, IF_ins=xxxxxxxx, 
+#  pc = 00000454: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000450IF_ID_out:xxxxxxxx00000454 NPC: 0000045c, NPCOp: 00xxx
+# 
+#  cycle=        283, IF_PC=00000458, IF_ins=xxxxxxxx, 
+#  pc = 00000458: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000454IF_ID_out:xxxxxxxx00000458 NPC: 00000460, NPCOp: 00xxx
+# 
+#  cycle=        284, IF_PC=0000045c, IF_ins=xxxxxxxx, 
+#  pc = 0000045c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000458IF_ID_out:xxxxxxxx0000045c NPC: 00000464, NPCOp: 00xxx
+# 
+#  cycle=        285, IF_PC=00000460, IF_ins=xxxxxxxx, 
+#  pc = 00000460: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000045cIF_ID_out:xxxxxxxx00000460 NPC: 00000468, NPCOp: 00xxx
+# 
+#  cycle=        286, IF_PC=00000464, IF_ins=xxxxxxxx, 
+#  pc = 00000464: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000460IF_ID_out:xxxxxxxx00000464 NPC: 0000046c, NPCOp: 00xxx
+# 
+#  cycle=        287, IF_PC=00000468, IF_ins=xxxxxxxx, 
+#  pc = 00000468: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000464IF_ID_out:xxxxxxxx00000468 NPC: 00000470, NPCOp: 00xxx
+# 
+#  cycle=        288, IF_PC=0000046c, IF_ins=xxxxxxxx, 
+#  pc = 0000046c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000468IF_ID_out:xxxxxxxx0000046c NPC: 00000474, NPCOp: 00xxx
+# 
+#  cycle=        289, IF_PC=00000470, IF_ins=xxxxxxxx, 
+#  pc = 00000470: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000046cIF_ID_out:xxxxxxxx00000470 NPC: 00000478, NPCOp: 00xxx
+# 
+#  cycle=        290, IF_PC=00000474, IF_ins=xxxxxxxx, 
+#  pc = 00000474: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000470IF_ID_out:xxxxxxxx00000474 NPC: 0000047c, NPCOp: 00xxx
+# 
+#  cycle=        291, IF_PC=00000478, IF_ins=xxxxxxxx, 
+#  pc = 00000478: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000474IF_ID_out:xxxxxxxx00000478 NPC: 00000480, NPCOp: 00xxx
+# 
+#  cycle=        292, IF_PC=0000047c, IF_ins=xxxxxxxx, 
+#  pc = 0000047c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000478IF_ID_out:xxxxxxxx0000047c NPC: 00000484, NPCOp: 00xxx
+# 
+#  cycle=        293, IF_PC=00000480, IF_ins=xxxxxxxx, 
+#  pc = 00000480: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000047cIF_ID_out:xxxxxxxx00000480 NPC: 00000488, NPCOp: 00xxx
+# 
+#  cycle=        294, IF_PC=00000484, IF_ins=xxxxxxxx, 
+#  pc = 00000484: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000480IF_ID_out:xxxxxxxx00000484 NPC: 0000048c, NPCOp: 00xxx
+# 
+#  cycle=        295, IF_PC=00000488, IF_ins=xxxxxxxx, 
+#  pc = 00000488: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000484IF_ID_out:xxxxxxxx00000488 NPC: 00000490, NPCOp: 00xxx
+# 
+#  cycle=        296, IF_PC=0000048c, IF_ins=xxxxxxxx, 
+#  pc = 0000048c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000488IF_ID_out:xxxxxxxx0000048c NPC: 00000494, NPCOp: 00xxx
+# 
+#  cycle=        297, IF_PC=00000490, IF_ins=xxxxxxxx, 
+#  pc = 00000490: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000048cIF_ID_out:xxxxxxxx00000490 NPC: 00000498, NPCOp: 00xxx
+# 
+#  cycle=        298, IF_PC=00000494, IF_ins=xxxxxxxx, 
+#  pc = 00000494: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000490IF_ID_out:xxxxxxxx00000494 NPC: 0000049c, NPCOp: 00xxx
+# 
+#  cycle=        299, IF_PC=00000498, IF_ins=xxxxxxxx, 
+#  pc = 00000498: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000494IF_ID_out:xxxxxxxx00000498 NPC: 000004a0, NPCOp: 00xxx
+# 
+#  cycle=        300, IF_PC=0000049c, IF_ins=xxxxxxxx, 
+#  pc = 0000049c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000498IF_ID_out:xxxxxxxx0000049c NPC: 000004a4, NPCOp: 00xxx
+# 
+#  cycle=        301, IF_PC=000004a0, IF_ins=xxxxxxxx, 
+#  pc = 000004a0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000049cIF_ID_out:xxxxxxxx000004a0 NPC: 000004a8, NPCOp: 00xxx
+# 
+#  cycle=        302, IF_PC=000004a4, IF_ins=xxxxxxxx, 
+#  pc = 000004a4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004a0IF_ID_out:xxxxxxxx000004a4 NPC: 000004ac, NPCOp: 00xxx
+# 
+#  cycle=        303, IF_PC=000004a8, IF_ins=xxxxxxxx, 
+#  pc = 000004a8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004a4IF_ID_out:xxxxxxxx000004a8 NPC: 000004b0, NPCOp: 00xxx
+# 
+#  cycle=        304, IF_PC=000004ac, IF_ins=xxxxxxxx, 
+#  pc = 000004ac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004a8IF_ID_out:xxxxxxxx000004ac NPC: 000004b4, NPCOp: 00xxx
+# 
+#  cycle=        305, IF_PC=000004b0, IF_ins=xxxxxxxx, 
+#  pc = 000004b0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004acIF_ID_out:xxxxxxxx000004b0 NPC: 000004b8, NPCOp: 00xxx
+# 
+#  cycle=        306, IF_PC=000004b4, IF_ins=xxxxxxxx, 
+#  pc = 000004b4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004b0IF_ID_out:xxxxxxxx000004b4 NPC: 000004bc, NPCOp: 00xxx
+# 
+#  cycle=        307, IF_PC=000004b8, IF_ins=xxxxxxxx, 
+#  pc = 000004b8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004b4IF_ID_out:xxxxxxxx000004b8 NPC: 000004c0, NPCOp: 00xxx
+# 
+#  cycle=        308, IF_PC=000004bc, IF_ins=xxxxxxxx, 
+#  pc = 000004bc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004b8IF_ID_out:xxxxxxxx000004bc NPC: 000004c4, NPCOp: 00xxx
+# 
+#  cycle=        309, IF_PC=000004c0, IF_ins=xxxxxxxx, 
+#  pc = 000004c0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004bcIF_ID_out:xxxxxxxx000004c0 NPC: 000004c8, NPCOp: 00xxx
+# 
+#  cycle=        310, IF_PC=000004c4, IF_ins=xxxxxxxx, 
+#  pc = 000004c4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004c0IF_ID_out:xxxxxxxx000004c4 NPC: 000004cc, NPCOp: 00xxx
+# 
+#  cycle=        311, IF_PC=000004c8, IF_ins=xxxxxxxx, 
+#  pc = 000004c8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004c4IF_ID_out:xxxxxxxx000004c8 NPC: 000004d0, NPCOp: 00xxx
+# 
+#  cycle=        312, IF_PC=000004cc, IF_ins=xxxxxxxx, 
+#  pc = 000004cc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004c8IF_ID_out:xxxxxxxx000004cc NPC: 000004d4, NPCOp: 00xxx
+# 
+#  cycle=        313, IF_PC=000004d0, IF_ins=xxxxxxxx, 
+#  pc = 000004d0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004ccIF_ID_out:xxxxxxxx000004d0 NPC: 000004d8, NPCOp: 00xxx
+# 
+#  cycle=        314, IF_PC=000004d4, IF_ins=xxxxxxxx, 
+#  pc = 000004d4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004d0IF_ID_out:xxxxxxxx000004d4 NPC: 000004dc, NPCOp: 00xxx
+# 
+#  cycle=        315, IF_PC=000004d8, IF_ins=xxxxxxxx, 
+#  pc = 000004d8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004d4IF_ID_out:xxxxxxxx000004d8 NPC: 000004e0, NPCOp: 00xxx
+# 
+#  cycle=        316, IF_PC=000004dc, IF_ins=xxxxxxxx, 
+#  pc = 000004dc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004d8IF_ID_out:xxxxxxxx000004dc NPC: 000004e4, NPCOp: 00xxx
+# 
+#  cycle=        317, IF_PC=000004e0, IF_ins=xxxxxxxx, 
+#  pc = 000004e0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004dcIF_ID_out:xxxxxxxx000004e0 NPC: 000004e8, NPCOp: 00xxx
+# 
+#  cycle=        318, IF_PC=000004e4, IF_ins=xxxxxxxx, 
+#  pc = 000004e4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004e0IF_ID_out:xxxxxxxx000004e4 NPC: 000004ec, NPCOp: 00xxx
+# 
+#  cycle=        319, IF_PC=000004e8, IF_ins=xxxxxxxx, 
+#  pc = 000004e8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004e4IF_ID_out:xxxxxxxx000004e8 NPC: 000004f0, NPCOp: 00xxx
+# 
+#  cycle=        320, IF_PC=000004ec, IF_ins=xxxxxxxx, 
+#  pc = 000004ec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004e8IF_ID_out:xxxxxxxx000004ec NPC: 000004f4, NPCOp: 00xxx
+# 
+#  cycle=        321, IF_PC=000004f0, IF_ins=xxxxxxxx, 
+#  pc = 000004f0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004ecIF_ID_out:xxxxxxxx000004f0 NPC: 000004f8, NPCOp: 00xxx
+# 
+#  cycle=        322, IF_PC=000004f4, IF_ins=xxxxxxxx, 
+#  pc = 000004f4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004f0IF_ID_out:xxxxxxxx000004f4 NPC: 000004fc, NPCOp: 00xxx
+# 
+#  cycle=        323, IF_PC=000004f8, IF_ins=xxxxxxxx, 
+#  pc = 000004f8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004f4IF_ID_out:xxxxxxxx000004f8 NPC: 00000500, NPCOp: 00xxx
+# 
+#  cycle=        324, IF_PC=000004fc, IF_ins=xxxxxxxx, 
+#  pc = 000004fc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004f8IF_ID_out:xxxxxxxx000004fc NPC: 00000504, NPCOp: 00xxx
+# 
+#  cycle=        325, IF_PC=00000500, IF_ins=xxxxxxxx, 
+#  pc = 00000500: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000004fcIF_ID_out:xxxxxxxx00000500 NPC: 00000508, NPCOp: 00xxx
+# 
+#  cycle=        326, IF_PC=00000504, IF_ins=xxxxxxxx, 
+#  pc = 00000504: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000500IF_ID_out:xxxxxxxx00000504 NPC: 0000050c, NPCOp: 00xxx
+# 
+#  cycle=        327, IF_PC=00000508, IF_ins=xxxxxxxx, 
+#  pc = 00000508: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000504IF_ID_out:xxxxxxxx00000508 NPC: 00000510, NPCOp: 00xxx
+# 
+#  cycle=        328, IF_PC=0000050c, IF_ins=xxxxxxxx, 
+#  pc = 0000050c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000508IF_ID_out:xxxxxxxx0000050c NPC: 00000514, NPCOp: 00xxx
+# 
+#  cycle=        329, IF_PC=00000510, IF_ins=xxxxxxxx, 
+#  pc = 00000510: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000050cIF_ID_out:xxxxxxxx00000510 NPC: 00000518, NPCOp: 00xxx
+# 
+#  cycle=        330, IF_PC=00000514, IF_ins=xxxxxxxx, 
+#  pc = 00000514: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000510IF_ID_out:xxxxxxxx00000514 NPC: 0000051c, NPCOp: 00xxx
+# 
+#  cycle=        331, IF_PC=00000518, IF_ins=xxxxxxxx, 
+#  pc = 00000518: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000514IF_ID_out:xxxxxxxx00000518 NPC: 00000520, NPCOp: 00xxx
+# 
+#  cycle=        332, IF_PC=0000051c, IF_ins=xxxxxxxx, 
+#  pc = 0000051c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000518IF_ID_out:xxxxxxxx0000051c NPC: 00000524, NPCOp: 00xxx
+# 
+#  cycle=        333, IF_PC=00000520, IF_ins=xxxxxxxx, 
+#  pc = 00000520: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000051cIF_ID_out:xxxxxxxx00000520 NPC: 00000528, NPCOp: 00xxx
+# 
+#  cycle=        334, IF_PC=00000524, IF_ins=xxxxxxxx, 
+#  pc = 00000524: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000520IF_ID_out:xxxxxxxx00000524 NPC: 0000052c, NPCOp: 00xxx
+# 
+#  cycle=        335, IF_PC=00000528, IF_ins=xxxxxxxx, 
+#  pc = 00000528: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000524IF_ID_out:xxxxxxxx00000528 NPC: 00000530, NPCOp: 00xxx
+# 
+#  cycle=        336, IF_PC=0000052c, IF_ins=xxxxxxxx, 
+#  pc = 0000052c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000528IF_ID_out:xxxxxxxx0000052c NPC: 00000534, NPCOp: 00xxx
+# 
+#  cycle=        337, IF_PC=00000530, IF_ins=xxxxxxxx, 
+#  pc = 00000530: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000052cIF_ID_out:xxxxxxxx00000530 NPC: 00000538, NPCOp: 00xxx
+# 
+#  cycle=        338, IF_PC=00000534, IF_ins=xxxxxxxx, 
+#  pc = 00000534: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000530IF_ID_out:xxxxxxxx00000534 NPC: 0000053c, NPCOp: 00xxx
+# 
+#  cycle=        339, IF_PC=00000538, IF_ins=xxxxxxxx, 
+#  pc = 00000538: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000534IF_ID_out:xxxxxxxx00000538 NPC: 00000540, NPCOp: 00xxx
+# 
+#  cycle=        340, IF_PC=0000053c, IF_ins=xxxxxxxx, 
+#  pc = 0000053c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000538IF_ID_out:xxxxxxxx0000053c NPC: 00000544, NPCOp: 00xxx
+# 
+#  cycle=        341, IF_PC=00000540, IF_ins=xxxxxxxx, 
+#  pc = 00000540: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000053cIF_ID_out:xxxxxxxx00000540 NPC: 00000548, NPCOp: 00xxx
+# 
+#  cycle=        342, IF_PC=00000544, IF_ins=xxxxxxxx, 
+#  pc = 00000544: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000540IF_ID_out:xxxxxxxx00000544 NPC: 0000054c, NPCOp: 00xxx
+# 
+#  cycle=        343, IF_PC=00000548, IF_ins=xxxxxxxx, 
+#  pc = 00000548: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000544IF_ID_out:xxxxxxxx00000548 NPC: 00000550, NPCOp: 00xxx
+# 
+#  cycle=        344, IF_PC=0000054c, IF_ins=xxxxxxxx, 
+#  pc = 0000054c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000548IF_ID_out:xxxxxxxx0000054c NPC: 00000554, NPCOp: 00xxx
+# 
+#  cycle=        345, IF_PC=00000550, IF_ins=xxxxxxxx, 
+#  pc = 00000550: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000054cIF_ID_out:xxxxxxxx00000550 NPC: 00000558, NPCOp: 00xxx
+# 
+#  cycle=        346, IF_PC=00000554, IF_ins=xxxxxxxx, 
+#  pc = 00000554: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000550IF_ID_out:xxxxxxxx00000554 NPC: 0000055c, NPCOp: 00xxx
+# 
+#  cycle=        347, IF_PC=00000558, IF_ins=xxxxxxxx, 
+#  pc = 00000558: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000554IF_ID_out:xxxxxxxx00000558 NPC: 00000560, NPCOp: 00xxx
+# 
+#  cycle=        348, IF_PC=0000055c, IF_ins=xxxxxxxx, 
+#  pc = 0000055c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000558IF_ID_out:xxxxxxxx0000055c NPC: 00000564, NPCOp: 00xxx
+# 
+#  cycle=        349, IF_PC=00000560, IF_ins=xxxxxxxx, 
+#  pc = 00000560: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000055cIF_ID_out:xxxxxxxx00000560 NPC: 00000568, NPCOp: 00xxx
+# 
+#  cycle=        350, IF_PC=00000564, IF_ins=xxxxxxxx, 
+#  pc = 00000564: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000560IF_ID_out:xxxxxxxx00000564 NPC: 0000056c, NPCOp: 00xxx
+# 
+#  cycle=        351, IF_PC=00000568, IF_ins=xxxxxxxx, 
+#  pc = 00000568: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000564IF_ID_out:xxxxxxxx00000568 NPC: 00000570, NPCOp: 00xxx
+# 
+#  cycle=        352, IF_PC=0000056c, IF_ins=xxxxxxxx, 
+#  pc = 0000056c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000568IF_ID_out:xxxxxxxx0000056c NPC: 00000574, NPCOp: 00xxx
+# 
+#  cycle=        353, IF_PC=00000570, IF_ins=xxxxxxxx, 
+#  pc = 00000570: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000056cIF_ID_out:xxxxxxxx00000570 NPC: 00000578, NPCOp: 00xxx
+# 
+#  cycle=        354, IF_PC=00000574, IF_ins=xxxxxxxx, 
+#  pc = 00000574: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000570IF_ID_out:xxxxxxxx00000574 NPC: 0000057c, NPCOp: 00xxx
+# 
+#  cycle=        355, IF_PC=00000578, IF_ins=xxxxxxxx, 
+#  pc = 00000578: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000574IF_ID_out:xxxxxxxx00000578 NPC: 00000580, NPCOp: 00xxx
+# 
+#  cycle=        356, IF_PC=0000057c, IF_ins=xxxxxxxx, 
+#  pc = 0000057c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000578IF_ID_out:xxxxxxxx0000057c NPC: 00000584, NPCOp: 00xxx
+# 
+#  cycle=        357, IF_PC=00000580, IF_ins=xxxxxxxx, 
+#  pc = 00000580: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000057cIF_ID_out:xxxxxxxx00000580 NPC: 00000588, NPCOp: 00xxx
+# 
+#  cycle=        358, IF_PC=00000584, IF_ins=xxxxxxxx, 
+#  pc = 00000584: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000580IF_ID_out:xxxxxxxx00000584 NPC: 0000058c, NPCOp: 00xxx
+# 
+#  cycle=        359, IF_PC=00000588, IF_ins=xxxxxxxx, 
+#  pc = 00000588: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000584IF_ID_out:xxxxxxxx00000588 NPC: 00000590, NPCOp: 00xxx
+# 
+#  cycle=        360, IF_PC=0000058c, IF_ins=xxxxxxxx, 
+#  pc = 0000058c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000588IF_ID_out:xxxxxxxx0000058c NPC: 00000594, NPCOp: 00xxx
+# 
+#  cycle=        361, IF_PC=00000590, IF_ins=xxxxxxxx, 
+#  pc = 00000590: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000058cIF_ID_out:xxxxxxxx00000590 NPC: 00000598, NPCOp: 00xxx
+# 
+#  cycle=        362, IF_PC=00000594, IF_ins=xxxxxxxx, 
+#  pc = 00000594: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000590IF_ID_out:xxxxxxxx00000594 NPC: 0000059c, NPCOp: 00xxx
+# 
+#  cycle=        363, IF_PC=00000598, IF_ins=xxxxxxxx, 
+#  pc = 00000598: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000594IF_ID_out:xxxxxxxx00000598 NPC: 000005a0, NPCOp: 00xxx
+# 
+#  cycle=        364, IF_PC=0000059c, IF_ins=xxxxxxxx, 
+#  pc = 0000059c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000598IF_ID_out:xxxxxxxx0000059c NPC: 000005a4, NPCOp: 00xxx
+# 
+#  cycle=        365, IF_PC=000005a0, IF_ins=xxxxxxxx, 
+#  pc = 000005a0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000059cIF_ID_out:xxxxxxxx000005a0 NPC: 000005a8, NPCOp: 00xxx
+# 
+#  cycle=        366, IF_PC=000005a4, IF_ins=xxxxxxxx, 
+#  pc = 000005a4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005a0IF_ID_out:xxxxxxxx000005a4 NPC: 000005ac, NPCOp: 00xxx
+# 
+#  cycle=        367, IF_PC=000005a8, IF_ins=xxxxxxxx, 
+#  pc = 000005a8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005a4IF_ID_out:xxxxxxxx000005a8 NPC: 000005b0, NPCOp: 00xxx
+# 
+#  cycle=        368, IF_PC=000005ac, IF_ins=xxxxxxxx, 
+#  pc = 000005ac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005a8IF_ID_out:xxxxxxxx000005ac NPC: 000005b4, NPCOp: 00xxx
+# 
+#  cycle=        369, IF_PC=000005b0, IF_ins=xxxxxxxx, 
+#  pc = 000005b0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005acIF_ID_out:xxxxxxxx000005b0 NPC: 000005b8, NPCOp: 00xxx
+# 
+#  cycle=        370, IF_PC=000005b4, IF_ins=xxxxxxxx, 
+#  pc = 000005b4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005b0IF_ID_out:xxxxxxxx000005b4 NPC: 000005bc, NPCOp: 00xxx
+# 
+#  cycle=        371, IF_PC=000005b8, IF_ins=xxxxxxxx, 
+#  pc = 000005b8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005b4IF_ID_out:xxxxxxxx000005b8 NPC: 000005c0, NPCOp: 00xxx
+# 
+#  cycle=        372, IF_PC=000005bc, IF_ins=xxxxxxxx, 
+#  pc = 000005bc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005b8IF_ID_out:xxxxxxxx000005bc NPC: 000005c4, NPCOp: 00xxx
+# 
+#  cycle=        373, IF_PC=000005c0, IF_ins=xxxxxxxx, 
+#  pc = 000005c0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005bcIF_ID_out:xxxxxxxx000005c0 NPC: 000005c8, NPCOp: 00xxx
+# 
+#  cycle=        374, IF_PC=000005c4, IF_ins=xxxxxxxx, 
+#  pc = 000005c4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005c0IF_ID_out:xxxxxxxx000005c4 NPC: 000005cc, NPCOp: 00xxx
+# 
+#  cycle=        375, IF_PC=000005c8, IF_ins=xxxxxxxx, 
+#  pc = 000005c8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005c4IF_ID_out:xxxxxxxx000005c8 NPC: 000005d0, NPCOp: 00xxx
+# 
+#  cycle=        376, IF_PC=000005cc, IF_ins=xxxxxxxx, 
+#  pc = 000005cc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005c8IF_ID_out:xxxxxxxx000005cc NPC: 000005d4, NPCOp: 00xxx
+# 
+#  cycle=        377, IF_PC=000005d0, IF_ins=xxxxxxxx, 
+#  pc = 000005d0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005ccIF_ID_out:xxxxxxxx000005d0 NPC: 000005d8, NPCOp: 00xxx
+# 
+#  cycle=        378, IF_PC=000005d4, IF_ins=xxxxxxxx, 
+#  pc = 000005d4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005d0IF_ID_out:xxxxxxxx000005d4 NPC: 000005dc, NPCOp: 00xxx
+# 
+#  cycle=        379, IF_PC=000005d8, IF_ins=xxxxxxxx, 
+#  pc = 000005d8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005d4IF_ID_out:xxxxxxxx000005d8 NPC: 000005e0, NPCOp: 00xxx
+# 
+#  cycle=        380, IF_PC=000005dc, IF_ins=xxxxxxxx, 
+#  pc = 000005dc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005d8IF_ID_out:xxxxxxxx000005dc NPC: 000005e4, NPCOp: 00xxx
+# 
+#  cycle=        381, IF_PC=000005e0, IF_ins=xxxxxxxx, 
+#  pc = 000005e0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005dcIF_ID_out:xxxxxxxx000005e0 NPC: 000005e8, NPCOp: 00xxx
+# 
+#  cycle=        382, IF_PC=000005e4, IF_ins=xxxxxxxx, 
+#  pc = 000005e4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005e0IF_ID_out:xxxxxxxx000005e4 NPC: 000005ec, NPCOp: 00xxx
+# 
+#  cycle=        383, IF_PC=000005e8, IF_ins=xxxxxxxx, 
+#  pc = 000005e8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005e4IF_ID_out:xxxxxxxx000005e8 NPC: 000005f0, NPCOp: 00xxx
+# 
+#  cycle=        384, IF_PC=000005ec, IF_ins=xxxxxxxx, 
+#  pc = 000005ec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005e8IF_ID_out:xxxxxxxx000005ec NPC: 000005f4, NPCOp: 00xxx
+# 
+#  cycle=        385, IF_PC=000005f0, IF_ins=xxxxxxxx, 
+#  pc = 000005f0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005ecIF_ID_out:xxxxxxxx000005f0 NPC: 000005f8, NPCOp: 00xxx
+# 
+#  cycle=        386, IF_PC=000005f4, IF_ins=xxxxxxxx, 
+#  pc = 000005f4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005f0IF_ID_out:xxxxxxxx000005f4 NPC: 000005fc, NPCOp: 00xxx
+# 
+#  cycle=        387, IF_PC=000005f8, IF_ins=xxxxxxxx, 
+#  pc = 000005f8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005f4IF_ID_out:xxxxxxxx000005f8 NPC: 00000600, NPCOp: 00xxx
+# 
+#  cycle=        388, IF_PC=000005fc, IF_ins=xxxxxxxx, 
+#  pc = 000005fc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005f8IF_ID_out:xxxxxxxx000005fc NPC: 00000604, NPCOp: 00xxx
+# 
+#  cycle=        389, IF_PC=00000600, IF_ins=xxxxxxxx, 
+#  pc = 00000600: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000005fcIF_ID_out:xxxxxxxx00000600 NPC: 00000608, NPCOp: 00xxx
+# 
+#  cycle=        390, IF_PC=00000604, IF_ins=xxxxxxxx, 
+#  pc = 00000604: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000600IF_ID_out:xxxxxxxx00000604 NPC: 0000060c, NPCOp: 00xxx
+# 
+#  cycle=        391, IF_PC=00000608, IF_ins=xxxxxxxx, 
+#  pc = 00000608: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000604IF_ID_out:xxxxxxxx00000608 NPC: 00000610, NPCOp: 00xxx
+# 
+#  cycle=        392, IF_PC=0000060c, IF_ins=xxxxxxxx, 
+#  pc = 0000060c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000608IF_ID_out:xxxxxxxx0000060c NPC: 00000614, NPCOp: 00xxx
+# 
+#  cycle=        393, IF_PC=00000610, IF_ins=xxxxxxxx, 
+#  pc = 00000610: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000060cIF_ID_out:xxxxxxxx00000610 NPC: 00000618, NPCOp: 00xxx
+# 
+#  cycle=        394, IF_PC=00000614, IF_ins=xxxxxxxx, 
+#  pc = 00000614: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000610IF_ID_out:xxxxxxxx00000614 NPC: 0000061c, NPCOp: 00xxx
+# 
+#  cycle=        395, IF_PC=00000618, IF_ins=xxxxxxxx, 
+#  pc = 00000618: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000614IF_ID_out:xxxxxxxx00000618 NPC: 00000620, NPCOp: 00xxx
+# 
+#  cycle=        396, IF_PC=0000061c, IF_ins=xxxxxxxx, 
+#  pc = 0000061c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000618IF_ID_out:xxxxxxxx0000061c NPC: 00000624, NPCOp: 00xxx
+# 
+#  cycle=        397, IF_PC=00000620, IF_ins=xxxxxxxx, 
+#  pc = 00000620: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000061cIF_ID_out:xxxxxxxx00000620 NPC: 00000628, NPCOp: 00xxx
+# 
+#  cycle=        398, IF_PC=00000624, IF_ins=xxxxxxxx, 
+#  pc = 00000624: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000620IF_ID_out:xxxxxxxx00000624 NPC: 0000062c, NPCOp: 00xxx
+# 
+#  cycle=        399, IF_PC=00000628, IF_ins=xxxxxxxx, 
+#  pc = 00000628: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000624IF_ID_out:xxxxxxxx00000628 NPC: 00000630, NPCOp: 00xxx
+# 
+#  cycle=        400, IF_PC=0000062c, IF_ins=xxxxxxxx, 
+#  pc = 0000062c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000628IF_ID_out:xxxxxxxx0000062c NPC: 00000634, NPCOp: 00xxx
+# 
+#  cycle=        401, IF_PC=00000630, IF_ins=xxxxxxxx, 
+#  pc = 00000630: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000062cIF_ID_out:xxxxxxxx00000630 NPC: 00000638, NPCOp: 00xxx
+# 
+#  cycle=        402, IF_PC=00000634, IF_ins=xxxxxxxx, 
+#  pc = 00000634: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000630IF_ID_out:xxxxxxxx00000634 NPC: 0000063c, NPCOp: 00xxx
+# 
+#  cycle=        403, IF_PC=00000638, IF_ins=xxxxxxxx, 
+#  pc = 00000638: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000634IF_ID_out:xxxxxxxx00000638 NPC: 00000640, NPCOp: 00xxx
+# 
+#  cycle=        404, IF_PC=0000063c, IF_ins=xxxxxxxx, 
+#  pc = 0000063c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000638IF_ID_out:xxxxxxxx0000063c NPC: 00000644, NPCOp: 00xxx
+# 
+#  cycle=        405, IF_PC=00000640, IF_ins=xxxxxxxx, 
+#  pc = 00000640: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000063cIF_ID_out:xxxxxxxx00000640 NPC: 00000648, NPCOp: 00xxx
+# 
+#  cycle=        406, IF_PC=00000644, IF_ins=xxxxxxxx, 
+#  pc = 00000644: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000640IF_ID_out:xxxxxxxx00000644 NPC: 0000064c, NPCOp: 00xxx
+# 
+#  cycle=        407, IF_PC=00000648, IF_ins=xxxxxxxx, 
+#  pc = 00000648: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000644IF_ID_out:xxxxxxxx00000648 NPC: 00000650, NPCOp: 00xxx
+# 
+#  cycle=        408, IF_PC=0000064c, IF_ins=xxxxxxxx, 
+#  pc = 0000064c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000648IF_ID_out:xxxxxxxx0000064c NPC: 00000654, NPCOp: 00xxx
+# 
+#  cycle=        409, IF_PC=00000650, IF_ins=xxxxxxxx, 
+#  pc = 00000650: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000064cIF_ID_out:xxxxxxxx00000650 NPC: 00000658, NPCOp: 00xxx
+# 
+#  cycle=        410, IF_PC=00000654, IF_ins=xxxxxxxx, 
+#  pc = 00000654: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000650IF_ID_out:xxxxxxxx00000654 NPC: 0000065c, NPCOp: 00xxx
+# 
+#  cycle=        411, IF_PC=00000658, IF_ins=xxxxxxxx, 
+#  pc = 00000658: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000654IF_ID_out:xxxxxxxx00000658 NPC: 00000660, NPCOp: 00xxx
+# 
+#  cycle=        412, IF_PC=0000065c, IF_ins=xxxxxxxx, 
+#  pc = 0000065c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000658IF_ID_out:xxxxxxxx0000065c NPC: 00000664, NPCOp: 00xxx
+# 
+#  cycle=        413, IF_PC=00000660, IF_ins=xxxxxxxx, 
+#  pc = 00000660: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000065cIF_ID_out:xxxxxxxx00000660 NPC: 00000668, NPCOp: 00xxx
+# 
+#  cycle=        414, IF_PC=00000664, IF_ins=xxxxxxxx, 
+#  pc = 00000664: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000660IF_ID_out:xxxxxxxx00000664 NPC: 0000066c, NPCOp: 00xxx
+# 
+#  cycle=        415, IF_PC=00000668, IF_ins=xxxxxxxx, 
+#  pc = 00000668: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000664IF_ID_out:xxxxxxxx00000668 NPC: 00000670, NPCOp: 00xxx
+# 
+#  cycle=        416, IF_PC=0000066c, IF_ins=xxxxxxxx, 
+#  pc = 0000066c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000668IF_ID_out:xxxxxxxx0000066c NPC: 00000674, NPCOp: 00xxx
+# 
+#  cycle=        417, IF_PC=00000670, IF_ins=xxxxxxxx, 
+#  pc = 00000670: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000066cIF_ID_out:xxxxxxxx00000670 NPC: 00000678, NPCOp: 00xxx
+# 
+#  cycle=        418, IF_PC=00000674, IF_ins=xxxxxxxx, 
+#  pc = 00000674: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000670IF_ID_out:xxxxxxxx00000674 NPC: 0000067c, NPCOp: 00xxx
+# 
+#  cycle=        419, IF_PC=00000678, IF_ins=xxxxxxxx, 
+#  pc = 00000678: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000674IF_ID_out:xxxxxxxx00000678 NPC: 00000680, NPCOp: 00xxx
+# 
+#  cycle=        420, IF_PC=0000067c, IF_ins=xxxxxxxx, 
+#  pc = 0000067c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000678IF_ID_out:xxxxxxxx0000067c NPC: 00000684, NPCOp: 00xxx
+# 
+#  cycle=        421, IF_PC=00000680, IF_ins=xxxxxxxx, 
+#  pc = 00000680: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000067cIF_ID_out:xxxxxxxx00000680 NPC: 00000688, NPCOp: 00xxx
+# 
+#  cycle=        422, IF_PC=00000684, IF_ins=xxxxxxxx, 
+#  pc = 00000684: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000680IF_ID_out:xxxxxxxx00000684 NPC: 0000068c, NPCOp: 00xxx
+# 
+#  cycle=        423, IF_PC=00000688, IF_ins=xxxxxxxx, 
+#  pc = 00000688: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000684IF_ID_out:xxxxxxxx00000688 NPC: 00000690, NPCOp: 00xxx
+# 
+#  cycle=        424, IF_PC=0000068c, IF_ins=xxxxxxxx, 
+#  pc = 0000068c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000688IF_ID_out:xxxxxxxx0000068c NPC: 00000694, NPCOp: 00xxx
+# 
+#  cycle=        425, IF_PC=00000690, IF_ins=xxxxxxxx, 
+#  pc = 00000690: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000068cIF_ID_out:xxxxxxxx00000690 NPC: 00000698, NPCOp: 00xxx
+# 
+#  cycle=        426, IF_PC=00000694, IF_ins=xxxxxxxx, 
+#  pc = 00000694: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000690IF_ID_out:xxxxxxxx00000694 NPC: 0000069c, NPCOp: 00xxx
+# 
+#  cycle=        427, IF_PC=00000698, IF_ins=xxxxxxxx, 
+#  pc = 00000698: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000694IF_ID_out:xxxxxxxx00000698 NPC: 000006a0, NPCOp: 00xxx
+# 
+#  cycle=        428, IF_PC=0000069c, IF_ins=xxxxxxxx, 
+#  pc = 0000069c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000698IF_ID_out:xxxxxxxx0000069c NPC: 000006a4, NPCOp: 00xxx
+# 
+#  cycle=        429, IF_PC=000006a0, IF_ins=xxxxxxxx, 
+#  pc = 000006a0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000069cIF_ID_out:xxxxxxxx000006a0 NPC: 000006a8, NPCOp: 00xxx
+# 
+#  cycle=        430, IF_PC=000006a4, IF_ins=xxxxxxxx, 
+#  pc = 000006a4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006a0IF_ID_out:xxxxxxxx000006a4 NPC: 000006ac, NPCOp: 00xxx
+# 
+#  cycle=        431, IF_PC=000006a8, IF_ins=xxxxxxxx, 
+#  pc = 000006a8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006a4IF_ID_out:xxxxxxxx000006a8 NPC: 000006b0, NPCOp: 00xxx
+# 
+#  cycle=        432, IF_PC=000006ac, IF_ins=xxxxxxxx, 
+#  pc = 000006ac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006a8IF_ID_out:xxxxxxxx000006ac NPC: 000006b4, NPCOp: 00xxx
+# 
+#  cycle=        433, IF_PC=000006b0, IF_ins=xxxxxxxx, 
+#  pc = 000006b0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006acIF_ID_out:xxxxxxxx000006b0 NPC: 000006b8, NPCOp: 00xxx
+# 
+#  cycle=        434, IF_PC=000006b4, IF_ins=xxxxxxxx, 
+#  pc = 000006b4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006b0IF_ID_out:xxxxxxxx000006b4 NPC: 000006bc, NPCOp: 00xxx
+# 
+#  cycle=        435, IF_PC=000006b8, IF_ins=xxxxxxxx, 
+#  pc = 000006b8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006b4IF_ID_out:xxxxxxxx000006b8 NPC: 000006c0, NPCOp: 00xxx
+# 
+#  cycle=        436, IF_PC=000006bc, IF_ins=xxxxxxxx, 
+#  pc = 000006bc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006b8IF_ID_out:xxxxxxxx000006bc NPC: 000006c4, NPCOp: 00xxx
+# 
+#  cycle=        437, IF_PC=000006c0, IF_ins=xxxxxxxx, 
+#  pc = 000006c0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006bcIF_ID_out:xxxxxxxx000006c0 NPC: 000006c8, NPCOp: 00xxx
+# 
+#  cycle=        438, IF_PC=000006c4, IF_ins=xxxxxxxx, 
+#  pc = 000006c4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006c0IF_ID_out:xxxxxxxx000006c4 NPC: 000006cc, NPCOp: 00xxx
+# 
+#  cycle=        439, IF_PC=000006c8, IF_ins=xxxxxxxx, 
+#  pc = 000006c8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006c4IF_ID_out:xxxxxxxx000006c8 NPC: 000006d0, NPCOp: 00xxx
+# 
+#  cycle=        440, IF_PC=000006cc, IF_ins=xxxxxxxx, 
+#  pc = 000006cc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006c8IF_ID_out:xxxxxxxx000006cc NPC: 000006d4, NPCOp: 00xxx
+# 
+#  cycle=        441, IF_PC=000006d0, IF_ins=xxxxxxxx, 
+#  pc = 000006d0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006ccIF_ID_out:xxxxxxxx000006d0 NPC: 000006d8, NPCOp: 00xxx
+# 
+#  cycle=        442, IF_PC=000006d4, IF_ins=xxxxxxxx, 
+#  pc = 000006d4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006d0IF_ID_out:xxxxxxxx000006d4 NPC: 000006dc, NPCOp: 00xxx
+# 
+#  cycle=        443, IF_PC=000006d8, IF_ins=xxxxxxxx, 
+#  pc = 000006d8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006d4IF_ID_out:xxxxxxxx000006d8 NPC: 000006e0, NPCOp: 00xxx
+# 
+#  cycle=        444, IF_PC=000006dc, IF_ins=xxxxxxxx, 
+#  pc = 000006dc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006d8IF_ID_out:xxxxxxxx000006dc NPC: 000006e4, NPCOp: 00xxx
+# 
+#  cycle=        445, IF_PC=000006e0, IF_ins=xxxxxxxx, 
+#  pc = 000006e0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006dcIF_ID_out:xxxxxxxx000006e0 NPC: 000006e8, NPCOp: 00xxx
+# 
+#  cycle=        446, IF_PC=000006e4, IF_ins=xxxxxxxx, 
+#  pc = 000006e4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006e0IF_ID_out:xxxxxxxx000006e4 NPC: 000006ec, NPCOp: 00xxx
+# 
+#  cycle=        447, IF_PC=000006e8, IF_ins=xxxxxxxx, 
+#  pc = 000006e8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006e4IF_ID_out:xxxxxxxx000006e8 NPC: 000006f0, NPCOp: 00xxx
+# 
+#  cycle=        448, IF_PC=000006ec, IF_ins=xxxxxxxx, 
+#  pc = 000006ec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006e8IF_ID_out:xxxxxxxx000006ec NPC: 000006f4, NPCOp: 00xxx
+# 
+#  cycle=        449, IF_PC=000006f0, IF_ins=xxxxxxxx, 
+#  pc = 000006f0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006ecIF_ID_out:xxxxxxxx000006f0 NPC: 000006f8, NPCOp: 00xxx
+# 
+#  cycle=        450, IF_PC=000006f4, IF_ins=xxxxxxxx, 
+#  pc = 000006f4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006f0IF_ID_out:xxxxxxxx000006f4 NPC: 000006fc, NPCOp: 00xxx
+# 
+#  cycle=        451, IF_PC=000006f8, IF_ins=xxxxxxxx, 
+#  pc = 000006f8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006f4IF_ID_out:xxxxxxxx000006f8 NPC: 00000700, NPCOp: 00xxx
+# 
+#  cycle=        452, IF_PC=000006fc, IF_ins=xxxxxxxx, 
+#  pc = 000006fc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006f8IF_ID_out:xxxxxxxx000006fc NPC: 00000704, NPCOp: 00xxx
+# 
+#  cycle=        453, IF_PC=00000700, IF_ins=xxxxxxxx, 
+#  pc = 00000700: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000006fcIF_ID_out:xxxxxxxx00000700 NPC: 00000708, NPCOp: 00xxx
+# 
+#  cycle=        454, IF_PC=00000704, IF_ins=xxxxxxxx, 
+#  pc = 00000704: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000700IF_ID_out:xxxxxxxx00000704 NPC: 0000070c, NPCOp: 00xxx
+# 
+#  cycle=        455, IF_PC=00000708, IF_ins=xxxxxxxx, 
+#  pc = 00000708: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000704IF_ID_out:xxxxxxxx00000708 NPC: 00000710, NPCOp: 00xxx
+# 
+#  cycle=        456, IF_PC=0000070c, IF_ins=xxxxxxxx, 
+#  pc = 0000070c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000708IF_ID_out:xxxxxxxx0000070c NPC: 00000714, NPCOp: 00xxx
+# 
+#  cycle=        457, IF_PC=00000710, IF_ins=xxxxxxxx, 
+#  pc = 00000710: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000070cIF_ID_out:xxxxxxxx00000710 NPC: 00000718, NPCOp: 00xxx
+# 
+#  cycle=        458, IF_PC=00000714, IF_ins=xxxxxxxx, 
+#  pc = 00000714: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000710IF_ID_out:xxxxxxxx00000714 NPC: 0000071c, NPCOp: 00xxx
+# 
+#  cycle=        459, IF_PC=00000718, IF_ins=xxxxxxxx, 
+#  pc = 00000718: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000714IF_ID_out:xxxxxxxx00000718 NPC: 00000720, NPCOp: 00xxx
+# 
+#  cycle=        460, IF_PC=0000071c, IF_ins=xxxxxxxx, 
+#  pc = 0000071c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000718IF_ID_out:xxxxxxxx0000071c NPC: 00000724, NPCOp: 00xxx
+# 
+#  cycle=        461, IF_PC=00000720, IF_ins=xxxxxxxx, 
+#  pc = 00000720: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000071cIF_ID_out:xxxxxxxx00000720 NPC: 00000728, NPCOp: 00xxx
+# 
+#  cycle=        462, IF_PC=00000724, IF_ins=xxxxxxxx, 
+#  pc = 00000724: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000720IF_ID_out:xxxxxxxx00000724 NPC: 0000072c, NPCOp: 00xxx
+# 
+#  cycle=        463, IF_PC=00000728, IF_ins=xxxxxxxx, 
+#  pc = 00000728: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000724IF_ID_out:xxxxxxxx00000728 NPC: 00000730, NPCOp: 00xxx
+# 
+#  cycle=        464, IF_PC=0000072c, IF_ins=xxxxxxxx, 
+#  pc = 0000072c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000728IF_ID_out:xxxxxxxx0000072c NPC: 00000734, NPCOp: 00xxx
+# 
+#  cycle=        465, IF_PC=00000730, IF_ins=xxxxxxxx, 
+#  pc = 00000730: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000072cIF_ID_out:xxxxxxxx00000730 NPC: 00000738, NPCOp: 00xxx
+# 
+#  cycle=        466, IF_PC=00000734, IF_ins=xxxxxxxx, 
+#  pc = 00000734: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000730IF_ID_out:xxxxxxxx00000734 NPC: 0000073c, NPCOp: 00xxx
+# 
+#  cycle=        467, IF_PC=00000738, IF_ins=xxxxxxxx, 
+#  pc = 00000738: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000734IF_ID_out:xxxxxxxx00000738 NPC: 00000740, NPCOp: 00xxx
+# 
+#  cycle=        468, IF_PC=0000073c, IF_ins=xxxxxxxx, 
+#  pc = 0000073c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000738IF_ID_out:xxxxxxxx0000073c NPC: 00000744, NPCOp: 00xxx
+# 
+#  cycle=        469, IF_PC=00000740, IF_ins=xxxxxxxx, 
+#  pc = 00000740: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000073cIF_ID_out:xxxxxxxx00000740 NPC: 00000748, NPCOp: 00xxx
+# 
+#  cycle=        470, IF_PC=00000744, IF_ins=xxxxxxxx, 
+#  pc = 00000744: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000740IF_ID_out:xxxxxxxx00000744 NPC: 0000074c, NPCOp: 00xxx
+# 
+#  cycle=        471, IF_PC=00000748, IF_ins=xxxxxxxx, 
+#  pc = 00000748: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000744IF_ID_out:xxxxxxxx00000748 NPC: 00000750, NPCOp: 00xxx
+# 
+#  cycle=        472, IF_PC=0000074c, IF_ins=xxxxxxxx, 
+#  pc = 0000074c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000748IF_ID_out:xxxxxxxx0000074c NPC: 00000754, NPCOp: 00xxx
+# 
+#  cycle=        473, IF_PC=00000750, IF_ins=xxxxxxxx, 
+#  pc = 00000750: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000074cIF_ID_out:xxxxxxxx00000750 NPC: 00000758, NPCOp: 00xxx
+# 
+#  cycle=        474, IF_PC=00000754, IF_ins=xxxxxxxx, 
+#  pc = 00000754: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000750IF_ID_out:xxxxxxxx00000754 NPC: 0000075c, NPCOp: 00xxx
+# 
+#  cycle=        475, IF_PC=00000758, IF_ins=xxxxxxxx, 
+#  pc = 00000758: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000754IF_ID_out:xxxxxxxx00000758 NPC: 00000760, NPCOp: 00xxx
+# 
+#  cycle=        476, IF_PC=0000075c, IF_ins=xxxxxxxx, 
+#  pc = 0000075c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000758IF_ID_out:xxxxxxxx0000075c NPC: 00000764, NPCOp: 00xxx
+# 
+#  cycle=        477, IF_PC=00000760, IF_ins=xxxxxxxx, 
+#  pc = 00000760: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000075cIF_ID_out:xxxxxxxx00000760 NPC: 00000768, NPCOp: 00xxx
+# 
+#  cycle=        478, IF_PC=00000764, IF_ins=xxxxxxxx, 
+#  pc = 00000764: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000760IF_ID_out:xxxxxxxx00000764 NPC: 0000076c, NPCOp: 00xxx
+# 
+#  cycle=        479, IF_PC=00000768, IF_ins=xxxxxxxx, 
+#  pc = 00000768: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000764IF_ID_out:xxxxxxxx00000768 NPC: 00000770, NPCOp: 00xxx
+# 
+#  cycle=        480, IF_PC=0000076c, IF_ins=xxxxxxxx, 
+#  pc = 0000076c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000768IF_ID_out:xxxxxxxx0000076c NPC: 00000774, NPCOp: 00xxx
+# 
+#  cycle=        481, IF_PC=00000770, IF_ins=xxxxxxxx, 
+#  pc = 00000770: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000076cIF_ID_out:xxxxxxxx00000770 NPC: 00000778, NPCOp: 00xxx
+# 
+#  cycle=        482, IF_PC=00000774, IF_ins=xxxxxxxx, 
+#  pc = 00000774: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000770IF_ID_out:xxxxxxxx00000774 NPC: 0000077c, NPCOp: 00xxx
+# 
+#  cycle=        483, IF_PC=00000778, IF_ins=xxxxxxxx, 
+#  pc = 00000778: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000774IF_ID_out:xxxxxxxx00000778 NPC: 00000780, NPCOp: 00xxx
+# 
+#  cycle=        484, IF_PC=0000077c, IF_ins=xxxxxxxx, 
+#  pc = 0000077c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000778IF_ID_out:xxxxxxxx0000077c NPC: 00000784, NPCOp: 00xxx
+# 
+#  cycle=        485, IF_PC=00000780, IF_ins=xxxxxxxx, 
+#  pc = 00000780: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000077cIF_ID_out:xxxxxxxx00000780 NPC: 00000788, NPCOp: 00xxx
+# 
+#  cycle=        486, IF_PC=00000784, IF_ins=xxxxxxxx, 
+#  pc = 00000784: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000780IF_ID_out:xxxxxxxx00000784 NPC: 0000078c, NPCOp: 00xxx
+# 
+#  cycle=        487, IF_PC=00000788, IF_ins=xxxxxxxx, 
+#  pc = 00000788: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000784IF_ID_out:xxxxxxxx00000788 NPC: 00000790, NPCOp: 00xxx
+# 
+#  cycle=        488, IF_PC=0000078c, IF_ins=xxxxxxxx, 
+#  pc = 0000078c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000788IF_ID_out:xxxxxxxx0000078c NPC: 00000794, NPCOp: 00xxx
+# 
+#  cycle=        489, IF_PC=00000790, IF_ins=xxxxxxxx, 
+#  pc = 00000790: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000078cIF_ID_out:xxxxxxxx00000790 NPC: 00000798, NPCOp: 00xxx
+# 
+#  cycle=        490, IF_PC=00000794, IF_ins=xxxxxxxx, 
+#  pc = 00000794: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000790IF_ID_out:xxxxxxxx00000794 NPC: 0000079c, NPCOp: 00xxx
+# 
+#  cycle=        491, IF_PC=00000798, IF_ins=xxxxxxxx, 
+#  pc = 00000798: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000794IF_ID_out:xxxxxxxx00000798 NPC: 000007a0, NPCOp: 00xxx
+# 
+#  cycle=        492, IF_PC=0000079c, IF_ins=xxxxxxxx, 
+#  pc = 0000079c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000798IF_ID_out:xxxxxxxx0000079c NPC: 000007a4, NPCOp: 00xxx
+# 
+#  cycle=        493, IF_PC=000007a0, IF_ins=xxxxxxxx, 
+#  pc = 000007a0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000079cIF_ID_out:xxxxxxxx000007a0 NPC: 000007a8, NPCOp: 00xxx
+# 
+#  cycle=        494, IF_PC=000007a4, IF_ins=xxxxxxxx, 
+#  pc = 000007a4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007a0IF_ID_out:xxxxxxxx000007a4 NPC: 000007ac, NPCOp: 00xxx
+# 
+#  cycle=        495, IF_PC=000007a8, IF_ins=xxxxxxxx, 
+#  pc = 000007a8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007a4IF_ID_out:xxxxxxxx000007a8 NPC: 000007b0, NPCOp: 00xxx
+# 
+#  cycle=        496, IF_PC=000007ac, IF_ins=xxxxxxxx, 
+#  pc = 000007ac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007a8IF_ID_out:xxxxxxxx000007ac NPC: 000007b4, NPCOp: 00xxx
+# 
+#  cycle=        497, IF_PC=000007b0, IF_ins=xxxxxxxx, 
+#  pc = 000007b0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007acIF_ID_out:xxxxxxxx000007b0 NPC: 000007b8, NPCOp: 00xxx
+# 
+#  cycle=        498, IF_PC=000007b4, IF_ins=xxxxxxxx, 
+#  pc = 000007b4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007b0IF_ID_out:xxxxxxxx000007b4 NPC: 000007bc, NPCOp: 00xxx
+# 
+#  cycle=        499, IF_PC=000007b8, IF_ins=xxxxxxxx, 
+#  pc = 000007b8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007b4IF_ID_out:xxxxxxxx000007b8 NPC: 000007c0, NPCOp: 00xxx
+# 
+#  cycle=        500, IF_PC=000007bc, IF_ins=xxxxxxxx, 
+#  pc = 000007bc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007b8IF_ID_out:xxxxxxxx000007bc NPC: 000007c4, NPCOp: 00xxx
+# 
+#  cycle=        501, IF_PC=000007c0, IF_ins=xxxxxxxx, 
+#  pc = 000007c0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007bcIF_ID_out:xxxxxxxx000007c0 NPC: 000007c8, NPCOp: 00xxx
+# 
+#  cycle=        502, IF_PC=000007c4, IF_ins=xxxxxxxx, 
+#  pc = 000007c4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007c0IF_ID_out:xxxxxxxx000007c4 NPC: 000007cc, NPCOp: 00xxx
+# 
+#  cycle=        503, IF_PC=000007c8, IF_ins=xxxxxxxx, 
+#  pc = 000007c8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007c4IF_ID_out:xxxxxxxx000007c8 NPC: 000007d0, NPCOp: 00xxx
+# 
+#  cycle=        504, IF_PC=000007cc, IF_ins=xxxxxxxx, 
+#  pc = 000007cc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007c8IF_ID_out:xxxxxxxx000007cc NPC: 000007d4, NPCOp: 00xxx
+# 
+#  cycle=        505, IF_PC=000007d0, IF_ins=xxxxxxxx, 
+#  pc = 000007d0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007ccIF_ID_out:xxxxxxxx000007d0 NPC: 000007d8, NPCOp: 00xxx
+# 
+#  cycle=        506, IF_PC=000007d4, IF_ins=xxxxxxxx, 
+#  pc = 000007d4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007d0IF_ID_out:xxxxxxxx000007d4 NPC: 000007dc, NPCOp: 00xxx
+# 
+#  cycle=        507, IF_PC=000007d8, IF_ins=xxxxxxxx, 
+#  pc = 000007d8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007d4IF_ID_out:xxxxxxxx000007d8 NPC: 000007e0, NPCOp: 00xxx
+# 
+#  cycle=        508, IF_PC=000007dc, IF_ins=xxxxxxxx, 
+#  pc = 000007dc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007d8IF_ID_out:xxxxxxxx000007dc NPC: 000007e4, NPCOp: 00xxx
+# 
+#  cycle=        509, IF_PC=000007e0, IF_ins=xxxxxxxx, 
+#  pc = 000007e0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007dcIF_ID_out:xxxxxxxx000007e0 NPC: 000007e8, NPCOp: 00xxx
+# 
+#  cycle=        510, IF_PC=000007e4, IF_ins=xxxxxxxx, 
+#  pc = 000007e4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007e0IF_ID_out:xxxxxxxx000007e4 NPC: 000007ec, NPCOp: 00xxx
+# 
+#  cycle=        511, IF_PC=000007e8, IF_ins=xxxxxxxx, 
+#  pc = 000007e8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007e4IF_ID_out:xxxxxxxx000007e8 NPC: 000007f0, NPCOp: 00xxx
+# 
+#  cycle=        512, IF_PC=000007ec, IF_ins=xxxxxxxx, 
+#  pc = 000007ec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007e8IF_ID_out:xxxxxxxx000007ec NPC: 000007f4, NPCOp: 00xxx
+# 
+#  cycle=        513, IF_PC=000007f0, IF_ins=xxxxxxxx, 
+#  pc = 000007f0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007ecIF_ID_out:xxxxxxxx000007f0 NPC: 000007f8, NPCOp: 00xxx
+# 
+#  cycle=        514, IF_PC=000007f4, IF_ins=xxxxxxxx, 
+#  pc = 000007f4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007f0IF_ID_out:xxxxxxxx000007f4 NPC: 000007fc, NPCOp: 00xxx
+# 
+#  cycle=        515, IF_PC=000007f8, IF_ins=xxxxxxxx, 
+#  pc = 000007f8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007f4IF_ID_out:xxxxxxxx000007f8 NPC: 00000800, NPCOp: 00xxx
+# 
+#  cycle=        516, IF_PC=000007fc, IF_ins=xxxxxxxx, 
+#  pc = 000007fc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007f8IF_ID_out:xxxxxxxx000007fc NPC: 00000804, NPCOp: 00xxx
+# 
+#  cycle=        517, IF_PC=00000800, IF_ins=xxxxxxxx, 
+#  pc = 00000800: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000007fcIF_ID_out:xxxxxxxx00000800 NPC: 00000808, NPCOp: 00xxx
+# 
+#  cycle=        518, IF_PC=00000804, IF_ins=xxxxxxxx, 
+#  pc = 00000804: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000800IF_ID_out:xxxxxxxx00000804 NPC: 0000080c, NPCOp: 00xxx
+# 
+#  cycle=        519, IF_PC=00000808, IF_ins=xxxxxxxx, 
+#  pc = 00000808: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000804IF_ID_out:xxxxxxxx00000808 NPC: 00000810, NPCOp: 00xxx
+# 
+#  cycle=        520, IF_PC=0000080c, IF_ins=xxxxxxxx, 
+#  pc = 0000080c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000808IF_ID_out:xxxxxxxx0000080c NPC: 00000814, NPCOp: 00xxx
+# 
+#  cycle=        521, IF_PC=00000810, IF_ins=xxxxxxxx, 
+#  pc = 00000810: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000080cIF_ID_out:xxxxxxxx00000810 NPC: 00000818, NPCOp: 00xxx
+# 
+#  cycle=        522, IF_PC=00000814, IF_ins=xxxxxxxx, 
+#  pc = 00000814: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000810IF_ID_out:xxxxxxxx00000814 NPC: 0000081c, NPCOp: 00xxx
+# 
+#  cycle=        523, IF_PC=00000818, IF_ins=xxxxxxxx, 
+#  pc = 00000818: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000814IF_ID_out:xxxxxxxx00000818 NPC: 00000820, NPCOp: 00xxx
+# 
+#  cycle=        524, IF_PC=0000081c, IF_ins=xxxxxxxx, 
+#  pc = 0000081c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000818IF_ID_out:xxxxxxxx0000081c NPC: 00000824, NPCOp: 00xxx
+# 
+#  cycle=        525, IF_PC=00000820, IF_ins=xxxxxxxx, 
+#  pc = 00000820: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000081cIF_ID_out:xxxxxxxx00000820 NPC: 00000828, NPCOp: 00xxx
+# 
+#  cycle=        526, IF_PC=00000824, IF_ins=xxxxxxxx, 
+#  pc = 00000824: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000820IF_ID_out:xxxxxxxx00000824 NPC: 0000082c, NPCOp: 00xxx
+# 
+#  cycle=        527, IF_PC=00000828, IF_ins=xxxxxxxx, 
+#  pc = 00000828: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000824IF_ID_out:xxxxxxxx00000828 NPC: 00000830, NPCOp: 00xxx
+# 
+#  cycle=        528, IF_PC=0000082c, IF_ins=xxxxxxxx, 
+#  pc = 0000082c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000828IF_ID_out:xxxxxxxx0000082c NPC: 00000834, NPCOp: 00xxx
+# 
+#  cycle=        529, IF_PC=00000830, IF_ins=xxxxxxxx, 
+#  pc = 00000830: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000082cIF_ID_out:xxxxxxxx00000830 NPC: 00000838, NPCOp: 00xxx
+# 
+#  cycle=        530, IF_PC=00000834, IF_ins=xxxxxxxx, 
+#  pc = 00000834: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000830IF_ID_out:xxxxxxxx00000834 NPC: 0000083c, NPCOp: 00xxx
+# 
+#  cycle=        531, IF_PC=00000838, IF_ins=xxxxxxxx, 
+#  pc = 00000838: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000834IF_ID_out:xxxxxxxx00000838 NPC: 00000840, NPCOp: 00xxx
+# 
+#  cycle=        532, IF_PC=0000083c, IF_ins=xxxxxxxx, 
+#  pc = 0000083c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000838IF_ID_out:xxxxxxxx0000083c NPC: 00000844, NPCOp: 00xxx
+# 
+#  cycle=        533, IF_PC=00000840, IF_ins=xxxxxxxx, 
+#  pc = 00000840: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000083cIF_ID_out:xxxxxxxx00000840 NPC: 00000848, NPCOp: 00xxx
+# 
+#  cycle=        534, IF_PC=00000844, IF_ins=xxxxxxxx, 
+#  pc = 00000844: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000840IF_ID_out:xxxxxxxx00000844 NPC: 0000084c, NPCOp: 00xxx
+# 
+#  cycle=        535, IF_PC=00000848, IF_ins=xxxxxxxx, 
+#  pc = 00000848: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000844IF_ID_out:xxxxxxxx00000848 NPC: 00000850, NPCOp: 00xxx
+# 
+#  cycle=        536, IF_PC=0000084c, IF_ins=xxxxxxxx, 
+#  pc = 0000084c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000848IF_ID_out:xxxxxxxx0000084c NPC: 00000854, NPCOp: 00xxx
+# 
+#  cycle=        537, IF_PC=00000850, IF_ins=xxxxxxxx, 
+#  pc = 00000850: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000084cIF_ID_out:xxxxxxxx00000850 NPC: 00000858, NPCOp: 00xxx
+# 
+#  cycle=        538, IF_PC=00000854, IF_ins=xxxxxxxx, 
+#  pc = 00000854: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000850IF_ID_out:xxxxxxxx00000854 NPC: 0000085c, NPCOp: 00xxx
+# 
+#  cycle=        539, IF_PC=00000858, IF_ins=xxxxxxxx, 
+#  pc = 00000858: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000854IF_ID_out:xxxxxxxx00000858 NPC: 00000860, NPCOp: 00xxx
+# 
+#  cycle=        540, IF_PC=0000085c, IF_ins=xxxxxxxx, 
+#  pc = 0000085c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000858IF_ID_out:xxxxxxxx0000085c NPC: 00000864, NPCOp: 00xxx
+# 
+#  cycle=        541, IF_PC=00000860, IF_ins=xxxxxxxx, 
+#  pc = 00000860: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000085cIF_ID_out:xxxxxxxx00000860 NPC: 00000868, NPCOp: 00xxx
+# 
+#  cycle=        542, IF_PC=00000864, IF_ins=xxxxxxxx, 
+#  pc = 00000864: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000860IF_ID_out:xxxxxxxx00000864 NPC: 0000086c, NPCOp: 00xxx
+# 
+#  cycle=        543, IF_PC=00000868, IF_ins=xxxxxxxx, 
+#  pc = 00000868: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000864IF_ID_out:xxxxxxxx00000868 NPC: 00000870, NPCOp: 00xxx
+# 
+#  cycle=        544, IF_PC=0000086c, IF_ins=xxxxxxxx, 
+#  pc = 0000086c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000868IF_ID_out:xxxxxxxx0000086c NPC: 00000874, NPCOp: 00xxx
+# 
+#  cycle=        545, IF_PC=00000870, IF_ins=xxxxxxxx, 
+#  pc = 00000870: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000086cIF_ID_out:xxxxxxxx00000870 NPC: 00000878, NPCOp: 00xxx
+# 
+#  cycle=        546, IF_PC=00000874, IF_ins=xxxxxxxx, 
+#  pc = 00000874: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000870IF_ID_out:xxxxxxxx00000874 NPC: 0000087c, NPCOp: 00xxx
+# 
+#  cycle=        547, IF_PC=00000878, IF_ins=xxxxxxxx, 
+#  pc = 00000878: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000874IF_ID_out:xxxxxxxx00000878 NPC: 00000880, NPCOp: 00xxx
+# 
+#  cycle=        548, IF_PC=0000087c, IF_ins=xxxxxxxx, 
+#  pc = 0000087c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000878IF_ID_out:xxxxxxxx0000087c NPC: 00000884, NPCOp: 00xxx
+# 
+#  cycle=        549, IF_PC=00000880, IF_ins=xxxxxxxx, 
+#  pc = 00000880: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000087cIF_ID_out:xxxxxxxx00000880 NPC: 00000888, NPCOp: 00xxx
+# 
+#  cycle=        550, IF_PC=00000884, IF_ins=xxxxxxxx, 
+#  pc = 00000884: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000880IF_ID_out:xxxxxxxx00000884 NPC: 0000088c, NPCOp: 00xxx
+# 
+#  cycle=        551, IF_PC=00000888, IF_ins=xxxxxxxx, 
+#  pc = 00000888: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000884IF_ID_out:xxxxxxxx00000888 NPC: 00000890, NPCOp: 00xxx
+# 
+#  cycle=        552, IF_PC=0000088c, IF_ins=xxxxxxxx, 
+#  pc = 0000088c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000888IF_ID_out:xxxxxxxx0000088c NPC: 00000894, NPCOp: 00xxx
+# 
+#  cycle=        553, IF_PC=00000890, IF_ins=xxxxxxxx, 
+#  pc = 00000890: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000088cIF_ID_out:xxxxxxxx00000890 NPC: 00000898, NPCOp: 00xxx
+# 
+#  cycle=        554, IF_PC=00000894, IF_ins=xxxxxxxx, 
+#  pc = 00000894: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000890IF_ID_out:xxxxxxxx00000894 NPC: 0000089c, NPCOp: 00xxx
+# 
+#  cycle=        555, IF_PC=00000898, IF_ins=xxxxxxxx, 
+#  pc = 00000898: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000894IF_ID_out:xxxxxxxx00000898 NPC: 000008a0, NPCOp: 00xxx
+# 
+#  cycle=        556, IF_PC=0000089c, IF_ins=xxxxxxxx, 
+#  pc = 0000089c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000898IF_ID_out:xxxxxxxx0000089c NPC: 000008a4, NPCOp: 00xxx
+# 
+#  cycle=        557, IF_PC=000008a0, IF_ins=xxxxxxxx, 
+#  pc = 000008a0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000089cIF_ID_out:xxxxxxxx000008a0 NPC: 000008a8, NPCOp: 00xxx
+# 
+#  cycle=        558, IF_PC=000008a4, IF_ins=xxxxxxxx, 
+#  pc = 000008a4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008a0IF_ID_out:xxxxxxxx000008a4 NPC: 000008ac, NPCOp: 00xxx
+# 
+#  cycle=        559, IF_PC=000008a8, IF_ins=xxxxxxxx, 
+#  pc = 000008a8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008a4IF_ID_out:xxxxxxxx000008a8 NPC: 000008b0, NPCOp: 00xxx
+# 
+#  cycle=        560, IF_PC=000008ac, IF_ins=xxxxxxxx, 
+#  pc = 000008ac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008a8IF_ID_out:xxxxxxxx000008ac NPC: 000008b4, NPCOp: 00xxx
+# 
+#  cycle=        561, IF_PC=000008b0, IF_ins=xxxxxxxx, 
+#  pc = 000008b0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008acIF_ID_out:xxxxxxxx000008b0 NPC: 000008b8, NPCOp: 00xxx
+# 
+#  cycle=        562, IF_PC=000008b4, IF_ins=xxxxxxxx, 
+#  pc = 000008b4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008b0IF_ID_out:xxxxxxxx000008b4 NPC: 000008bc, NPCOp: 00xxx
+# 
+#  cycle=        563, IF_PC=000008b8, IF_ins=xxxxxxxx, 
+#  pc = 000008b8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008b4IF_ID_out:xxxxxxxx000008b8 NPC: 000008c0, NPCOp: 00xxx
+# 
+#  cycle=        564, IF_PC=000008bc, IF_ins=xxxxxxxx, 
+#  pc = 000008bc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008b8IF_ID_out:xxxxxxxx000008bc NPC: 000008c4, NPCOp: 00xxx
+# 
+#  cycle=        565, IF_PC=000008c0, IF_ins=xxxxxxxx, 
+#  pc = 000008c0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008bcIF_ID_out:xxxxxxxx000008c0 NPC: 000008c8, NPCOp: 00xxx
+# 
+#  cycle=        566, IF_PC=000008c4, IF_ins=xxxxxxxx, 
+#  pc = 000008c4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008c0IF_ID_out:xxxxxxxx000008c4 NPC: 000008cc, NPCOp: 00xxx
+# 
+#  cycle=        567, IF_PC=000008c8, IF_ins=xxxxxxxx, 
+#  pc = 000008c8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008c4IF_ID_out:xxxxxxxx000008c8 NPC: 000008d0, NPCOp: 00xxx
+# 
+#  cycle=        568, IF_PC=000008cc, IF_ins=xxxxxxxx, 
+#  pc = 000008cc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008c8IF_ID_out:xxxxxxxx000008cc NPC: 000008d4, NPCOp: 00xxx
+# 
+#  cycle=        569, IF_PC=000008d0, IF_ins=xxxxxxxx, 
+#  pc = 000008d0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008ccIF_ID_out:xxxxxxxx000008d0 NPC: 000008d8, NPCOp: 00xxx
+# 
+#  cycle=        570, IF_PC=000008d4, IF_ins=xxxxxxxx, 
+#  pc = 000008d4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008d0IF_ID_out:xxxxxxxx000008d4 NPC: 000008dc, NPCOp: 00xxx
+# 
+#  cycle=        571, IF_PC=000008d8, IF_ins=xxxxxxxx, 
+#  pc = 000008d8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008d4IF_ID_out:xxxxxxxx000008d8 NPC: 000008e0, NPCOp: 00xxx
+# 
+#  cycle=        572, IF_PC=000008dc, IF_ins=xxxxxxxx, 
+#  pc = 000008dc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008d8IF_ID_out:xxxxxxxx000008dc NPC: 000008e4, NPCOp: 00xxx
+# 
+#  cycle=        573, IF_PC=000008e0, IF_ins=xxxxxxxx, 
+#  pc = 000008e0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008dcIF_ID_out:xxxxxxxx000008e0 NPC: 000008e8, NPCOp: 00xxx
+# 
+#  cycle=        574, IF_PC=000008e4, IF_ins=xxxxxxxx, 
+#  pc = 000008e4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008e0IF_ID_out:xxxxxxxx000008e4 NPC: 000008ec, NPCOp: 00xxx
+# 
+#  cycle=        575, IF_PC=000008e8, IF_ins=xxxxxxxx, 
+#  pc = 000008e8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008e4IF_ID_out:xxxxxxxx000008e8 NPC: 000008f0, NPCOp: 00xxx
+# 
+#  cycle=        576, IF_PC=000008ec, IF_ins=xxxxxxxx, 
+#  pc = 000008ec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008e8IF_ID_out:xxxxxxxx000008ec NPC: 000008f4, NPCOp: 00xxx
+# 
+#  cycle=        577, IF_PC=000008f0, IF_ins=xxxxxxxx, 
+#  pc = 000008f0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008ecIF_ID_out:xxxxxxxx000008f0 NPC: 000008f8, NPCOp: 00xxx
+# 
+#  cycle=        578, IF_PC=000008f4, IF_ins=xxxxxxxx, 
+#  pc = 000008f4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008f0IF_ID_out:xxxxxxxx000008f4 NPC: 000008fc, NPCOp: 00xxx
+# 
+#  cycle=        579, IF_PC=000008f8, IF_ins=xxxxxxxx, 
+#  pc = 000008f8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008f4IF_ID_out:xxxxxxxx000008f8 NPC: 00000900, NPCOp: 00xxx
+# 
+#  cycle=        580, IF_PC=000008fc, IF_ins=xxxxxxxx, 
+#  pc = 000008fc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008f8IF_ID_out:xxxxxxxx000008fc NPC: 00000904, NPCOp: 00xxx
+# 
+#  cycle=        581, IF_PC=00000900, IF_ins=xxxxxxxx, 
+#  pc = 00000900: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000008fcIF_ID_out:xxxxxxxx00000900 NPC: 00000908, NPCOp: 00xxx
+# 
+#  cycle=        582, IF_PC=00000904, IF_ins=xxxxxxxx, 
+#  pc = 00000904: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000900IF_ID_out:xxxxxxxx00000904 NPC: 0000090c, NPCOp: 00xxx
+# 
+#  cycle=        583, IF_PC=00000908, IF_ins=xxxxxxxx, 
+#  pc = 00000908: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000904IF_ID_out:xxxxxxxx00000908 NPC: 00000910, NPCOp: 00xxx
+# 
+#  cycle=        584, IF_PC=0000090c, IF_ins=xxxxxxxx, 
+#  pc = 0000090c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000908IF_ID_out:xxxxxxxx0000090c NPC: 00000914, NPCOp: 00xxx
+# 
+#  cycle=        585, IF_PC=00000910, IF_ins=xxxxxxxx, 
+#  pc = 00000910: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000090cIF_ID_out:xxxxxxxx00000910 NPC: 00000918, NPCOp: 00xxx
+# 
+#  cycle=        586, IF_PC=00000914, IF_ins=xxxxxxxx, 
+#  pc = 00000914: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000910IF_ID_out:xxxxxxxx00000914 NPC: 0000091c, NPCOp: 00xxx
+# 
+#  cycle=        587, IF_PC=00000918, IF_ins=xxxxxxxx, 
+#  pc = 00000918: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000914IF_ID_out:xxxxxxxx00000918 NPC: 00000920, NPCOp: 00xxx
+# 
+#  cycle=        588, IF_PC=0000091c, IF_ins=xxxxxxxx, 
+#  pc = 0000091c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000918IF_ID_out:xxxxxxxx0000091c NPC: 00000924, NPCOp: 00xxx
+# 
+#  cycle=        589, IF_PC=00000920, IF_ins=xxxxxxxx, 
+#  pc = 00000920: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000091cIF_ID_out:xxxxxxxx00000920 NPC: 00000928, NPCOp: 00xxx
+# 
+#  cycle=        590, IF_PC=00000924, IF_ins=xxxxxxxx, 
+#  pc = 00000924: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000920IF_ID_out:xxxxxxxx00000924 NPC: 0000092c, NPCOp: 00xxx
+# 
+#  cycle=        591, IF_PC=00000928, IF_ins=xxxxxxxx, 
+#  pc = 00000928: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000924IF_ID_out:xxxxxxxx00000928 NPC: 00000930, NPCOp: 00xxx
+# 
+#  cycle=        592, IF_PC=0000092c, IF_ins=xxxxxxxx, 
+#  pc = 0000092c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000928IF_ID_out:xxxxxxxx0000092c NPC: 00000934, NPCOp: 00xxx
+# 
+#  cycle=        593, IF_PC=00000930, IF_ins=xxxxxxxx, 
+#  pc = 00000930: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000092cIF_ID_out:xxxxxxxx00000930 NPC: 00000938, NPCOp: 00xxx
+# 
+#  cycle=        594, IF_PC=00000934, IF_ins=xxxxxxxx, 
+#  pc = 00000934: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000930IF_ID_out:xxxxxxxx00000934 NPC: 0000093c, NPCOp: 00xxx
+# 
+#  cycle=        595, IF_PC=00000938, IF_ins=xxxxxxxx, 
+#  pc = 00000938: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000934IF_ID_out:xxxxxxxx00000938 NPC: 00000940, NPCOp: 00xxx
+# 
+#  cycle=        596, IF_PC=0000093c, IF_ins=xxxxxxxx, 
+#  pc = 0000093c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000938IF_ID_out:xxxxxxxx0000093c NPC: 00000944, NPCOp: 00xxx
+# 
+#  cycle=        597, IF_PC=00000940, IF_ins=xxxxxxxx, 
+#  pc = 00000940: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000093cIF_ID_out:xxxxxxxx00000940 NPC: 00000948, NPCOp: 00xxx
+# 
+#  cycle=        598, IF_PC=00000944, IF_ins=xxxxxxxx, 
+#  pc = 00000944: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000940IF_ID_out:xxxxxxxx00000944 NPC: 0000094c, NPCOp: 00xxx
+# 
+#  cycle=        599, IF_PC=00000948, IF_ins=xxxxxxxx, 
+#  pc = 00000948: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000944IF_ID_out:xxxxxxxx00000948 NPC: 00000950, NPCOp: 00xxx
+# 
+#  cycle=        600, IF_PC=0000094c, IF_ins=xxxxxxxx, 
+#  pc = 0000094c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000948IF_ID_out:xxxxxxxx0000094c NPC: 00000954, NPCOp: 00xxx
+# 
+#  cycle=        601, IF_PC=00000950, IF_ins=xxxxxxxx, 
+#  pc = 00000950: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000094cIF_ID_out:xxxxxxxx00000950 NPC: 00000958, NPCOp: 00xxx
+# 
+#  cycle=        602, IF_PC=00000954, IF_ins=xxxxxxxx, 
+#  pc = 00000954: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000950IF_ID_out:xxxxxxxx00000954 NPC: 0000095c, NPCOp: 00xxx
+# 
+#  cycle=        603, IF_PC=00000958, IF_ins=xxxxxxxx, 
+#  pc = 00000958: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000954IF_ID_out:xxxxxxxx00000958 NPC: 00000960, NPCOp: 00xxx
+# 
+#  cycle=        604, IF_PC=0000095c, IF_ins=xxxxxxxx, 
+#  pc = 0000095c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000958IF_ID_out:xxxxxxxx0000095c NPC: 00000964, NPCOp: 00xxx
+# 
+#  cycle=        605, IF_PC=00000960, IF_ins=xxxxxxxx, 
+#  pc = 00000960: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000095cIF_ID_out:xxxxxxxx00000960 NPC: 00000968, NPCOp: 00xxx
+# 
+#  cycle=        606, IF_PC=00000964, IF_ins=xxxxxxxx, 
+#  pc = 00000964: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000960IF_ID_out:xxxxxxxx00000964 NPC: 0000096c, NPCOp: 00xxx
+# 
+#  cycle=        607, IF_PC=00000968, IF_ins=xxxxxxxx, 
+#  pc = 00000968: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000964IF_ID_out:xxxxxxxx00000968 NPC: 00000970, NPCOp: 00xxx
+# 
+#  cycle=        608, IF_PC=0000096c, IF_ins=xxxxxxxx, 
+#  pc = 0000096c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000968IF_ID_out:xxxxxxxx0000096c NPC: 00000974, NPCOp: 00xxx
+# 
+#  cycle=        609, IF_PC=00000970, IF_ins=xxxxxxxx, 
+#  pc = 00000970: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000096cIF_ID_out:xxxxxxxx00000970 NPC: 00000978, NPCOp: 00xxx
+# 
+#  cycle=        610, IF_PC=00000974, IF_ins=xxxxxxxx, 
+#  pc = 00000974: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000970IF_ID_out:xxxxxxxx00000974 NPC: 0000097c, NPCOp: 00xxx
+# 
+#  cycle=        611, IF_PC=00000978, IF_ins=xxxxxxxx, 
+#  pc = 00000978: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000974IF_ID_out:xxxxxxxx00000978 NPC: 00000980, NPCOp: 00xxx
+# 
+#  cycle=        612, IF_PC=0000097c, IF_ins=xxxxxxxx, 
+#  pc = 0000097c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000978IF_ID_out:xxxxxxxx0000097c NPC: 00000984, NPCOp: 00xxx
+# 
+#  cycle=        613, IF_PC=00000980, IF_ins=xxxxxxxx, 
+#  pc = 00000980: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000097cIF_ID_out:xxxxxxxx00000980 NPC: 00000988, NPCOp: 00xxx
+# 
+#  cycle=        614, IF_PC=00000984, IF_ins=xxxxxxxx, 
+#  pc = 00000984: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000980IF_ID_out:xxxxxxxx00000984 NPC: 0000098c, NPCOp: 00xxx
+# 
+#  cycle=        615, IF_PC=00000988, IF_ins=xxxxxxxx, 
+#  pc = 00000988: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000984IF_ID_out:xxxxxxxx00000988 NPC: 00000990, NPCOp: 00xxx
+# 
+#  cycle=        616, IF_PC=0000098c, IF_ins=xxxxxxxx, 
+#  pc = 0000098c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000988IF_ID_out:xxxxxxxx0000098c NPC: 00000994, NPCOp: 00xxx
+# 
+#  cycle=        617, IF_PC=00000990, IF_ins=xxxxxxxx, 
+#  pc = 00000990: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000098cIF_ID_out:xxxxxxxx00000990 NPC: 00000998, NPCOp: 00xxx
+# 
+#  cycle=        618, IF_PC=00000994, IF_ins=xxxxxxxx, 
+#  pc = 00000994: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000990IF_ID_out:xxxxxxxx00000994 NPC: 0000099c, NPCOp: 00xxx
+# 
+#  cycle=        619, IF_PC=00000998, IF_ins=xxxxxxxx, 
+#  pc = 00000998: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000994IF_ID_out:xxxxxxxx00000998 NPC: 000009a0, NPCOp: 00xxx
+# 
+#  cycle=        620, IF_PC=0000099c, IF_ins=xxxxxxxx, 
+#  pc = 0000099c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000998IF_ID_out:xxxxxxxx0000099c NPC: 000009a4, NPCOp: 00xxx
+# 
+#  cycle=        621, IF_PC=000009a0, IF_ins=xxxxxxxx, 
+#  pc = 000009a0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx0000099cIF_ID_out:xxxxxxxx000009a0 NPC: 000009a8, NPCOp: 00xxx
+# 
+#  cycle=        622, IF_PC=000009a4, IF_ins=xxxxxxxx, 
+#  pc = 000009a4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009a0IF_ID_out:xxxxxxxx000009a4 NPC: 000009ac, NPCOp: 00xxx
+# 
+#  cycle=        623, IF_PC=000009a8, IF_ins=xxxxxxxx, 
+#  pc = 000009a8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009a4IF_ID_out:xxxxxxxx000009a8 NPC: 000009b0, NPCOp: 00xxx
+# 
+#  cycle=        624, IF_PC=000009ac, IF_ins=xxxxxxxx, 
+#  pc = 000009ac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009a8IF_ID_out:xxxxxxxx000009ac NPC: 000009b4, NPCOp: 00xxx
+# 
+#  cycle=        625, IF_PC=000009b0, IF_ins=xxxxxxxx, 
+#  pc = 000009b0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009acIF_ID_out:xxxxxxxx000009b0 NPC: 000009b8, NPCOp: 00xxx
+# 
+#  cycle=        626, IF_PC=000009b4, IF_ins=xxxxxxxx, 
+#  pc = 000009b4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009b0IF_ID_out:xxxxxxxx000009b4 NPC: 000009bc, NPCOp: 00xxx
+# 
+#  cycle=        627, IF_PC=000009b8, IF_ins=xxxxxxxx, 
+#  pc = 000009b8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009b4IF_ID_out:xxxxxxxx000009b8 NPC: 000009c0, NPCOp: 00xxx
+# 
+#  cycle=        628, IF_PC=000009bc, IF_ins=xxxxxxxx, 
+#  pc = 000009bc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009b8IF_ID_out:xxxxxxxx000009bc NPC: 000009c4, NPCOp: 00xxx
+# 
+#  cycle=        629, IF_PC=000009c0, IF_ins=xxxxxxxx, 
+#  pc = 000009c0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009bcIF_ID_out:xxxxxxxx000009c0 NPC: 000009c8, NPCOp: 00xxx
+# 
+#  cycle=        630, IF_PC=000009c4, IF_ins=xxxxxxxx, 
+#  pc = 000009c4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009c0IF_ID_out:xxxxxxxx000009c4 NPC: 000009cc, NPCOp: 00xxx
+# 
+#  cycle=        631, IF_PC=000009c8, IF_ins=xxxxxxxx, 
+#  pc = 000009c8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009c4IF_ID_out:xxxxxxxx000009c8 NPC: 000009d0, NPCOp: 00xxx
+# 
+#  cycle=        632, IF_PC=000009cc, IF_ins=xxxxxxxx, 
+#  pc = 000009cc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009c8IF_ID_out:xxxxxxxx000009cc NPC: 000009d4, NPCOp: 00xxx
+# 
+#  cycle=        633, IF_PC=000009d0, IF_ins=xxxxxxxx, 
+#  pc = 000009d0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009ccIF_ID_out:xxxxxxxx000009d0 NPC: 000009d8, NPCOp: 00xxx
+# 
+#  cycle=        634, IF_PC=000009d4, IF_ins=xxxxxxxx, 
+#  pc = 000009d4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009d0IF_ID_out:xxxxxxxx000009d4 NPC: 000009dc, NPCOp: 00xxx
+# 
+#  cycle=        635, IF_PC=000009d8, IF_ins=xxxxxxxx, 
+#  pc = 000009d8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009d4IF_ID_out:xxxxxxxx000009d8 NPC: 000009e0, NPCOp: 00xxx
+# 
+#  cycle=        636, IF_PC=000009dc, IF_ins=xxxxxxxx, 
+#  pc = 000009dc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009d8IF_ID_out:xxxxxxxx000009dc NPC: 000009e4, NPCOp: 00xxx
+# 
+#  cycle=        637, IF_PC=000009e0, IF_ins=xxxxxxxx, 
+#  pc = 000009e0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009dcIF_ID_out:xxxxxxxx000009e0 NPC: 000009e8, NPCOp: 00xxx
+# 
+#  cycle=        638, IF_PC=000009e4, IF_ins=xxxxxxxx, 
+#  pc = 000009e4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009e0IF_ID_out:xxxxxxxx000009e4 NPC: 000009ec, NPCOp: 00xxx
+# 
+#  cycle=        639, IF_PC=000009e8, IF_ins=xxxxxxxx, 
+#  pc = 000009e8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009e4IF_ID_out:xxxxxxxx000009e8 NPC: 000009f0, NPCOp: 00xxx
+# 
+#  cycle=        640, IF_PC=000009ec, IF_ins=xxxxxxxx, 
+#  pc = 000009ec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009e8IF_ID_out:xxxxxxxx000009ec NPC: 000009f4, NPCOp: 00xxx
+# 
+#  cycle=        641, IF_PC=000009f0, IF_ins=xxxxxxxx, 
+#  pc = 000009f0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009ecIF_ID_out:xxxxxxxx000009f0 NPC: 000009f8, NPCOp: 00xxx
+# 
+#  cycle=        642, IF_PC=000009f4, IF_ins=xxxxxxxx, 
+#  pc = 000009f4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009f0IF_ID_out:xxxxxxxx000009f4 NPC: 000009fc, NPCOp: 00xxx
+# 
+#  cycle=        643, IF_PC=000009f8, IF_ins=xxxxxxxx, 
+#  pc = 000009f8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009f4IF_ID_out:xxxxxxxx000009f8 NPC: 00000a00, NPCOp: 00xxx
+# 
+#  cycle=        644, IF_PC=000009fc, IF_ins=xxxxxxxx, 
+#  pc = 000009fc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009f8IF_ID_out:xxxxxxxx000009fc NPC: 00000a04, NPCOp: 00xxx
+# 
+#  cycle=        645, IF_PC=00000a00, IF_ins=xxxxxxxx, 
+#  pc = 00000a00: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx000009fcIF_ID_out:xxxxxxxx00000a00 NPC: 00000a08, NPCOp: 00xxx
+# 
+#  cycle=        646, IF_PC=00000a04, IF_ins=xxxxxxxx, 
+#  pc = 00000a04: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a00IF_ID_out:xxxxxxxx00000a04 NPC: 00000a0c, NPCOp: 00xxx
+# 
+#  cycle=        647, IF_PC=00000a08, IF_ins=xxxxxxxx, 
+#  pc = 00000a08: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a04IF_ID_out:xxxxxxxx00000a08 NPC: 00000a10, NPCOp: 00xxx
+# 
+#  cycle=        648, IF_PC=00000a0c, IF_ins=xxxxxxxx, 
+#  pc = 00000a0c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a08IF_ID_out:xxxxxxxx00000a0c NPC: 00000a14, NPCOp: 00xxx
+# 
+#  cycle=        649, IF_PC=00000a10, IF_ins=xxxxxxxx, 
+#  pc = 00000a10: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a0cIF_ID_out:xxxxxxxx00000a10 NPC: 00000a18, NPCOp: 00xxx
+# 
+#  cycle=        650, IF_PC=00000a14, IF_ins=xxxxxxxx, 
+#  pc = 00000a14: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a10IF_ID_out:xxxxxxxx00000a14 NPC: 00000a1c, NPCOp: 00xxx
+# 
+#  cycle=        651, IF_PC=00000a18, IF_ins=xxxxxxxx, 
+#  pc = 00000a18: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a14IF_ID_out:xxxxxxxx00000a18 NPC: 00000a20, NPCOp: 00xxx
+# 
+#  cycle=        652, IF_PC=00000a1c, IF_ins=xxxxxxxx, 
+#  pc = 00000a1c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a18IF_ID_out:xxxxxxxx00000a1c NPC: 00000a24, NPCOp: 00xxx
+# 
+#  cycle=        653, IF_PC=00000a20, IF_ins=xxxxxxxx, 
+#  pc = 00000a20: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a1cIF_ID_out:xxxxxxxx00000a20 NPC: 00000a28, NPCOp: 00xxx
+# 
+#  cycle=        654, IF_PC=00000a24, IF_ins=xxxxxxxx, 
+#  pc = 00000a24: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a20IF_ID_out:xxxxxxxx00000a24 NPC: 00000a2c, NPCOp: 00xxx
+# 
+#  cycle=        655, IF_PC=00000a28, IF_ins=xxxxxxxx, 
+#  pc = 00000a28: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a24IF_ID_out:xxxxxxxx00000a28 NPC: 00000a30, NPCOp: 00xxx
+# 
+#  cycle=        656, IF_PC=00000a2c, IF_ins=xxxxxxxx, 
+#  pc = 00000a2c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a28IF_ID_out:xxxxxxxx00000a2c NPC: 00000a34, NPCOp: 00xxx
+# 
+#  cycle=        657, IF_PC=00000a30, IF_ins=xxxxxxxx, 
+#  pc = 00000a30: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a2cIF_ID_out:xxxxxxxx00000a30 NPC: 00000a38, NPCOp: 00xxx
+# 
+#  cycle=        658, IF_PC=00000a34, IF_ins=xxxxxxxx, 
+#  pc = 00000a34: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a30IF_ID_out:xxxxxxxx00000a34 NPC: 00000a3c, NPCOp: 00xxx
+# 
+#  cycle=        659, IF_PC=00000a38, IF_ins=xxxxxxxx, 
+#  pc = 00000a38: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a34IF_ID_out:xxxxxxxx00000a38 NPC: 00000a40, NPCOp: 00xxx
+# 
+#  cycle=        660, IF_PC=00000a3c, IF_ins=xxxxxxxx, 
+#  pc = 00000a3c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a38IF_ID_out:xxxxxxxx00000a3c NPC: 00000a44, NPCOp: 00xxx
+# 
+#  cycle=        661, IF_PC=00000a40, IF_ins=xxxxxxxx, 
+#  pc = 00000a40: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a3cIF_ID_out:xxxxxxxx00000a40 NPC: 00000a48, NPCOp: 00xxx
+# 
+#  cycle=        662, IF_PC=00000a44, IF_ins=xxxxxxxx, 
+#  pc = 00000a44: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a40IF_ID_out:xxxxxxxx00000a44 NPC: 00000a4c, NPCOp: 00xxx
+# 
+#  cycle=        663, IF_PC=00000a48, IF_ins=xxxxxxxx, 
+#  pc = 00000a48: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a44IF_ID_out:xxxxxxxx00000a48 NPC: 00000a50, NPCOp: 00xxx
+# 
+#  cycle=        664, IF_PC=00000a4c, IF_ins=xxxxxxxx, 
+#  pc = 00000a4c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a48IF_ID_out:xxxxxxxx00000a4c NPC: 00000a54, NPCOp: 00xxx
+# 
+#  cycle=        665, IF_PC=00000a50, IF_ins=xxxxxxxx, 
+#  pc = 00000a50: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a4cIF_ID_out:xxxxxxxx00000a50 NPC: 00000a58, NPCOp: 00xxx
+# 
+#  cycle=        666, IF_PC=00000a54, IF_ins=xxxxxxxx, 
+#  pc = 00000a54: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a50IF_ID_out:xxxxxxxx00000a54 NPC: 00000a5c, NPCOp: 00xxx
+# 
+#  cycle=        667, IF_PC=00000a58, IF_ins=xxxxxxxx, 
+#  pc = 00000a58: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a54IF_ID_out:xxxxxxxx00000a58 NPC: 00000a60, NPCOp: 00xxx
+# 
+#  cycle=        668, IF_PC=00000a5c, IF_ins=xxxxxxxx, 
+#  pc = 00000a5c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a58IF_ID_out:xxxxxxxx00000a5c NPC: 00000a64, NPCOp: 00xxx
+# 
+#  cycle=        669, IF_PC=00000a60, IF_ins=xxxxxxxx, 
+#  pc = 00000a60: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a5cIF_ID_out:xxxxxxxx00000a60 NPC: 00000a68, NPCOp: 00xxx
+# 
+#  cycle=        670, IF_PC=00000a64, IF_ins=xxxxxxxx, 
+#  pc = 00000a64: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a60IF_ID_out:xxxxxxxx00000a64 NPC: 00000a6c, NPCOp: 00xxx
+# 
+#  cycle=        671, IF_PC=00000a68, IF_ins=xxxxxxxx, 
+#  pc = 00000a68: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a64IF_ID_out:xxxxxxxx00000a68 NPC: 00000a70, NPCOp: 00xxx
+# 
+#  cycle=        672, IF_PC=00000a6c, IF_ins=xxxxxxxx, 
+#  pc = 00000a6c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a68IF_ID_out:xxxxxxxx00000a6c NPC: 00000a74, NPCOp: 00xxx
+# 
+#  cycle=        673, IF_PC=00000a70, IF_ins=xxxxxxxx, 
+#  pc = 00000a70: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a6cIF_ID_out:xxxxxxxx00000a70 NPC: 00000a78, NPCOp: 00xxx
+# 
+#  cycle=        674, IF_PC=00000a74, IF_ins=xxxxxxxx, 
+#  pc = 00000a74: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a70IF_ID_out:xxxxxxxx00000a74 NPC: 00000a7c, NPCOp: 00xxx
+# 
+#  cycle=        675, IF_PC=00000a78, IF_ins=xxxxxxxx, 
+#  pc = 00000a78: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a74IF_ID_out:xxxxxxxx00000a78 NPC: 00000a80, NPCOp: 00xxx
+# 
+#  cycle=        676, IF_PC=00000a7c, IF_ins=xxxxxxxx, 
+#  pc = 00000a7c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a78IF_ID_out:xxxxxxxx00000a7c NPC: 00000a84, NPCOp: 00xxx
+# 
+#  cycle=        677, IF_PC=00000a80, IF_ins=xxxxxxxx, 
+#  pc = 00000a80: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a7cIF_ID_out:xxxxxxxx00000a80 NPC: 00000a88, NPCOp: 00xxx
+# 
+#  cycle=        678, IF_PC=00000a84, IF_ins=xxxxxxxx, 
+#  pc = 00000a84: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a80IF_ID_out:xxxxxxxx00000a84 NPC: 00000a8c, NPCOp: 00xxx
+# 
+#  cycle=        679, IF_PC=00000a88, IF_ins=xxxxxxxx, 
+#  pc = 00000a88: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a84IF_ID_out:xxxxxxxx00000a88 NPC: 00000a90, NPCOp: 00xxx
+# 
+#  cycle=        680, IF_PC=00000a8c, IF_ins=xxxxxxxx, 
+#  pc = 00000a8c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a88IF_ID_out:xxxxxxxx00000a8c NPC: 00000a94, NPCOp: 00xxx
+# 
+#  cycle=        681, IF_PC=00000a90, IF_ins=xxxxxxxx, 
+#  pc = 00000a90: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a8cIF_ID_out:xxxxxxxx00000a90 NPC: 00000a98, NPCOp: 00xxx
+# 
+#  cycle=        682, IF_PC=00000a94, IF_ins=xxxxxxxx, 
+#  pc = 00000a94: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a90IF_ID_out:xxxxxxxx00000a94 NPC: 00000a9c, NPCOp: 00xxx
+# 
+#  cycle=        683, IF_PC=00000a98, IF_ins=xxxxxxxx, 
+#  pc = 00000a98: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a94IF_ID_out:xxxxxxxx00000a98 NPC: 00000aa0, NPCOp: 00xxx
+# 
+#  cycle=        684, IF_PC=00000a9c, IF_ins=xxxxxxxx, 
+#  pc = 00000a9c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a98IF_ID_out:xxxxxxxx00000a9c NPC: 00000aa4, NPCOp: 00xxx
+# 
+#  cycle=        685, IF_PC=00000aa0, IF_ins=xxxxxxxx, 
+#  pc = 00000aa0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000a9cIF_ID_out:xxxxxxxx00000aa0 NPC: 00000aa8, NPCOp: 00xxx
+# 
+#  cycle=        686, IF_PC=00000aa4, IF_ins=xxxxxxxx, 
+#  pc = 00000aa4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000aa0IF_ID_out:xxxxxxxx00000aa4 NPC: 00000aac, NPCOp: 00xxx
+# 
+#  cycle=        687, IF_PC=00000aa8, IF_ins=xxxxxxxx, 
+#  pc = 00000aa8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000aa4IF_ID_out:xxxxxxxx00000aa8 NPC: 00000ab0, NPCOp: 00xxx
+# 
+#  cycle=        688, IF_PC=00000aac, IF_ins=xxxxxxxx, 
+#  pc = 00000aac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000aa8IF_ID_out:xxxxxxxx00000aac NPC: 00000ab4, NPCOp: 00xxx
+# 
+#  cycle=        689, IF_PC=00000ab0, IF_ins=xxxxxxxx, 
+#  pc = 00000ab0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000aacIF_ID_out:xxxxxxxx00000ab0 NPC: 00000ab8, NPCOp: 00xxx
+# 
+#  cycle=        690, IF_PC=00000ab4, IF_ins=xxxxxxxx, 
+#  pc = 00000ab4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ab0IF_ID_out:xxxxxxxx00000ab4 NPC: 00000abc, NPCOp: 00xxx
+# 
+#  cycle=        691, IF_PC=00000ab8, IF_ins=xxxxxxxx, 
+#  pc = 00000ab8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ab4IF_ID_out:xxxxxxxx00000ab8 NPC: 00000ac0, NPCOp: 00xxx
+# 
+#  cycle=        692, IF_PC=00000abc, IF_ins=xxxxxxxx, 
+#  pc = 00000abc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ab8IF_ID_out:xxxxxxxx00000abc NPC: 00000ac4, NPCOp: 00xxx
+# 
+#  cycle=        693, IF_PC=00000ac0, IF_ins=xxxxxxxx, 
+#  pc = 00000ac0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000abcIF_ID_out:xxxxxxxx00000ac0 NPC: 00000ac8, NPCOp: 00xxx
+# 
+#  cycle=        694, IF_PC=00000ac4, IF_ins=xxxxxxxx, 
+#  pc = 00000ac4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ac0IF_ID_out:xxxxxxxx00000ac4 NPC: 00000acc, NPCOp: 00xxx
+# 
+#  cycle=        695, IF_PC=00000ac8, IF_ins=xxxxxxxx, 
+#  pc = 00000ac8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ac4IF_ID_out:xxxxxxxx00000ac8 NPC: 00000ad0, NPCOp: 00xxx
+# 
+#  cycle=        696, IF_PC=00000acc, IF_ins=xxxxxxxx, 
+#  pc = 00000acc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ac8IF_ID_out:xxxxxxxx00000acc NPC: 00000ad4, NPCOp: 00xxx
+# 
+#  cycle=        697, IF_PC=00000ad0, IF_ins=xxxxxxxx, 
+#  pc = 00000ad0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000accIF_ID_out:xxxxxxxx00000ad0 NPC: 00000ad8, NPCOp: 00xxx
+# 
+#  cycle=        698, IF_PC=00000ad4, IF_ins=xxxxxxxx, 
+#  pc = 00000ad4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ad0IF_ID_out:xxxxxxxx00000ad4 NPC: 00000adc, NPCOp: 00xxx
+# 
+#  cycle=        699, IF_PC=00000ad8, IF_ins=xxxxxxxx, 
+#  pc = 00000ad8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ad4IF_ID_out:xxxxxxxx00000ad8 NPC: 00000ae0, NPCOp: 00xxx
+# 
+#  cycle=        700, IF_PC=00000adc, IF_ins=xxxxxxxx, 
+#  pc = 00000adc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ad8IF_ID_out:xxxxxxxx00000adc NPC: 00000ae4, NPCOp: 00xxx
+# 
+#  cycle=        701, IF_PC=00000ae0, IF_ins=xxxxxxxx, 
+#  pc = 00000ae0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000adcIF_ID_out:xxxxxxxx00000ae0 NPC: 00000ae8, NPCOp: 00xxx
+# 
+#  cycle=        702, IF_PC=00000ae4, IF_ins=xxxxxxxx, 
+#  pc = 00000ae4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ae0IF_ID_out:xxxxxxxx00000ae4 NPC: 00000aec, NPCOp: 00xxx
+# 
+#  cycle=        703, IF_PC=00000ae8, IF_ins=xxxxxxxx, 
+#  pc = 00000ae8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ae4IF_ID_out:xxxxxxxx00000ae8 NPC: 00000af0, NPCOp: 00xxx
+# 
+#  cycle=        704, IF_PC=00000aec, IF_ins=xxxxxxxx, 
+#  pc = 00000aec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ae8IF_ID_out:xxxxxxxx00000aec NPC: 00000af4, NPCOp: 00xxx
+# 
+#  cycle=        705, IF_PC=00000af0, IF_ins=xxxxxxxx, 
+#  pc = 00000af0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000aecIF_ID_out:xxxxxxxx00000af0 NPC: 00000af8, NPCOp: 00xxx
+# 
+#  cycle=        706, IF_PC=00000af4, IF_ins=xxxxxxxx, 
+#  pc = 00000af4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000af0IF_ID_out:xxxxxxxx00000af4 NPC: 00000afc, NPCOp: 00xxx
+# 
+#  cycle=        707, IF_PC=00000af8, IF_ins=xxxxxxxx, 
+#  pc = 00000af8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000af4IF_ID_out:xxxxxxxx00000af8 NPC: 00000b00, NPCOp: 00xxx
+# 
+#  cycle=        708, IF_PC=00000afc, IF_ins=xxxxxxxx, 
+#  pc = 00000afc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000af8IF_ID_out:xxxxxxxx00000afc NPC: 00000b04, NPCOp: 00xxx
+# 
+#  cycle=        709, IF_PC=00000b00, IF_ins=xxxxxxxx, 
+#  pc = 00000b00: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000afcIF_ID_out:xxxxxxxx00000b00 NPC: 00000b08, NPCOp: 00xxx
+# 
+#  cycle=        710, IF_PC=00000b04, IF_ins=xxxxxxxx, 
+#  pc = 00000b04: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b00IF_ID_out:xxxxxxxx00000b04 NPC: 00000b0c, NPCOp: 00xxx
+# 
+#  cycle=        711, IF_PC=00000b08, IF_ins=xxxxxxxx, 
+#  pc = 00000b08: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b04IF_ID_out:xxxxxxxx00000b08 NPC: 00000b10, NPCOp: 00xxx
+# 
+#  cycle=        712, IF_PC=00000b0c, IF_ins=xxxxxxxx, 
+#  pc = 00000b0c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b08IF_ID_out:xxxxxxxx00000b0c NPC: 00000b14, NPCOp: 00xxx
+# 
+#  cycle=        713, IF_PC=00000b10, IF_ins=xxxxxxxx, 
+#  pc = 00000b10: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b0cIF_ID_out:xxxxxxxx00000b10 NPC: 00000b18, NPCOp: 00xxx
+# 
+#  cycle=        714, IF_PC=00000b14, IF_ins=xxxxxxxx, 
+#  pc = 00000b14: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b10IF_ID_out:xxxxxxxx00000b14 NPC: 00000b1c, NPCOp: 00xxx
+# 
+#  cycle=        715, IF_PC=00000b18, IF_ins=xxxxxxxx, 
+#  pc = 00000b18: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b14IF_ID_out:xxxxxxxx00000b18 NPC: 00000b20, NPCOp: 00xxx
+# 
+#  cycle=        716, IF_PC=00000b1c, IF_ins=xxxxxxxx, 
+#  pc = 00000b1c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b18IF_ID_out:xxxxxxxx00000b1c NPC: 00000b24, NPCOp: 00xxx
+# 
+#  cycle=        717, IF_PC=00000b20, IF_ins=xxxxxxxx, 
+#  pc = 00000b20: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b1cIF_ID_out:xxxxxxxx00000b20 NPC: 00000b28, NPCOp: 00xxx
+# 
+#  cycle=        718, IF_PC=00000b24, IF_ins=xxxxxxxx, 
+#  pc = 00000b24: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b20IF_ID_out:xxxxxxxx00000b24 NPC: 00000b2c, NPCOp: 00xxx
+# 
+#  cycle=        719, IF_PC=00000b28, IF_ins=xxxxxxxx, 
+#  pc = 00000b28: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b24IF_ID_out:xxxxxxxx00000b28 NPC: 00000b30, NPCOp: 00xxx
+# 
+#  cycle=        720, IF_PC=00000b2c, IF_ins=xxxxxxxx, 
+#  pc = 00000b2c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b28IF_ID_out:xxxxxxxx00000b2c NPC: 00000b34, NPCOp: 00xxx
+# 
+#  cycle=        721, IF_PC=00000b30, IF_ins=xxxxxxxx, 
+#  pc = 00000b30: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b2cIF_ID_out:xxxxxxxx00000b30 NPC: 00000b38, NPCOp: 00xxx
+# 
+#  cycle=        722, IF_PC=00000b34, IF_ins=xxxxxxxx, 
+#  pc = 00000b34: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b30IF_ID_out:xxxxxxxx00000b34 NPC: 00000b3c, NPCOp: 00xxx
+# 
+#  cycle=        723, IF_PC=00000b38, IF_ins=xxxxxxxx, 
+#  pc = 00000b38: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b34IF_ID_out:xxxxxxxx00000b38 NPC: 00000b40, NPCOp: 00xxx
+# 
+#  cycle=        724, IF_PC=00000b3c, IF_ins=xxxxxxxx, 
+#  pc = 00000b3c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b38IF_ID_out:xxxxxxxx00000b3c NPC: 00000b44, NPCOp: 00xxx
+# 
+#  cycle=        725, IF_PC=00000b40, IF_ins=xxxxxxxx, 
+#  pc = 00000b40: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b3cIF_ID_out:xxxxxxxx00000b40 NPC: 00000b48, NPCOp: 00xxx
+# 
+#  cycle=        726, IF_PC=00000b44, IF_ins=xxxxxxxx, 
+#  pc = 00000b44: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b40IF_ID_out:xxxxxxxx00000b44 NPC: 00000b4c, NPCOp: 00xxx
+# 
+#  cycle=        727, IF_PC=00000b48, IF_ins=xxxxxxxx, 
+#  pc = 00000b48: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b44IF_ID_out:xxxxxxxx00000b48 NPC: 00000b50, NPCOp: 00xxx
+# 
+#  cycle=        728, IF_PC=00000b4c, IF_ins=xxxxxxxx, 
+#  pc = 00000b4c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b48IF_ID_out:xxxxxxxx00000b4c NPC: 00000b54, NPCOp: 00xxx
+# 
+#  cycle=        729, IF_PC=00000b50, IF_ins=xxxxxxxx, 
+#  pc = 00000b50: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b4cIF_ID_out:xxxxxxxx00000b50 NPC: 00000b58, NPCOp: 00xxx
+# 
+#  cycle=        730, IF_PC=00000b54, IF_ins=xxxxxxxx, 
+#  pc = 00000b54: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b50IF_ID_out:xxxxxxxx00000b54 NPC: 00000b5c, NPCOp: 00xxx
+# 
+#  cycle=        731, IF_PC=00000b58, IF_ins=xxxxxxxx, 
+#  pc = 00000b58: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b54IF_ID_out:xxxxxxxx00000b58 NPC: 00000b60, NPCOp: 00xxx
+# 
+#  cycle=        732, IF_PC=00000b5c, IF_ins=xxxxxxxx, 
+#  pc = 00000b5c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b58IF_ID_out:xxxxxxxx00000b5c NPC: 00000b64, NPCOp: 00xxx
+# 
+#  cycle=        733, IF_PC=00000b60, IF_ins=xxxxxxxx, 
+#  pc = 00000b60: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b5cIF_ID_out:xxxxxxxx00000b60 NPC: 00000b68, NPCOp: 00xxx
+# 
+#  cycle=        734, IF_PC=00000b64, IF_ins=xxxxxxxx, 
+#  pc = 00000b64: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b60IF_ID_out:xxxxxxxx00000b64 NPC: 00000b6c, NPCOp: 00xxx
+# 
+#  cycle=        735, IF_PC=00000b68, IF_ins=xxxxxxxx, 
+#  pc = 00000b68: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b64IF_ID_out:xxxxxxxx00000b68 NPC: 00000b70, NPCOp: 00xxx
+# 
+#  cycle=        736, IF_PC=00000b6c, IF_ins=xxxxxxxx, 
+#  pc = 00000b6c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b68IF_ID_out:xxxxxxxx00000b6c NPC: 00000b74, NPCOp: 00xxx
+# 
+#  cycle=        737, IF_PC=00000b70, IF_ins=xxxxxxxx, 
+#  pc = 00000b70: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b6cIF_ID_out:xxxxxxxx00000b70 NPC: 00000b78, NPCOp: 00xxx
+# 
+#  cycle=        738, IF_PC=00000b74, IF_ins=xxxxxxxx, 
+#  pc = 00000b74: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b70IF_ID_out:xxxxxxxx00000b74 NPC: 00000b7c, NPCOp: 00xxx
+# 
+#  cycle=        739, IF_PC=00000b78, IF_ins=xxxxxxxx, 
+#  pc = 00000b78: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b74IF_ID_out:xxxxxxxx00000b78 NPC: 00000b80, NPCOp: 00xxx
+# 
+#  cycle=        740, IF_PC=00000b7c, IF_ins=xxxxxxxx, 
+#  pc = 00000b7c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b78IF_ID_out:xxxxxxxx00000b7c NPC: 00000b84, NPCOp: 00xxx
+# 
+#  cycle=        741, IF_PC=00000b80, IF_ins=xxxxxxxx, 
+#  pc = 00000b80: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b7cIF_ID_out:xxxxxxxx00000b80 NPC: 00000b88, NPCOp: 00xxx
+# 
+#  cycle=        742, IF_PC=00000b84, IF_ins=xxxxxxxx, 
+#  pc = 00000b84: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b80IF_ID_out:xxxxxxxx00000b84 NPC: 00000b8c, NPCOp: 00xxx
+# 
+#  cycle=        743, IF_PC=00000b88, IF_ins=xxxxxxxx, 
+#  pc = 00000b88: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b84IF_ID_out:xxxxxxxx00000b88 NPC: 00000b90, NPCOp: 00xxx
+# 
+#  cycle=        744, IF_PC=00000b8c, IF_ins=xxxxxxxx, 
+#  pc = 00000b8c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b88IF_ID_out:xxxxxxxx00000b8c NPC: 00000b94, NPCOp: 00xxx
+# 
+#  cycle=        745, IF_PC=00000b90, IF_ins=xxxxxxxx, 
+#  pc = 00000b90: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b8cIF_ID_out:xxxxxxxx00000b90 NPC: 00000b98, NPCOp: 00xxx
+# 
+#  cycle=        746, IF_PC=00000b94, IF_ins=xxxxxxxx, 
+#  pc = 00000b94: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b90IF_ID_out:xxxxxxxx00000b94 NPC: 00000b9c, NPCOp: 00xxx
+# 
+#  cycle=        747, IF_PC=00000b98, IF_ins=xxxxxxxx, 
+#  pc = 00000b98: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b94IF_ID_out:xxxxxxxx00000b98 NPC: 00000ba0, NPCOp: 00xxx
+# 
+#  cycle=        748, IF_PC=00000b9c, IF_ins=xxxxxxxx, 
+#  pc = 00000b9c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b98IF_ID_out:xxxxxxxx00000b9c NPC: 00000ba4, NPCOp: 00xxx
+# 
+#  cycle=        749, IF_PC=00000ba0, IF_ins=xxxxxxxx, 
+#  pc = 00000ba0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000b9cIF_ID_out:xxxxxxxx00000ba0 NPC: 00000ba8, NPCOp: 00xxx
+# 
+#  cycle=        750, IF_PC=00000ba4, IF_ins=xxxxxxxx, 
+#  pc = 00000ba4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ba0IF_ID_out:xxxxxxxx00000ba4 NPC: 00000bac, NPCOp: 00xxx
+# 
+#  cycle=        751, IF_PC=00000ba8, IF_ins=xxxxxxxx, 
+#  pc = 00000ba8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ba4IF_ID_out:xxxxxxxx00000ba8 NPC: 00000bb0, NPCOp: 00xxx
+# 
+#  cycle=        752, IF_PC=00000bac, IF_ins=xxxxxxxx, 
+#  pc = 00000bac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ba8IF_ID_out:xxxxxxxx00000bac NPC: 00000bb4, NPCOp: 00xxx
+# 
+#  cycle=        753, IF_PC=00000bb0, IF_ins=xxxxxxxx, 
+#  pc = 00000bb0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bacIF_ID_out:xxxxxxxx00000bb0 NPC: 00000bb8, NPCOp: 00xxx
+# 
+#  cycle=        754, IF_PC=00000bb4, IF_ins=xxxxxxxx, 
+#  pc = 00000bb4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bb0IF_ID_out:xxxxxxxx00000bb4 NPC: 00000bbc, NPCOp: 00xxx
+# 
+#  cycle=        755, IF_PC=00000bb8, IF_ins=xxxxxxxx, 
+#  pc = 00000bb8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bb4IF_ID_out:xxxxxxxx00000bb8 NPC: 00000bc0, NPCOp: 00xxx
+# 
+#  cycle=        756, IF_PC=00000bbc, IF_ins=xxxxxxxx, 
+#  pc = 00000bbc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bb8IF_ID_out:xxxxxxxx00000bbc NPC: 00000bc4, NPCOp: 00xxx
+# 
+#  cycle=        757, IF_PC=00000bc0, IF_ins=xxxxxxxx, 
+#  pc = 00000bc0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bbcIF_ID_out:xxxxxxxx00000bc0 NPC: 00000bc8, NPCOp: 00xxx
+# 
+#  cycle=        758, IF_PC=00000bc4, IF_ins=xxxxxxxx, 
+#  pc = 00000bc4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bc0IF_ID_out:xxxxxxxx00000bc4 NPC: 00000bcc, NPCOp: 00xxx
+# 
+#  cycle=        759, IF_PC=00000bc8, IF_ins=xxxxxxxx, 
+#  pc = 00000bc8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bc4IF_ID_out:xxxxxxxx00000bc8 NPC: 00000bd0, NPCOp: 00xxx
+# 
+#  cycle=        760, IF_PC=00000bcc, IF_ins=xxxxxxxx, 
+#  pc = 00000bcc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bc8IF_ID_out:xxxxxxxx00000bcc NPC: 00000bd4, NPCOp: 00xxx
+# 
+#  cycle=        761, IF_PC=00000bd0, IF_ins=xxxxxxxx, 
+#  pc = 00000bd0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bccIF_ID_out:xxxxxxxx00000bd0 NPC: 00000bd8, NPCOp: 00xxx
+# 
+#  cycle=        762, IF_PC=00000bd4, IF_ins=xxxxxxxx, 
+#  pc = 00000bd4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bd0IF_ID_out:xxxxxxxx00000bd4 NPC: 00000bdc, NPCOp: 00xxx
+# 
+#  cycle=        763, IF_PC=00000bd8, IF_ins=xxxxxxxx, 
+#  pc = 00000bd8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bd4IF_ID_out:xxxxxxxx00000bd8 NPC: 00000be0, NPCOp: 00xxx
+# 
+#  cycle=        764, IF_PC=00000bdc, IF_ins=xxxxxxxx, 
+#  pc = 00000bdc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bd8IF_ID_out:xxxxxxxx00000bdc NPC: 00000be4, NPCOp: 00xxx
+# 
+#  cycle=        765, IF_PC=00000be0, IF_ins=xxxxxxxx, 
+#  pc = 00000be0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bdcIF_ID_out:xxxxxxxx00000be0 NPC: 00000be8, NPCOp: 00xxx
+# 
+#  cycle=        766, IF_PC=00000be4, IF_ins=xxxxxxxx, 
+#  pc = 00000be4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000be0IF_ID_out:xxxxxxxx00000be4 NPC: 00000bec, NPCOp: 00xxx
+# 
+#  cycle=        767, IF_PC=00000be8, IF_ins=xxxxxxxx, 
+#  pc = 00000be8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000be4IF_ID_out:xxxxxxxx00000be8 NPC: 00000bf0, NPCOp: 00xxx
+# 
+#  cycle=        768, IF_PC=00000bec, IF_ins=xxxxxxxx, 
+#  pc = 00000bec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000be8IF_ID_out:xxxxxxxx00000bec NPC: 00000bf4, NPCOp: 00xxx
+# 
+#  cycle=        769, IF_PC=00000bf0, IF_ins=xxxxxxxx, 
+#  pc = 00000bf0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000becIF_ID_out:xxxxxxxx00000bf0 NPC: 00000bf8, NPCOp: 00xxx
+# 
+#  cycle=        770, IF_PC=00000bf4, IF_ins=xxxxxxxx, 
+#  pc = 00000bf4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bf0IF_ID_out:xxxxxxxx00000bf4 NPC: 00000bfc, NPCOp: 00xxx
+# 
+#  cycle=        771, IF_PC=00000bf8, IF_ins=xxxxxxxx, 
+#  pc = 00000bf8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bf4IF_ID_out:xxxxxxxx00000bf8 NPC: 00000c00, NPCOp: 00xxx
+# 
+#  cycle=        772, IF_PC=00000bfc, IF_ins=xxxxxxxx, 
+#  pc = 00000bfc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bf8IF_ID_out:xxxxxxxx00000bfc NPC: 00000c04, NPCOp: 00xxx
+# 
+#  cycle=        773, IF_PC=00000c00, IF_ins=xxxxxxxx, 
+#  pc = 00000c00: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000bfcIF_ID_out:xxxxxxxx00000c00 NPC: 00000c08, NPCOp: 00xxx
+# 
+#  cycle=        774, IF_PC=00000c04, IF_ins=xxxxxxxx, 
+#  pc = 00000c04: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c00IF_ID_out:xxxxxxxx00000c04 NPC: 00000c0c, NPCOp: 00xxx
+# 
+#  cycle=        775, IF_PC=00000c08, IF_ins=xxxxxxxx, 
+#  pc = 00000c08: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c04IF_ID_out:xxxxxxxx00000c08 NPC: 00000c10, NPCOp: 00xxx
+# 
+#  cycle=        776, IF_PC=00000c0c, IF_ins=xxxxxxxx, 
+#  pc = 00000c0c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c08IF_ID_out:xxxxxxxx00000c0c NPC: 00000c14, NPCOp: 00xxx
+# 
+#  cycle=        777, IF_PC=00000c10, IF_ins=xxxxxxxx, 
+#  pc = 00000c10: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c0cIF_ID_out:xxxxxxxx00000c10 NPC: 00000c18, NPCOp: 00xxx
+# 
+#  cycle=        778, IF_PC=00000c14, IF_ins=xxxxxxxx, 
+#  pc = 00000c14: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c10IF_ID_out:xxxxxxxx00000c14 NPC: 00000c1c, NPCOp: 00xxx
+# 
+#  cycle=        779, IF_PC=00000c18, IF_ins=xxxxxxxx, 
+#  pc = 00000c18: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c14IF_ID_out:xxxxxxxx00000c18 NPC: 00000c20, NPCOp: 00xxx
+# 
+#  cycle=        780, IF_PC=00000c1c, IF_ins=xxxxxxxx, 
+#  pc = 00000c1c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c18IF_ID_out:xxxxxxxx00000c1c NPC: 00000c24, NPCOp: 00xxx
+# 
+#  cycle=        781, IF_PC=00000c20, IF_ins=xxxxxxxx, 
+#  pc = 00000c20: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c1cIF_ID_out:xxxxxxxx00000c20 NPC: 00000c28, NPCOp: 00xxx
+# 
+#  cycle=        782, IF_PC=00000c24, IF_ins=xxxxxxxx, 
+#  pc = 00000c24: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c20IF_ID_out:xxxxxxxx00000c24 NPC: 00000c2c, NPCOp: 00xxx
+# 
+#  cycle=        783, IF_PC=00000c28, IF_ins=xxxxxxxx, 
+#  pc = 00000c28: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c24IF_ID_out:xxxxxxxx00000c28 NPC: 00000c30, NPCOp: 00xxx
+# 
+#  cycle=        784, IF_PC=00000c2c, IF_ins=xxxxxxxx, 
+#  pc = 00000c2c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c28IF_ID_out:xxxxxxxx00000c2c NPC: 00000c34, NPCOp: 00xxx
+# 
+#  cycle=        785, IF_PC=00000c30, IF_ins=xxxxxxxx, 
+#  pc = 00000c30: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c2cIF_ID_out:xxxxxxxx00000c30 NPC: 00000c38, NPCOp: 00xxx
+# 
+#  cycle=        786, IF_PC=00000c34, IF_ins=xxxxxxxx, 
+#  pc = 00000c34: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c30IF_ID_out:xxxxxxxx00000c34 NPC: 00000c3c, NPCOp: 00xxx
+# 
+#  cycle=        787, IF_PC=00000c38, IF_ins=xxxxxxxx, 
+#  pc = 00000c38: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c34IF_ID_out:xxxxxxxx00000c38 NPC: 00000c40, NPCOp: 00xxx
+# 
+#  cycle=        788, IF_PC=00000c3c, IF_ins=xxxxxxxx, 
+#  pc = 00000c3c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c38IF_ID_out:xxxxxxxx00000c3c NPC: 00000c44, NPCOp: 00xxx
+# 
+#  cycle=        789, IF_PC=00000c40, IF_ins=xxxxxxxx, 
+#  pc = 00000c40: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c3cIF_ID_out:xxxxxxxx00000c40 NPC: 00000c48, NPCOp: 00xxx
+# 
+#  cycle=        790, IF_PC=00000c44, IF_ins=xxxxxxxx, 
+#  pc = 00000c44: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c40IF_ID_out:xxxxxxxx00000c44 NPC: 00000c4c, NPCOp: 00xxx
+# 
+#  cycle=        791, IF_PC=00000c48, IF_ins=xxxxxxxx, 
+#  pc = 00000c48: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c44IF_ID_out:xxxxxxxx00000c48 NPC: 00000c50, NPCOp: 00xxx
+# 
+#  cycle=        792, IF_PC=00000c4c, IF_ins=xxxxxxxx, 
+#  pc = 00000c4c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c48IF_ID_out:xxxxxxxx00000c4c NPC: 00000c54, NPCOp: 00xxx
+# 
+#  cycle=        793, IF_PC=00000c50, IF_ins=xxxxxxxx, 
+#  pc = 00000c50: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c4cIF_ID_out:xxxxxxxx00000c50 NPC: 00000c58, NPCOp: 00xxx
+# 
+#  cycle=        794, IF_PC=00000c54, IF_ins=xxxxxxxx, 
+#  pc = 00000c54: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c50IF_ID_out:xxxxxxxx00000c54 NPC: 00000c5c, NPCOp: 00xxx
+# 
+#  cycle=        795, IF_PC=00000c58, IF_ins=xxxxxxxx, 
+#  pc = 00000c58: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c54IF_ID_out:xxxxxxxx00000c58 NPC: 00000c60, NPCOp: 00xxx
+# 
+#  cycle=        796, IF_PC=00000c5c, IF_ins=xxxxxxxx, 
+#  pc = 00000c5c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c58IF_ID_out:xxxxxxxx00000c5c NPC: 00000c64, NPCOp: 00xxx
+# 
+#  cycle=        797, IF_PC=00000c60, IF_ins=xxxxxxxx, 
+#  pc = 00000c60: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c5cIF_ID_out:xxxxxxxx00000c60 NPC: 00000c68, NPCOp: 00xxx
+# 
+#  cycle=        798, IF_PC=00000c64, IF_ins=xxxxxxxx, 
+#  pc = 00000c64: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c60IF_ID_out:xxxxxxxx00000c64 NPC: 00000c6c, NPCOp: 00xxx
+# 
+#  cycle=        799, IF_PC=00000c68, IF_ins=xxxxxxxx, 
+#  pc = 00000c68: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c64IF_ID_out:xxxxxxxx00000c68 NPC: 00000c70, NPCOp: 00xxx
+# 
+#  cycle=        800, IF_PC=00000c6c, IF_ins=xxxxxxxx, 
+#  pc = 00000c6c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c68IF_ID_out:xxxxxxxx00000c6c NPC: 00000c74, NPCOp: 00xxx
+# 
+#  cycle=        801, IF_PC=00000c70, IF_ins=xxxxxxxx, 
+#  pc = 00000c70: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c6cIF_ID_out:xxxxxxxx00000c70 NPC: 00000c78, NPCOp: 00xxx
+# 
+#  cycle=        802, IF_PC=00000c74, IF_ins=xxxxxxxx, 
+#  pc = 00000c74: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c70IF_ID_out:xxxxxxxx00000c74 NPC: 00000c7c, NPCOp: 00xxx
+# 
+#  cycle=        803, IF_PC=00000c78, IF_ins=xxxxxxxx, 
+#  pc = 00000c78: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c74IF_ID_out:xxxxxxxx00000c78 NPC: 00000c80, NPCOp: 00xxx
+# 
+#  cycle=        804, IF_PC=00000c7c, IF_ins=xxxxxxxx, 
+#  pc = 00000c7c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c78IF_ID_out:xxxxxxxx00000c7c NPC: 00000c84, NPCOp: 00xxx
+# 
+#  cycle=        805, IF_PC=00000c80, IF_ins=xxxxxxxx, 
+#  pc = 00000c80: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c7cIF_ID_out:xxxxxxxx00000c80 NPC: 00000c88, NPCOp: 00xxx
+# 
+#  cycle=        806, IF_PC=00000c84, IF_ins=xxxxxxxx, 
+#  pc = 00000c84: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c80IF_ID_out:xxxxxxxx00000c84 NPC: 00000c8c, NPCOp: 00xxx
+# 
+#  cycle=        807, IF_PC=00000c88, IF_ins=xxxxxxxx, 
+#  pc = 00000c88: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c84IF_ID_out:xxxxxxxx00000c88 NPC: 00000c90, NPCOp: 00xxx
+# 
+#  cycle=        808, IF_PC=00000c8c, IF_ins=xxxxxxxx, 
+#  pc = 00000c8c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c88IF_ID_out:xxxxxxxx00000c8c NPC: 00000c94, NPCOp: 00xxx
+# 
+#  cycle=        809, IF_PC=00000c90, IF_ins=xxxxxxxx, 
+#  pc = 00000c90: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c8cIF_ID_out:xxxxxxxx00000c90 NPC: 00000c98, NPCOp: 00xxx
+# 
+#  cycle=        810, IF_PC=00000c94, IF_ins=xxxxxxxx, 
+#  pc = 00000c94: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c90IF_ID_out:xxxxxxxx00000c94 NPC: 00000c9c, NPCOp: 00xxx
+# 
+#  cycle=        811, IF_PC=00000c98, IF_ins=xxxxxxxx, 
+#  pc = 00000c98: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c94IF_ID_out:xxxxxxxx00000c98 NPC: 00000ca0, NPCOp: 00xxx
+# 
+#  cycle=        812, IF_PC=00000c9c, IF_ins=xxxxxxxx, 
+#  pc = 00000c9c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c98IF_ID_out:xxxxxxxx00000c9c NPC: 00000ca4, NPCOp: 00xxx
+# 
+#  cycle=        813, IF_PC=00000ca0, IF_ins=xxxxxxxx, 
+#  pc = 00000ca0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000c9cIF_ID_out:xxxxxxxx00000ca0 NPC: 00000ca8, NPCOp: 00xxx
+# 
+#  cycle=        814, IF_PC=00000ca4, IF_ins=xxxxxxxx, 
+#  pc = 00000ca4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ca0IF_ID_out:xxxxxxxx00000ca4 NPC: 00000cac, NPCOp: 00xxx
+# 
+#  cycle=        815, IF_PC=00000ca8, IF_ins=xxxxxxxx, 
+#  pc = 00000ca8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ca4IF_ID_out:xxxxxxxx00000ca8 NPC: 00000cb0, NPCOp: 00xxx
+# 
+#  cycle=        816, IF_PC=00000cac, IF_ins=xxxxxxxx, 
+#  pc = 00000cac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ca8IF_ID_out:xxxxxxxx00000cac NPC: 00000cb4, NPCOp: 00xxx
+# 
+#  cycle=        817, IF_PC=00000cb0, IF_ins=xxxxxxxx, 
+#  pc = 00000cb0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cacIF_ID_out:xxxxxxxx00000cb0 NPC: 00000cb8, NPCOp: 00xxx
+# 
+#  cycle=        818, IF_PC=00000cb4, IF_ins=xxxxxxxx, 
+#  pc = 00000cb4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cb0IF_ID_out:xxxxxxxx00000cb4 NPC: 00000cbc, NPCOp: 00xxx
+# 
+#  cycle=        819, IF_PC=00000cb8, IF_ins=xxxxxxxx, 
+#  pc = 00000cb8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cb4IF_ID_out:xxxxxxxx00000cb8 NPC: 00000cc0, NPCOp: 00xxx
+# 
+#  cycle=        820, IF_PC=00000cbc, IF_ins=xxxxxxxx, 
+#  pc = 00000cbc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cb8IF_ID_out:xxxxxxxx00000cbc NPC: 00000cc4, NPCOp: 00xxx
+# 
+#  cycle=        821, IF_PC=00000cc0, IF_ins=xxxxxxxx, 
+#  pc = 00000cc0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cbcIF_ID_out:xxxxxxxx00000cc0 NPC: 00000cc8, NPCOp: 00xxx
+# 
+#  cycle=        822, IF_PC=00000cc4, IF_ins=xxxxxxxx, 
+#  pc = 00000cc4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cc0IF_ID_out:xxxxxxxx00000cc4 NPC: 00000ccc, NPCOp: 00xxx
+# 
+#  cycle=        823, IF_PC=00000cc8, IF_ins=xxxxxxxx, 
+#  pc = 00000cc8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cc4IF_ID_out:xxxxxxxx00000cc8 NPC: 00000cd0, NPCOp: 00xxx
+# 
+#  cycle=        824, IF_PC=00000ccc, IF_ins=xxxxxxxx, 
+#  pc = 00000ccc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cc8IF_ID_out:xxxxxxxx00000ccc NPC: 00000cd4, NPCOp: 00xxx
+# 
+#  cycle=        825, IF_PC=00000cd0, IF_ins=xxxxxxxx, 
+#  pc = 00000cd0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cccIF_ID_out:xxxxxxxx00000cd0 NPC: 00000cd8, NPCOp: 00xxx
+# 
+#  cycle=        826, IF_PC=00000cd4, IF_ins=xxxxxxxx, 
+#  pc = 00000cd4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cd0IF_ID_out:xxxxxxxx00000cd4 NPC: 00000cdc, NPCOp: 00xxx
+# 
+#  cycle=        827, IF_PC=00000cd8, IF_ins=xxxxxxxx, 
+#  pc = 00000cd8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cd4IF_ID_out:xxxxxxxx00000cd8 NPC: 00000ce0, NPCOp: 00xxx
+# 
+#  cycle=        828, IF_PC=00000cdc, IF_ins=xxxxxxxx, 
+#  pc = 00000cdc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cd8IF_ID_out:xxxxxxxx00000cdc NPC: 00000ce4, NPCOp: 00xxx
+# 
+#  cycle=        829, IF_PC=00000ce0, IF_ins=xxxxxxxx, 
+#  pc = 00000ce0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cdcIF_ID_out:xxxxxxxx00000ce0 NPC: 00000ce8, NPCOp: 00xxx
+# 
+#  cycle=        830, IF_PC=00000ce4, IF_ins=xxxxxxxx, 
+#  pc = 00000ce4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ce0IF_ID_out:xxxxxxxx00000ce4 NPC: 00000cec, NPCOp: 00xxx
+# 
+#  cycle=        831, IF_PC=00000ce8, IF_ins=xxxxxxxx, 
+#  pc = 00000ce8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ce4IF_ID_out:xxxxxxxx00000ce8 NPC: 00000cf0, NPCOp: 00xxx
+# 
+#  cycle=        832, IF_PC=00000cec, IF_ins=xxxxxxxx, 
+#  pc = 00000cec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ce8IF_ID_out:xxxxxxxx00000cec NPC: 00000cf4, NPCOp: 00xxx
+# 
+#  cycle=        833, IF_PC=00000cf0, IF_ins=xxxxxxxx, 
+#  pc = 00000cf0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cecIF_ID_out:xxxxxxxx00000cf0 NPC: 00000cf8, NPCOp: 00xxx
+# 
+#  cycle=        834, IF_PC=00000cf4, IF_ins=xxxxxxxx, 
+#  pc = 00000cf4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cf0IF_ID_out:xxxxxxxx00000cf4 NPC: 00000cfc, NPCOp: 00xxx
+# 
+#  cycle=        835, IF_PC=00000cf8, IF_ins=xxxxxxxx, 
+#  pc = 00000cf8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cf4IF_ID_out:xxxxxxxx00000cf8 NPC: 00000d00, NPCOp: 00xxx
+# 
+#  cycle=        836, IF_PC=00000cfc, IF_ins=xxxxxxxx, 
+#  pc = 00000cfc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cf8IF_ID_out:xxxxxxxx00000cfc NPC: 00000d04, NPCOp: 00xxx
+# 
+#  cycle=        837, IF_PC=00000d00, IF_ins=xxxxxxxx, 
+#  pc = 00000d00: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000cfcIF_ID_out:xxxxxxxx00000d00 NPC: 00000d08, NPCOp: 00xxx
+# 
+#  cycle=        838, IF_PC=00000d04, IF_ins=xxxxxxxx, 
+#  pc = 00000d04: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d00IF_ID_out:xxxxxxxx00000d04 NPC: 00000d0c, NPCOp: 00xxx
+# 
+#  cycle=        839, IF_PC=00000d08, IF_ins=xxxxxxxx, 
+#  pc = 00000d08: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d04IF_ID_out:xxxxxxxx00000d08 NPC: 00000d10, NPCOp: 00xxx
+# 
+#  cycle=        840, IF_PC=00000d0c, IF_ins=xxxxxxxx, 
+#  pc = 00000d0c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d08IF_ID_out:xxxxxxxx00000d0c NPC: 00000d14, NPCOp: 00xxx
+# 
+#  cycle=        841, IF_PC=00000d10, IF_ins=xxxxxxxx, 
+#  pc = 00000d10: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d0cIF_ID_out:xxxxxxxx00000d10 NPC: 00000d18, NPCOp: 00xxx
+# 
+#  cycle=        842, IF_PC=00000d14, IF_ins=xxxxxxxx, 
+#  pc = 00000d14: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d10IF_ID_out:xxxxxxxx00000d14 NPC: 00000d1c, NPCOp: 00xxx
+# 
+#  cycle=        843, IF_PC=00000d18, IF_ins=xxxxxxxx, 
+#  pc = 00000d18: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d14IF_ID_out:xxxxxxxx00000d18 NPC: 00000d20, NPCOp: 00xxx
+# 
+#  cycle=        844, IF_PC=00000d1c, IF_ins=xxxxxxxx, 
+#  pc = 00000d1c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d18IF_ID_out:xxxxxxxx00000d1c NPC: 00000d24, NPCOp: 00xxx
+# 
+#  cycle=        845, IF_PC=00000d20, IF_ins=xxxxxxxx, 
+#  pc = 00000d20: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d1cIF_ID_out:xxxxxxxx00000d20 NPC: 00000d28, NPCOp: 00xxx
+# 
+#  cycle=        846, IF_PC=00000d24, IF_ins=xxxxxxxx, 
+#  pc = 00000d24: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d20IF_ID_out:xxxxxxxx00000d24 NPC: 00000d2c, NPCOp: 00xxx
+# 
+#  cycle=        847, IF_PC=00000d28, IF_ins=xxxxxxxx, 
+#  pc = 00000d28: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d24IF_ID_out:xxxxxxxx00000d28 NPC: 00000d30, NPCOp: 00xxx
+# 
+#  cycle=        848, IF_PC=00000d2c, IF_ins=xxxxxxxx, 
+#  pc = 00000d2c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d28IF_ID_out:xxxxxxxx00000d2c NPC: 00000d34, NPCOp: 00xxx
+# 
+#  cycle=        849, IF_PC=00000d30, IF_ins=xxxxxxxx, 
+#  pc = 00000d30: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d2cIF_ID_out:xxxxxxxx00000d30 NPC: 00000d38, NPCOp: 00xxx
+# 
+#  cycle=        850, IF_PC=00000d34, IF_ins=xxxxxxxx, 
+#  pc = 00000d34: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d30IF_ID_out:xxxxxxxx00000d34 NPC: 00000d3c, NPCOp: 00xxx
+# 
+#  cycle=        851, IF_PC=00000d38, IF_ins=xxxxxxxx, 
+#  pc = 00000d38: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d34IF_ID_out:xxxxxxxx00000d38 NPC: 00000d40, NPCOp: 00xxx
+# 
+#  cycle=        852, IF_PC=00000d3c, IF_ins=xxxxxxxx, 
+#  pc = 00000d3c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d38IF_ID_out:xxxxxxxx00000d3c NPC: 00000d44, NPCOp: 00xxx
+# 
+#  cycle=        853, IF_PC=00000d40, IF_ins=xxxxxxxx, 
+#  pc = 00000d40: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d3cIF_ID_out:xxxxxxxx00000d40 NPC: 00000d48, NPCOp: 00xxx
+# 
+#  cycle=        854, IF_PC=00000d44, IF_ins=xxxxxxxx, 
+#  pc = 00000d44: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d40IF_ID_out:xxxxxxxx00000d44 NPC: 00000d4c, NPCOp: 00xxx
+# 
+#  cycle=        855, IF_PC=00000d48, IF_ins=xxxxxxxx, 
+#  pc = 00000d48: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d44IF_ID_out:xxxxxxxx00000d48 NPC: 00000d50, NPCOp: 00xxx
+# 
+#  cycle=        856, IF_PC=00000d4c, IF_ins=xxxxxxxx, 
+#  pc = 00000d4c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d48IF_ID_out:xxxxxxxx00000d4c NPC: 00000d54, NPCOp: 00xxx
+# 
+#  cycle=        857, IF_PC=00000d50, IF_ins=xxxxxxxx, 
+#  pc = 00000d50: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d4cIF_ID_out:xxxxxxxx00000d50 NPC: 00000d58, NPCOp: 00xxx
+# 
+#  cycle=        858, IF_PC=00000d54, IF_ins=xxxxxxxx, 
+#  pc = 00000d54: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d50IF_ID_out:xxxxxxxx00000d54 NPC: 00000d5c, NPCOp: 00xxx
+# 
+#  cycle=        859, IF_PC=00000d58, IF_ins=xxxxxxxx, 
+#  pc = 00000d58: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d54IF_ID_out:xxxxxxxx00000d58 NPC: 00000d60, NPCOp: 00xxx
+# 
+#  cycle=        860, IF_PC=00000d5c, IF_ins=xxxxxxxx, 
+#  pc = 00000d5c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d58IF_ID_out:xxxxxxxx00000d5c NPC: 00000d64, NPCOp: 00xxx
+# 
+#  cycle=        861, IF_PC=00000d60, IF_ins=xxxxxxxx, 
+#  pc = 00000d60: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d5cIF_ID_out:xxxxxxxx00000d60 NPC: 00000d68, NPCOp: 00xxx
+# 
+#  cycle=        862, IF_PC=00000d64, IF_ins=xxxxxxxx, 
+#  pc = 00000d64: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d60IF_ID_out:xxxxxxxx00000d64 NPC: 00000d6c, NPCOp: 00xxx
+# 
+#  cycle=        863, IF_PC=00000d68, IF_ins=xxxxxxxx, 
+#  pc = 00000d68: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d64IF_ID_out:xxxxxxxx00000d68 NPC: 00000d70, NPCOp: 00xxx
+# 
+#  cycle=        864, IF_PC=00000d6c, IF_ins=xxxxxxxx, 
+#  pc = 00000d6c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d68IF_ID_out:xxxxxxxx00000d6c NPC: 00000d74, NPCOp: 00xxx
+# 
+#  cycle=        865, IF_PC=00000d70, IF_ins=xxxxxxxx, 
+#  pc = 00000d70: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d6cIF_ID_out:xxxxxxxx00000d70 NPC: 00000d78, NPCOp: 00xxx
+# 
+#  cycle=        866, IF_PC=00000d74, IF_ins=xxxxxxxx, 
+#  pc = 00000d74: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d70IF_ID_out:xxxxxxxx00000d74 NPC: 00000d7c, NPCOp: 00xxx
+# 
+#  cycle=        867, IF_PC=00000d78, IF_ins=xxxxxxxx, 
+#  pc = 00000d78: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d74IF_ID_out:xxxxxxxx00000d78 NPC: 00000d80, NPCOp: 00xxx
+# 
+#  cycle=        868, IF_PC=00000d7c, IF_ins=xxxxxxxx, 
+#  pc = 00000d7c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d78IF_ID_out:xxxxxxxx00000d7c NPC: 00000d84, NPCOp: 00xxx
+# 
+#  cycle=        869, IF_PC=00000d80, IF_ins=xxxxxxxx, 
+#  pc = 00000d80: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d7cIF_ID_out:xxxxxxxx00000d80 NPC: 00000d88, NPCOp: 00xxx
+# 
+#  cycle=        870, IF_PC=00000d84, IF_ins=xxxxxxxx, 
+#  pc = 00000d84: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d80IF_ID_out:xxxxxxxx00000d84 NPC: 00000d8c, NPCOp: 00xxx
+# 
+#  cycle=        871, IF_PC=00000d88, IF_ins=xxxxxxxx, 
+#  pc = 00000d88: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d84IF_ID_out:xxxxxxxx00000d88 NPC: 00000d90, NPCOp: 00xxx
+# 
+#  cycle=        872, IF_PC=00000d8c, IF_ins=xxxxxxxx, 
+#  pc = 00000d8c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d88IF_ID_out:xxxxxxxx00000d8c NPC: 00000d94, NPCOp: 00xxx
+# 
+#  cycle=        873, IF_PC=00000d90, IF_ins=xxxxxxxx, 
+#  pc = 00000d90: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d8cIF_ID_out:xxxxxxxx00000d90 NPC: 00000d98, NPCOp: 00xxx
+# 
+#  cycle=        874, IF_PC=00000d94, IF_ins=xxxxxxxx, 
+#  pc = 00000d94: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d90IF_ID_out:xxxxxxxx00000d94 NPC: 00000d9c, NPCOp: 00xxx
+# 
+#  cycle=        875, IF_PC=00000d98, IF_ins=xxxxxxxx, 
+#  pc = 00000d98: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d94IF_ID_out:xxxxxxxx00000d98 NPC: 00000da0, NPCOp: 00xxx
+# 
+#  cycle=        876, IF_PC=00000d9c, IF_ins=xxxxxxxx, 
+#  pc = 00000d9c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d98IF_ID_out:xxxxxxxx00000d9c NPC: 00000da4, NPCOp: 00xxx
+# 
+#  cycle=        877, IF_PC=00000da0, IF_ins=xxxxxxxx, 
+#  pc = 00000da0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000d9cIF_ID_out:xxxxxxxx00000da0 NPC: 00000da8, NPCOp: 00xxx
+# 
+#  cycle=        878, IF_PC=00000da4, IF_ins=xxxxxxxx, 
+#  pc = 00000da4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000da0IF_ID_out:xxxxxxxx00000da4 NPC: 00000dac, NPCOp: 00xxx
+# 
+#  cycle=        879, IF_PC=00000da8, IF_ins=xxxxxxxx, 
+#  pc = 00000da8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000da4IF_ID_out:xxxxxxxx00000da8 NPC: 00000db0, NPCOp: 00xxx
+# 
+#  cycle=        880, IF_PC=00000dac, IF_ins=xxxxxxxx, 
+#  pc = 00000dac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000da8IF_ID_out:xxxxxxxx00000dac NPC: 00000db4, NPCOp: 00xxx
+# 
+#  cycle=        881, IF_PC=00000db0, IF_ins=xxxxxxxx, 
+#  pc = 00000db0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000dacIF_ID_out:xxxxxxxx00000db0 NPC: 00000db8, NPCOp: 00xxx
+# 
+#  cycle=        882, IF_PC=00000db4, IF_ins=xxxxxxxx, 
+#  pc = 00000db4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000db0IF_ID_out:xxxxxxxx00000db4 NPC: 00000dbc, NPCOp: 00xxx
+# 
+#  cycle=        883, IF_PC=00000db8, IF_ins=xxxxxxxx, 
+#  pc = 00000db8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000db4IF_ID_out:xxxxxxxx00000db8 NPC: 00000dc0, NPCOp: 00xxx
+# 
+#  cycle=        884, IF_PC=00000dbc, IF_ins=xxxxxxxx, 
+#  pc = 00000dbc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000db8IF_ID_out:xxxxxxxx00000dbc NPC: 00000dc4, NPCOp: 00xxx
+# 
+#  cycle=        885, IF_PC=00000dc0, IF_ins=xxxxxxxx, 
+#  pc = 00000dc0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000dbcIF_ID_out:xxxxxxxx00000dc0 NPC: 00000dc8, NPCOp: 00xxx
+# 
+#  cycle=        886, IF_PC=00000dc4, IF_ins=xxxxxxxx, 
+#  pc = 00000dc4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000dc0IF_ID_out:xxxxxxxx00000dc4 NPC: 00000dcc, NPCOp: 00xxx
+# 
+#  cycle=        887, IF_PC=00000dc8, IF_ins=xxxxxxxx, 
+#  pc = 00000dc8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000dc4IF_ID_out:xxxxxxxx00000dc8 NPC: 00000dd0, NPCOp: 00xxx
+# 
+#  cycle=        888, IF_PC=00000dcc, IF_ins=xxxxxxxx, 
+#  pc = 00000dcc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000dc8IF_ID_out:xxxxxxxx00000dcc NPC: 00000dd4, NPCOp: 00xxx
+# 
+#  cycle=        889, IF_PC=00000dd0, IF_ins=xxxxxxxx, 
+#  pc = 00000dd0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000dccIF_ID_out:xxxxxxxx00000dd0 NPC: 00000dd8, NPCOp: 00xxx
+# 
+#  cycle=        890, IF_PC=00000dd4, IF_ins=xxxxxxxx, 
+#  pc = 00000dd4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000dd0IF_ID_out:xxxxxxxx00000dd4 NPC: 00000ddc, NPCOp: 00xxx
+# 
+#  cycle=        891, IF_PC=00000dd8, IF_ins=xxxxxxxx, 
+#  pc = 00000dd8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000dd4IF_ID_out:xxxxxxxx00000dd8 NPC: 00000de0, NPCOp: 00xxx
+# 
+#  cycle=        892, IF_PC=00000ddc, IF_ins=xxxxxxxx, 
+#  pc = 00000ddc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000dd8IF_ID_out:xxxxxxxx00000ddc NPC: 00000de4, NPCOp: 00xxx
+# 
+#  cycle=        893, IF_PC=00000de0, IF_ins=xxxxxxxx, 
+#  pc = 00000de0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ddcIF_ID_out:xxxxxxxx00000de0 NPC: 00000de8, NPCOp: 00xxx
+# 
+#  cycle=        894, IF_PC=00000de4, IF_ins=xxxxxxxx, 
+#  pc = 00000de4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000de0IF_ID_out:xxxxxxxx00000de4 NPC: 00000dec, NPCOp: 00xxx
+# 
+#  cycle=        895, IF_PC=00000de8, IF_ins=xxxxxxxx, 
+#  pc = 00000de8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000de4IF_ID_out:xxxxxxxx00000de8 NPC: 00000df0, NPCOp: 00xxx
+# 
+#  cycle=        896, IF_PC=00000dec, IF_ins=xxxxxxxx, 
+#  pc = 00000dec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000de8IF_ID_out:xxxxxxxx00000dec NPC: 00000df4, NPCOp: 00xxx
+# 
+#  cycle=        897, IF_PC=00000df0, IF_ins=xxxxxxxx, 
+#  pc = 00000df0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000decIF_ID_out:xxxxxxxx00000df0 NPC: 00000df8, NPCOp: 00xxx
+# 
+#  cycle=        898, IF_PC=00000df4, IF_ins=xxxxxxxx, 
+#  pc = 00000df4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000df0IF_ID_out:xxxxxxxx00000df4 NPC: 00000dfc, NPCOp: 00xxx
+# 
+#  cycle=        899, IF_PC=00000df8, IF_ins=xxxxxxxx, 
+#  pc = 00000df8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000df4IF_ID_out:xxxxxxxx00000df8 NPC: 00000e00, NPCOp: 00xxx
+# 
+#  cycle=        900, IF_PC=00000dfc, IF_ins=xxxxxxxx, 
+#  pc = 00000dfc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000df8IF_ID_out:xxxxxxxx00000dfc NPC: 00000e04, NPCOp: 00xxx
+# 
+#  cycle=        901, IF_PC=00000e00, IF_ins=xxxxxxxx, 
+#  pc = 00000e00: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000dfcIF_ID_out:xxxxxxxx00000e00 NPC: 00000e08, NPCOp: 00xxx
+# 
+#  cycle=        902, IF_PC=00000e04, IF_ins=xxxxxxxx, 
+#  pc = 00000e04: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e00IF_ID_out:xxxxxxxx00000e04 NPC: 00000e0c, NPCOp: 00xxx
+# 
+#  cycle=        903, IF_PC=00000e08, IF_ins=xxxxxxxx, 
+#  pc = 00000e08: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e04IF_ID_out:xxxxxxxx00000e08 NPC: 00000e10, NPCOp: 00xxx
+# 
+#  cycle=        904, IF_PC=00000e0c, IF_ins=xxxxxxxx, 
+#  pc = 00000e0c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e08IF_ID_out:xxxxxxxx00000e0c NPC: 00000e14, NPCOp: 00xxx
+# 
+#  cycle=        905, IF_PC=00000e10, IF_ins=xxxxxxxx, 
+#  pc = 00000e10: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e0cIF_ID_out:xxxxxxxx00000e10 NPC: 00000e18, NPCOp: 00xxx
+# 
+#  cycle=        906, IF_PC=00000e14, IF_ins=xxxxxxxx, 
+#  pc = 00000e14: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e10IF_ID_out:xxxxxxxx00000e14 NPC: 00000e1c, NPCOp: 00xxx
+# 
+#  cycle=        907, IF_PC=00000e18, IF_ins=xxxxxxxx, 
+#  pc = 00000e18: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e14IF_ID_out:xxxxxxxx00000e18 NPC: 00000e20, NPCOp: 00xxx
+# 
+#  cycle=        908, IF_PC=00000e1c, IF_ins=xxxxxxxx, 
+#  pc = 00000e1c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e18IF_ID_out:xxxxxxxx00000e1c NPC: 00000e24, NPCOp: 00xxx
+# 
+#  cycle=        909, IF_PC=00000e20, IF_ins=xxxxxxxx, 
+#  pc = 00000e20: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e1cIF_ID_out:xxxxxxxx00000e20 NPC: 00000e28, NPCOp: 00xxx
+# 
+#  cycle=        910, IF_PC=00000e24, IF_ins=xxxxxxxx, 
+#  pc = 00000e24: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e20IF_ID_out:xxxxxxxx00000e24 NPC: 00000e2c, NPCOp: 00xxx
+# 
+#  cycle=        911, IF_PC=00000e28, IF_ins=xxxxxxxx, 
+#  pc = 00000e28: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e24IF_ID_out:xxxxxxxx00000e28 NPC: 00000e30, NPCOp: 00xxx
+# 
+#  cycle=        912, IF_PC=00000e2c, IF_ins=xxxxxxxx, 
+#  pc = 00000e2c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e28IF_ID_out:xxxxxxxx00000e2c NPC: 00000e34, NPCOp: 00xxx
+# 
+#  cycle=        913, IF_PC=00000e30, IF_ins=xxxxxxxx, 
+#  pc = 00000e30: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e2cIF_ID_out:xxxxxxxx00000e30 NPC: 00000e38, NPCOp: 00xxx
+# 
+#  cycle=        914, IF_PC=00000e34, IF_ins=xxxxxxxx, 
+#  pc = 00000e34: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e30IF_ID_out:xxxxxxxx00000e34 NPC: 00000e3c, NPCOp: 00xxx
+# 
+#  cycle=        915, IF_PC=00000e38, IF_ins=xxxxxxxx, 
+#  pc = 00000e38: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e34IF_ID_out:xxxxxxxx00000e38 NPC: 00000e40, NPCOp: 00xxx
+# 
+#  cycle=        916, IF_PC=00000e3c, IF_ins=xxxxxxxx, 
+#  pc = 00000e3c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e38IF_ID_out:xxxxxxxx00000e3c NPC: 00000e44, NPCOp: 00xxx
+# 
+#  cycle=        917, IF_PC=00000e40, IF_ins=xxxxxxxx, 
+#  pc = 00000e40: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e3cIF_ID_out:xxxxxxxx00000e40 NPC: 00000e48, NPCOp: 00xxx
+# 
+#  cycle=        918, IF_PC=00000e44, IF_ins=xxxxxxxx, 
+#  pc = 00000e44: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e40IF_ID_out:xxxxxxxx00000e44 NPC: 00000e4c, NPCOp: 00xxx
+# 
+#  cycle=        919, IF_PC=00000e48, IF_ins=xxxxxxxx, 
+#  pc = 00000e48: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e44IF_ID_out:xxxxxxxx00000e48 NPC: 00000e50, NPCOp: 00xxx
+# 
+#  cycle=        920, IF_PC=00000e4c, IF_ins=xxxxxxxx, 
+#  pc = 00000e4c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e48IF_ID_out:xxxxxxxx00000e4c NPC: 00000e54, NPCOp: 00xxx
+# 
+#  cycle=        921, IF_PC=00000e50, IF_ins=xxxxxxxx, 
+#  pc = 00000e50: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e4cIF_ID_out:xxxxxxxx00000e50 NPC: 00000e58, NPCOp: 00xxx
+# 
+#  cycle=        922, IF_PC=00000e54, IF_ins=xxxxxxxx, 
+#  pc = 00000e54: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e50IF_ID_out:xxxxxxxx00000e54 NPC: 00000e5c, NPCOp: 00xxx
+# 
+#  cycle=        923, IF_PC=00000e58, IF_ins=xxxxxxxx, 
+#  pc = 00000e58: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e54IF_ID_out:xxxxxxxx00000e58 NPC: 00000e60, NPCOp: 00xxx
+# 
+#  cycle=        924, IF_PC=00000e5c, IF_ins=xxxxxxxx, 
+#  pc = 00000e5c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e58IF_ID_out:xxxxxxxx00000e5c NPC: 00000e64, NPCOp: 00xxx
+# 
+#  cycle=        925, IF_PC=00000e60, IF_ins=xxxxxxxx, 
+#  pc = 00000e60: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e5cIF_ID_out:xxxxxxxx00000e60 NPC: 00000e68, NPCOp: 00xxx
+# 
+#  cycle=        926, IF_PC=00000e64, IF_ins=xxxxxxxx, 
+#  pc = 00000e64: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e60IF_ID_out:xxxxxxxx00000e64 NPC: 00000e6c, NPCOp: 00xxx
+# 
+#  cycle=        927, IF_PC=00000e68, IF_ins=xxxxxxxx, 
+#  pc = 00000e68: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e64IF_ID_out:xxxxxxxx00000e68 NPC: 00000e70, NPCOp: 00xxx
+# 
+#  cycle=        928, IF_PC=00000e6c, IF_ins=xxxxxxxx, 
+#  pc = 00000e6c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e68IF_ID_out:xxxxxxxx00000e6c NPC: 00000e74, NPCOp: 00xxx
+# 
+#  cycle=        929, IF_PC=00000e70, IF_ins=xxxxxxxx, 
+#  pc = 00000e70: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e6cIF_ID_out:xxxxxxxx00000e70 NPC: 00000e78, NPCOp: 00xxx
+# 
+#  cycle=        930, IF_PC=00000e74, IF_ins=xxxxxxxx, 
+#  pc = 00000e74: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e70IF_ID_out:xxxxxxxx00000e74 NPC: 00000e7c, NPCOp: 00xxx
+# 
+#  cycle=        931, IF_PC=00000e78, IF_ins=xxxxxxxx, 
+#  pc = 00000e78: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e74IF_ID_out:xxxxxxxx00000e78 NPC: 00000e80, NPCOp: 00xxx
+# 
+#  cycle=        932, IF_PC=00000e7c, IF_ins=xxxxxxxx, 
+#  pc = 00000e7c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e78IF_ID_out:xxxxxxxx00000e7c NPC: 00000e84, NPCOp: 00xxx
+# 
+#  cycle=        933, IF_PC=00000e80, IF_ins=xxxxxxxx, 
+#  pc = 00000e80: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e7cIF_ID_out:xxxxxxxx00000e80 NPC: 00000e88, NPCOp: 00xxx
+# 
+#  cycle=        934, IF_PC=00000e84, IF_ins=xxxxxxxx, 
+#  pc = 00000e84: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e80IF_ID_out:xxxxxxxx00000e84 NPC: 00000e8c, NPCOp: 00xxx
+# 
+#  cycle=        935, IF_PC=00000e88, IF_ins=xxxxxxxx, 
+#  pc = 00000e88: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e84IF_ID_out:xxxxxxxx00000e88 NPC: 00000e90, NPCOp: 00xxx
+# 
+#  cycle=        936, IF_PC=00000e8c, IF_ins=xxxxxxxx, 
+#  pc = 00000e8c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e88IF_ID_out:xxxxxxxx00000e8c NPC: 00000e94, NPCOp: 00xxx
+# 
+#  cycle=        937, IF_PC=00000e90, IF_ins=xxxxxxxx, 
+#  pc = 00000e90: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e8cIF_ID_out:xxxxxxxx00000e90 NPC: 00000e98, NPCOp: 00xxx
+# 
+#  cycle=        938, IF_PC=00000e94, IF_ins=xxxxxxxx, 
+#  pc = 00000e94: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e90IF_ID_out:xxxxxxxx00000e94 NPC: 00000e9c, NPCOp: 00xxx
+# 
+#  cycle=        939, IF_PC=00000e98, IF_ins=xxxxxxxx, 
+#  pc = 00000e98: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e94IF_ID_out:xxxxxxxx00000e98 NPC: 00000ea0, NPCOp: 00xxx
+# 
+#  cycle=        940, IF_PC=00000e9c, IF_ins=xxxxxxxx, 
+#  pc = 00000e9c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e98IF_ID_out:xxxxxxxx00000e9c NPC: 00000ea4, NPCOp: 00xxx
+# 
+#  cycle=        941, IF_PC=00000ea0, IF_ins=xxxxxxxx, 
+#  pc = 00000ea0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000e9cIF_ID_out:xxxxxxxx00000ea0 NPC: 00000ea8, NPCOp: 00xxx
+# 
+#  cycle=        942, IF_PC=00000ea4, IF_ins=xxxxxxxx, 
+#  pc = 00000ea4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ea0IF_ID_out:xxxxxxxx00000ea4 NPC: 00000eac, NPCOp: 00xxx
+# 
+#  cycle=        943, IF_PC=00000ea8, IF_ins=xxxxxxxx, 
+#  pc = 00000ea8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ea4IF_ID_out:xxxxxxxx00000ea8 NPC: 00000eb0, NPCOp: 00xxx
+# 
+#  cycle=        944, IF_PC=00000eac, IF_ins=xxxxxxxx, 
+#  pc = 00000eac: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ea8IF_ID_out:xxxxxxxx00000eac NPC: 00000eb4, NPCOp: 00xxx
+# 
+#  cycle=        945, IF_PC=00000eb0, IF_ins=xxxxxxxx, 
+#  pc = 00000eb0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000eacIF_ID_out:xxxxxxxx00000eb0 NPC: 00000eb8, NPCOp: 00xxx
+# 
+#  cycle=        946, IF_PC=00000eb4, IF_ins=xxxxxxxx, 
+#  pc = 00000eb4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000eb0IF_ID_out:xxxxxxxx00000eb4 NPC: 00000ebc, NPCOp: 00xxx
+# 
+#  cycle=        947, IF_PC=00000eb8, IF_ins=xxxxxxxx, 
+#  pc = 00000eb8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000eb4IF_ID_out:xxxxxxxx00000eb8 NPC: 00000ec0, NPCOp: 00xxx
+# 
+#  cycle=        948, IF_PC=00000ebc, IF_ins=xxxxxxxx, 
+#  pc = 00000ebc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000eb8IF_ID_out:xxxxxxxx00000ebc NPC: 00000ec4, NPCOp: 00xxx
+# 
+#  cycle=        949, IF_PC=00000ec0, IF_ins=xxxxxxxx, 
+#  pc = 00000ec0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ebcIF_ID_out:xxxxxxxx00000ec0 NPC: 00000ec8, NPCOp: 00xxx
+# 
+#  cycle=        950, IF_PC=00000ec4, IF_ins=xxxxxxxx, 
+#  pc = 00000ec4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ec0IF_ID_out:xxxxxxxx00000ec4 NPC: 00000ecc, NPCOp: 00xxx
+# 
+#  cycle=        951, IF_PC=00000ec8, IF_ins=xxxxxxxx, 
+#  pc = 00000ec8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ec4IF_ID_out:xxxxxxxx00000ec8 NPC: 00000ed0, NPCOp: 00xxx
+# 
+#  cycle=        952, IF_PC=00000ecc, IF_ins=xxxxxxxx, 
+#  pc = 00000ecc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ec8IF_ID_out:xxxxxxxx00000ecc NPC: 00000ed4, NPCOp: 00xxx
+# 
+#  cycle=        953, IF_PC=00000ed0, IF_ins=xxxxxxxx, 
+#  pc = 00000ed0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000eccIF_ID_out:xxxxxxxx00000ed0 NPC: 00000ed8, NPCOp: 00xxx
+# 
+#  cycle=        954, IF_PC=00000ed4, IF_ins=xxxxxxxx, 
+#  pc = 00000ed4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ed0IF_ID_out:xxxxxxxx00000ed4 NPC: 00000edc, NPCOp: 00xxx
+# 
+#  cycle=        955, IF_PC=00000ed8, IF_ins=xxxxxxxx, 
+#  pc = 00000ed8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ed4IF_ID_out:xxxxxxxx00000ed8 NPC: 00000ee0, NPCOp: 00xxx
+# 
+#  cycle=        956, IF_PC=00000edc, IF_ins=xxxxxxxx, 
+#  pc = 00000edc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ed8IF_ID_out:xxxxxxxx00000edc NPC: 00000ee4, NPCOp: 00xxx
+# 
+#  cycle=        957, IF_PC=00000ee0, IF_ins=xxxxxxxx, 
+#  pc = 00000ee0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000edcIF_ID_out:xxxxxxxx00000ee0 NPC: 00000ee8, NPCOp: 00xxx
+# 
+#  cycle=        958, IF_PC=00000ee4, IF_ins=xxxxxxxx, 
+#  pc = 00000ee4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ee0IF_ID_out:xxxxxxxx00000ee4 NPC: 00000eec, NPCOp: 00xxx
+# 
+#  cycle=        959, IF_PC=00000ee8, IF_ins=xxxxxxxx, 
+#  pc = 00000ee8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ee4IF_ID_out:xxxxxxxx00000ee8 NPC: 00000ef0, NPCOp: 00xxx
+# 
+#  cycle=        960, IF_PC=00000eec, IF_ins=xxxxxxxx, 
+#  pc = 00000eec: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ee8IF_ID_out:xxxxxxxx00000eec NPC: 00000ef4, NPCOp: 00xxx
+# 
+#  cycle=        961, IF_PC=00000ef0, IF_ins=xxxxxxxx, 
+#  pc = 00000ef0: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000eecIF_ID_out:xxxxxxxx00000ef0 NPC: 00000ef8, NPCOp: 00xxx
+# 
+#  cycle=        962, IF_PC=00000ef4, IF_ins=xxxxxxxx, 
+#  pc = 00000ef4: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ef0IF_ID_out:xxxxxxxx00000ef4 NPC: 00000efc, NPCOp: 00xxx
+# 
+#  cycle=        963, IF_PC=00000ef8, IF_ins=xxxxxxxx, 
+#  pc = 00000ef8: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ef4IF_ID_out:xxxxxxxx00000ef8 NPC: 00000f00, NPCOp: 00xxx
+# 
+#  cycle=        964, IF_PC=00000efc, IF_ins=xxxxxxxx, 
+#  pc = 00000efc: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000ef8IF_ID_out:xxxxxxxx00000efc NPC: 00000f04, NPCOp: 00xxx
+# 
+#  cycle=        965, IF_PC=00000f00, IF_ins=xxxxxxxx, 
+#  pc = 00000f00: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000efcIF_ID_out:xxxxxxxx00000f00 NPC: 00000f08, NPCOp: 00xxx
+# 
+#  cycle=        966, IF_PC=00000f04, IF_ins=xxxxxxxx, 
+#  pc = 00000f04: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f00IF_ID_out:xxxxxxxx00000f04 NPC: 00000f0c, NPCOp: 00xxx
+# 
+#  cycle=        967, IF_PC=00000f08, IF_ins=xxxxxxxx, 
+#  pc = 00000f08: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f04IF_ID_out:xxxxxxxx00000f08 NPC: 00000f10, NPCOp: 00xxx
+# 
+#  cycle=        968, IF_PC=00000f0c, IF_ins=xxxxxxxx, 
+#  pc = 00000f0c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f08IF_ID_out:xxxxxxxx00000f0c NPC: 00000f14, NPCOp: 00xxx
+# 
+#  cycle=        969, IF_PC=00000f10, IF_ins=xxxxxxxx, 
+#  pc = 00000f10: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f0cIF_ID_out:xxxxxxxx00000f10 NPC: 00000f18, NPCOp: 00xxx
+# 
+#  cycle=        970, IF_PC=00000f14, IF_ins=xxxxxxxx, 
+#  pc = 00000f14: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f10IF_ID_out:xxxxxxxx00000f14 NPC: 00000f1c, NPCOp: 00xxx
+# 
+#  cycle=        971, IF_PC=00000f18, IF_ins=xxxxxxxx, 
+#  pc = 00000f18: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f14IF_ID_out:xxxxxxxx00000f18 NPC: 00000f20, NPCOp: 00xxx
+# 
+#  cycle=        972, IF_PC=00000f1c, IF_ins=xxxxxxxx, 
+#  pc = 00000f1c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f18IF_ID_out:xxxxxxxx00000f1c NPC: 00000f24, NPCOp: 00xxx
+# 
+#  cycle=        973, IF_PC=00000f20, IF_ins=xxxxxxxx, 
+#  pc = 00000f20: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f1cIF_ID_out:xxxxxxxx00000f20 NPC: 00000f28, NPCOp: 00xxx
+# 
+#  cycle=        974, IF_PC=00000f24, IF_ins=xxxxxxxx, 
+#  pc = 00000f24: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f20IF_ID_out:xxxxxxxx00000f24 NPC: 00000f2c, NPCOp: 00xxx
+# 
+#  cycle=        975, IF_PC=00000f28, IF_ins=xxxxxxxx, 
+#  pc = 00000f28: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f24IF_ID_out:xxxxxxxx00000f28 NPC: 00000f30, NPCOp: 00xxx
+# 
+#  cycle=        976, IF_PC=00000f2c, IF_ins=xxxxxxxx, 
+#  pc = 00000f2c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f28IF_ID_out:xxxxxxxx00000f2c NPC: 00000f34, NPCOp: 00xxx
+# 
+#  cycle=        977, IF_PC=00000f30, IF_ins=xxxxxxxx, 
+#  pc = 00000f30: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f2cIF_ID_out:xxxxxxxx00000f30 NPC: 00000f38, NPCOp: 00xxx
+# 
+#  cycle=        978, IF_PC=00000f34, IF_ins=xxxxxxxx, 
+#  pc = 00000f34: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f30IF_ID_out:xxxxxxxx00000f34 NPC: 00000f3c, NPCOp: 00xxx
+# 
+#  cycle=        979, IF_PC=00000f38, IF_ins=xxxxxxxx, 
+#  pc = 00000f38: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f34IF_ID_out:xxxxxxxx00000f38 NPC: 00000f40, NPCOp: 00xxx
+# 
+#  cycle=        980, IF_PC=00000f3c, IF_ins=xxxxxxxx, 
+#  pc = 00000f3c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f38IF_ID_out:xxxxxxxx00000f3c NPC: 00000f44, NPCOp: 00xxx
+# 
+#  cycle=        981, IF_PC=00000f40, IF_ins=xxxxxxxx, 
+#  pc = 00000f40: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f3cIF_ID_out:xxxxxxxx00000f40 NPC: 00000f48, NPCOp: 00xxx
+# 
+#  cycle=        982, IF_PC=00000f44, IF_ins=xxxxxxxx, 
+#  pc = 00000f44: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f40IF_ID_out:xxxxxxxx00000f44 NPC: 00000f4c, NPCOp: 00xxx
+# 
+#  cycle=        983, IF_PC=00000f48, IF_ins=xxxxxxxx, 
+#  pc = 00000f48: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f44IF_ID_out:xxxxxxxx00000f48 NPC: 00000f50, NPCOp: 00xxx
+# 
+#  cycle=        984, IF_PC=00000f4c, IF_ins=xxxxxxxx, 
+#  pc = 00000f4c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f48IF_ID_out:xxxxxxxx00000f4c NPC: 00000f54, NPCOp: 00xxx
+# 
+#  cycle=        985, IF_PC=00000f50, IF_ins=xxxxxxxx, 
+#  pc = 00000f50: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f4cIF_ID_out:xxxxxxxx00000f50 NPC: 00000f58, NPCOp: 00xxx
+# 
+#  cycle=        986, IF_PC=00000f54, IF_ins=xxxxxxxx, 
+#  pc = 00000f54: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f50IF_ID_out:xxxxxxxx00000f54 NPC: 00000f5c, NPCOp: 00xxx
+# 
+#  cycle=        987, IF_PC=00000f58, IF_ins=xxxxxxxx, 
+#  pc = 00000f58: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f54IF_ID_out:xxxxxxxx00000f58 NPC: 00000f60, NPCOp: 00xxx
+# 
+#  cycle=        988, IF_PC=00000f5c, IF_ins=xxxxxxxx, 
+#  pc = 00000f5c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f58IF_ID_out:xxxxxxxx00000f5c NPC: 00000f64, NPCOp: 00xxx
+# 
+#  cycle=        989, IF_PC=00000f60, IF_ins=xxxxxxxx, 
+#  pc = 00000f60: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f5cIF_ID_out:xxxxxxxx00000f60 NPC: 00000f68, NPCOp: 00xxx
+# 
+#  cycle=        990, IF_PC=00000f64, IF_ins=xxxxxxxx, 
+#  pc = 00000f64: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f60IF_ID_out:xxxxxxxx00000f64 NPC: 00000f6c, NPCOp: 00xxx
+# 
+#  cycle=        991, IF_PC=00000f68, IF_ins=xxxxxxxx, 
+#  pc = 00000f68: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f64IF_ID_out:xxxxxxxx00000f68 NPC: 00000f70, NPCOp: 00xxx
+# 
+#  cycle=        992, IF_PC=00000f6c, IF_ins=xxxxxxxx, 
+#  pc = 00000f6c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f68IF_ID_out:xxxxxxxx00000f6c NPC: 00000f74, NPCOp: 00xxx
+# 
+#  cycle=        993, IF_PC=00000f70, IF_ins=xxxxxxxx, 
+#  pc = 00000f70: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f6cIF_ID_out:xxxxxxxx00000f70 NPC: 00000f78, NPCOp: 00xxx
+# 
+#  cycle=        994, IF_PC=00000f74, IF_ins=xxxxxxxx, 
+#  pc = 00000f74: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f70IF_ID_out:xxxxxxxx00000f74 NPC: 00000f7c, NPCOp: 00xxx
+# 
+#  cycle=        995, IF_PC=00000f78, IF_ins=xxxxxxxx, 
+#  pc = 00000f78: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f74IF_ID_out:xxxxxxxx00000f78 NPC: 00000f80, NPCOp: 00xxx
+# 
+#  cycle=        996, IF_PC=00000f7c, IF_ins=xxxxxxxx, 
+#  pc = 00000f7c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f78IF_ID_out:xxxxxxxx00000f7c NPC: 00000f84, NPCOp: 00xxx
+# 
+#  cycle=        997, IF_PC=00000f80, IF_ins=xxxxxxxx, 
+#  pc = 00000f80: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f7cIF_ID_out:xxxxxxxx00000f80 NPC: 00000f88, NPCOp: 00xxx
+# 
+#  cycle=        998, IF_PC=00000f84, IF_ins=xxxxxxxx, 
+#  pc = 00000f84: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f80IF_ID_out:xxxxxxxx00000f84 NPC: 00000f8c, NPCOp: 00xxx
+# 
+#  cycle=        999, IF_PC=00000f88, IF_ins=xxxxxxxx, 
+#  pc = 00000f88: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f84IF_ID_out:xxxxxxxx00000f88 NPC: 00000f90, NPCOp: 00xxx
+# 
+#  cycle=       1000, IF_PC=00000f8c, IF_ins=xxxxxxxx, 
+#  pc = 00000f8c: ID_EX_out:xxxxxxxxxXXxxxxxxxxxxxxxxxxxxX0000000Xxxx00000f88IF_ID_out:xxxxxxxx00000f8c NPC: 00000f94, NPCOp: 00xxx
+# ** Error: ¾¾·Î¡ >Þ  
+#        Unable to replace existing ini file (E:/program/cpu/dinoPLCPU/dinoPLCPU.mpf).  File can not be renamed.
+# ** Error: ¾¾·Î¡ >Þ  
+#        Unable to replace existing ini file (E:/program/cpu/dinoPLCPU/dinoPLCPU.mpf).  File can not be renamed.
+# ** Error: ¾¾·Î¡ >Þ  
+#        Unable to replace existing ini file (E:/program/cpu/dinoPLCPU/dinoPLCPU.mpf).  File can not be renamed.
+# End time: 00:45:31 on May 20,2025, Elapsed time: 0:04:04
+# Errors: 3, Warnings: 2

@@ -17,6 +17,7 @@ module pl_reg #(parameter WIDTH = 32)(
             else if (flush)
                 out <= 0;
             // 当 ID 到 EX 阶段的暂停信号有效时，将寄存器输出清零，为避免无效指令执行，防止错误传播
+            else if (stall_id_ex)
                 out <= 0;
             // 当 IF 到 ID 阶段的暂停信号有效时，寄存器输出保持不变，防止数据冒险，维持流水线状态
             else if (stall_if_id)

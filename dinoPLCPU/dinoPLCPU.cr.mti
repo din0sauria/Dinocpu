@@ -1,0 +1,97 @@
+E:/program/cpu/dinoPLCPU/PC.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/PC.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} E:/program/cpu/dinoPLCPU/RF.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/RF.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}} E:/program/cpu/dinoPLCPU/ctrl_encode_def.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/ctrl_encode_def.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+
+} {} {}} E:/program/cpu/dinoPLCPU/EXT.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/EXT.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module EXT
+
+Top level modules:
+	EXT
+
+} {} {}} E:/program/cpu/dinoPLCPU/NPC.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/NPC.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module NPC
+
+Top level modules:
+	NPC
+
+} {} {}} E:/program/cpu/dinoPLCPU/pl_reg.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/pl_reg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module pl_reg
+
+Top level modules:
+	pl_reg
+
+} {} {}} E:/program/cpu/dinoPLCPU/alu.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} E:/program/cpu/dinoPLCPU/hazard.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/hazard.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module Hazard_Detect
+-- Compiling module Forwarding
+
+Top level modules:
+	Hazard_Detect
+	Forwarding
+
+} {} {}} E:/program/cpu/dinoPLCPU/plcomp.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/plcomp.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module plcomp
+
+Top level modules:
+	plcomp
+
+} {} {}} E:/program/cpu/dinoPLCPU/PLCPU.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/PLCPU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module PLCPU
+
+Top level modules:
+	PLCPU
+
+} {} {}} E:/program/cpu/dinoPLCPU/ctrl.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/ctrl.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module ctrl
+
+Top level modules:
+	ctrl
+
+} {} {}} E:/program/cpu/dinoPLCPU/im.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/im.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module im
+
+Top level modules:
+	im
+
+} {} {}} E:/program/cpu/dinoPLCPU/plcomp_tb.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/plcomp_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module plcomp_tb
+
+Top level modules:
+	plcomp_tb
+
+} {} {}} E:/program/cpu/dinoPLCPU/dm.v {1 {vlog -work work -stats=none E:/program/cpu/dinoPLCPU/dm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module dm
+
+Top level modules:
+	dm
+
+} {} {}}

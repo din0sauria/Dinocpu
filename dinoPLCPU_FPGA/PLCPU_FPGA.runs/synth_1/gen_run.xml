@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1747738604">
+  <File Type="PA-TCL" Name="PLCPUSOC_Top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="PLCPUSOC_Top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="PLCPUSOC_Top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="PLCPUSOC_Top.vds"/>
+  <File Type="RDS-UTIL" Name="PLCPUSOC_Top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="PLCPUSOC_Top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="PLCPUSOC_Top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="PLCPUSOC_Top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="PLCPUSOC_Top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/ctrl_encode_def.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ctrl_encode_def.v"/>
+        <Attr Name="ImportTime" Val="1741606650"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/EXT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EXT.v"/>
+        <Attr Name="ImportTime" Val="1741249652"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/MIO_BUS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../MIO_BUS.v"/>
+        <Attr Name="ImportTime" Val="1551203864"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/Multi_CH32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Multi_CH32.v"/>
+        <Attr Name="ImportTime" Val="1551527432"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/NPC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../NPC.v"/>
+        <Attr Name="ImportTime" Val="1741675384"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/PC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PC.v"/>
+        <Attr Name="ImportTime" Val="1741523434"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/PLCPU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PLCPU.v"/>
+        <Attr Name="ImportTime" Val="1742046974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/RF.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RF.v"/>
+        <Attr Name="ImportTime" Val="1742046276"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../alu.v"/>
+        <Attr Name="ImportTime" Val="1741677984"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/clk_div.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../clk_div.v"/>
+        <Attr Name="ImportTime" Val="1572142346"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ctrl.v"/>
+        <Attr Name="ImportTime" Val="1741677976"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/dm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dm.v"/>
+        <Attr Name="ImportTime" Val="1742046642"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/hazard.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hazard.v"/>
+        <Attr Name="ImportTime" Val="1741615752"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/pl_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pl_reg.v"/>
+        <Attr Name="ImportTime" Val="1741613168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/seg7x16.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seg7x16.v"/>
+        <Attr Name="ImportTime" Val="1551458036"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PLCPU_FPGA/PLCPU_Top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PLCPU_Top.v"/>
+        <Attr Name="ImportTime" Val="1742046086"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../dino.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PLCPUSOC_Top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/Nexys4DDR_CPU.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../SCCPU_FPGA/SCCPU_SOC.srcs/constrs_1/imports/constraints/Nexys4DDR_CPU.xdc"/>
+        <Attr Name="ImportTime" Val="1745480212"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="imem"/>
+</GenRun>
